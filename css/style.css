@@ -67,7 +67,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 0 0 2rem 0;
 }
 
 .app-card {
@@ -254,32 +254,52 @@ body {
     color: var(--primary-color);
 }
 
-/* 标签过滤器样式 */
-.tags-filter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+/* 标签过滤器容器样式 */
+.tags-filter-container {
+    position: relative;
     margin: 1rem 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* 隐藏滚动条但保持功能 */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
 }
 
+.tags-filter-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.tags-filter {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    white-space: nowrap;
+}
+
+/* 标签样式 */
 .filter-tag {
     background: var(--card-background);
-    padding: 6px 16px;
+    padding: 8px 20px;
     border-radius: 20px;
     font-size: 0.9rem;
     color: var(--secondary-text);
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: all 0.2s ease;
     border: 1px solid var(--border-color);
+    user-select: none;
+    /* 移除底部边距 */
+    display: inline-flex;
+    align-items: center;
 }
 
 .filter-tag:hover {
-    transform: scale(1.05);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .filter-tag.active {
     background: var(--primary-color);
-    color: white;
+    color: var(--card-background);
     border-color: var(--primary-color);
 }
 

@@ -196,9 +196,44 @@ async function initializeApp() {
     // 初始化搜索功能
     initializeSearch(apps);
     
+    // 收集所有唯一的标签
+    const allTags = [...new Set(apps.flatMap(app => app.tags))];
+    
+    // 初始化标签过滤器
+    const tagsFilter = document.getElementById('tagsFilter');
+    allTags.forEach(tag => {
+        const tagElement = document.createElement('span');
+        tagElement.className = 'filter-tag';
+        tagElement.textContent = tag;
+        tagElement.addEventListener('click', () => {
+            tagElement.classList.toggle('active');
+            filterApps();
+        });
+        tagsFilter.appendChild(tagElement);
+    });
+    
+    // 渲染应用卡片
     apps.forEach(app => {
         appsGrid.appendChild(renderAppCard(app));
     });
+    
+    // 过滤应用的函数
+    function filterApps() {
+        const selectedTags = Array.from(document.querySelectorAll('.filter-tag.active'))
+            .map(tag => tag.textContent);
+        
+        const cards = document.querySelectorAll('.app-card');
+        cards.forEach(card => {
+            const cardTags = Array.from(card.querySelectorAll('.tag'))
+                .map(tag => tag.textContent);
+            
+            if (selectedTags.length === 0 || selectedTags.some(tag => cardTags.includes(tag))) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
     
     // 关闭模态框
     const closeButton = document.querySelector('.close-button');
