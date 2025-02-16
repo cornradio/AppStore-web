@@ -95,9 +95,20 @@ function renderAppCard(app) {
             
             requestAnimationFrame(() => {
                 card.classList.add('expanded');
-                card.style.top = `${window.innerHeight * 0.1 + scrollTop}px`;
-                card.style.left = `${(window.innerWidth - Math.min(600, window.innerWidth * 0.9)) / 2}px`;
-                card.style.width = `${Math.min(600, window.innerWidth * 0.9)}px`;
+                
+                // 修改展开后的位置计算
+                const expandedWidth = Math.min(600, window.innerWidth * 0.9);
+                const expandedLeft = (window.innerWidth - expandedWidth) / 2;
+                
+                // 计算展开后的高度，确保上下都有足够空间
+                const topMargin = Math.max(window.innerHeight * 0.05, 20); // 至少20px的上边距
+                const bottomMargin = Math.max(window.innerHeight * 0.1, 40); // 至少40px的下边距
+                const maxHeight = window.innerHeight - topMargin - bottomMargin;
+                
+                card.style.top = `${topMargin + scrollTop}px`;
+                card.style.left = `${expandedLeft}px`;
+                card.style.width = `${expandedWidth}px`;
+                card.style.maxHeight = `${maxHeight}px`; // 设置最大高度
                 card.style.height = 'auto';
                 
                 // 监听过渡结束，然后显示遮罩
