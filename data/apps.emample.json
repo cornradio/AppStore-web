@@ -5,7 +5,7 @@
       "icon": "https://placehold.co/80x80/007AFF/ffffff.png?text=W",
       "name": "微信",
       "short_description": "连接亿万用户的即时通讯工具",
-      "long_description": "微信是一款提供即时通讯服务的免费应用程序，支持通过网络发送语音短信、视频、图片和文字，可以使用朋友圈、视频号等功能。",
+      "long_description": "<div class='app-desc-content'><p>微信是一款提供即时通讯服务的免费应用程序，支持通过网络发送语音短信、视频、图片和文字，可以使用朋友圈、视频号等功能。</p><img src='https://placehold.co/600x300/007AFF/ffffff.png' alt='微信界面预览' class='desc-img'><p>主要功能：</p><ul><li>多人聊天</li><li>朋友圈</li><li>视频号</li></ul></div>",
       "download_link": "https://weixin.qq.com/",
       "tags": ["社交", "通讯", "热门"]
     },

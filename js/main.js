@@ -7,10 +7,19 @@ const themeToggle = document.getElementById('themeToggle');
 const sunIcon = document.querySelector('.sun-icon');
 const moonIcon = document.querySelector('.moon-icon');
 
+// 添加设置相关的 DOM 元素
+const settingsButton = document.getElementById('settingsButton');
+const settingsModal = document.getElementById('settingsModal');
+const jsonPathInput = document.getElementById('jsonPath');
+const saveButton = settingsModal.querySelector('.save-button');
+const cancelButton = settingsModal.querySelector('.cancel-button');
+
 // 加载应用数据
 async function loadApps() {
     try {
-        const response = await fetch('data/apps.json');
+        // 从本地存储获取自定义 JSON 路径，如果没有则使用默认路径
+        const jsonPath = localStorage.getItem('appsJsonPath') || 'data/apps.json';
+        const response = await fetch(jsonPath);
         const data = await response.json();
         return data.apps;
     } catch (error) {
@@ -18,6 +27,20 @@ async function loadApps() {
         return [];
     }
 }
+
+// 添加设置 JSON 路径的函数
+function setCustomJsonPath(path) {
+    try {
+        localStorage.setItem('appsJsonPath', path);
+        // 重新加载页面以应用新的 JSON 文件
+        window.location.reload();
+    } catch (error) {
+        console.error('设置 JSON 路径失败:', error);
+    }
+}
+
+// 可以在控制台使用这个函数来更改 JSON 路径
+window.setCustomJsonPath = setCustomJsonPath;
 
 // 渲染应用卡片
 function renderAppCard(app) {
@@ -250,4 +273,34 @@ async function initializeApp() {
 }
 
 // 启动应用
-document.addEventListener('DOMContentLoaded', initializeApp); 
+document.addEventListener('DOMContentLoaded', initializeApp);
+
+// 显示当前的 JSON 路径
+jsonPathInput.value = localStorage.getItem('appsJsonPath') || 'data/apps.json';
+
+// 设置按钮点击事件
+settingsButton.addEventListener('click', () => {
+    settingsModal.style.display = 'block';
+});
+
+// 保存按钮点击事件
+saveButton.addEventListener('click', () => {
+    const newPath = jsonPathInput.value.trim();
+    if (newPath) {
+        setCustomJsonPath(newPath);
+    }
+    settingsModal.style.display = 'none';
+});
+
+// 取消按钮点击事件
+cancelButton.addEventListener('click', () => {
+    jsonPathInput.value = localStorage.getItem('appsJsonPath') || 'data/apps.json';
+    settingsModal.style.display = 'none';
+});
+
+// 点击弹窗外部关闭
+settingsModal.addEventListener('click', (event) => {
+    if (event.target === settingsModal) {
+        settingsModal.style.display = 'none';
+    }
+}); 
