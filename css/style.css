@@ -1,0 +1,434 @@
+/* 浅色主题变量 */
+:root[data-theme="light"] {
+    --primary-color: #0066cc;
+    --background-color: #f5f5f7;
+    --card-background: #ffffff;
+    --text-color: #1d1d1f;
+    --secondary-text: #86868b;
+    --card-shadow: rgba(0, 0, 0, 0.05);
+    --border-color: #d2d2d7;
+}
+
+/* 深色主题变量 */
+:root[data-theme="dark"] {
+    --primary-color: #cbe5ff;
+    --background-color: #1c1c1e;
+    --card-background: #2c2c2e;
+    --text-color: #ffffff;
+    --secondary-text: #98989d;
+    --card-shadow: rgba(0, 0, 0, 0.2);
+    --border-color: #3a3a3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: rgb(0 147 255 / 80%);
+    backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1rem 0;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 680px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin: 1rem 0;
+    font-size: 1rem;
+    background: var(--card-background);
+    color: var(--text-color);
+}
+
+.search-bar input::placeholder {
+    color: var(--secondary-text);
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.app-card {
+    background: var(--card-background);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-shadow: 0 2px 10px var(--card-shadow);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+    transform-origin: center;
+    z-index: 1;
+    border: 2px solid transparent; /* 添加透明边框作为占位 */
+}
+
+/* 修改悬停效果 */
+.app-card:hover:not(.expanded) {  /* 添加 :not(.expanded) 来排除展开状态 */
+    transform: none;  /* 移除上移动画 */
+    border-color: var(--primary-color);  /* 悬停时显示主题色边框 */
+}
+
+/* 确保展开状态下没有悬停效果 */
+.app-card.expanded:hover {
+    transform: none;
+    border-color: transparent;
+}
+
+.app-card.expanded {
+    position: fixed;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    z-index: 1000;
+    scrollbar-gutter: stable; /* 防止滚动条出现时内容跳动 */
+}
+
+.app-card.expanded .app-description {
+    -webkit-line-clamp: unset;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);  /* 初始透明 */
+    z-index: 999;
+    transition: background-color 0.3s ease;  /* 添加过渡效果 */
+}
+
+.overlay.active {
+    display: block;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);  /* 最终的透明度 */
+}
+
+/* 为了使过渡效果生效，我们需要修改显示/隐藏的方式 */
+.overlay {
+    visibility: hidden;
+    opacity: 0;
+    display: block;  /* 改为一直显示，但通过 visibility 和 opacity 来控制 */
+    transition: visibility 0s 0.3s, opacity 0.3s ease;  /* visibility 延迟到 opacity 动画结束后 */
+}
+
+.overlay.active {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s ease;  /* visibility 立即生效 */
+}
+
+/* 详情视图样式 */
+.app-details {
+    display: none;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.app-card.expanded .app-details {
+    display: block;
+}
+
+.app-details .long-description {
+    margin: 1rem 0;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* 下载按钮样式 */
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--primary-color);
+    color: var(--card-background);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: transform 0.2s;
+}
+
+.download-button:hover {
+    transform: scale(1.05);
+}
+
+.download-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* 第一行布局 */
+.app-card-main {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.app-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.app-info {
+    flex-grow: 1;
+    min-width: 0; /* 防止文本溢出 */
+}
+
+.app-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.app-description {
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* 下载图标调整 */
+.download-icon-wrapper {
+    margin-left: auto;
+    padding-left: 1rem;
+}
+
+.download-icon {
+    position: static;
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s;
+}
+
+/* 标签样式调整 */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.tag {
+    background: var(--background-color);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+/* 标签过滤器样式 */
+.tags-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.filter-tag {
+    background: var(--card-background);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 1px solid var(--border-color);
+}
+
+.filter-tag:hover {
+    transform: scale(1.05);
+}
+
+.filter-tag.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* 无结果样式 */
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    color: var(--secondary-text);
+    font-size: 1.1rem;
+}
+
+/* 模态框样式 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: var(--card-background);
+    margin: 5% auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 12px;
+    position: relative;
+    color: var(--text-color);
+}
+
+.close-button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* 主题切换按钮样式 */
+.theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--card-background);
+    border: none;
+    box-shadow: 0 2px 10px var(--card-shadow);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: transform 0.2s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+    color: var(--text-color);
+}
+
+/* 标题样式 */
+.header h1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 3.5rem
+}
+
+/* 详情内容样式 */
+.app-desc-content {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.app-desc-content p {
+    margin: 1rem 0;
+}
+
+.app-desc-content ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.app-desc-content li {
+    margin: 0.5rem 0;
+}
+
+.desc-img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+}
+
+/* 图片加载动画 */
+.desc-img {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.desc-img.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 全局滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-text);
+    border-radius: 4px;
+    opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Firefox 滚动条样式 */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-text) transparent;
+}
+
+/* 深色主题滚动条调整 */
+:root[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+:root[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+

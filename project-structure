@@ -1,0 +1,9 @@
+app-store/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── main.js
+│   └── data.js
+└── data/
+    └── apps.json 
