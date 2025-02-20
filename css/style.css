@@ -558,3 +558,7 @@ body {
     transform: scale(1.05);
 }
 
+.expanded img{
+    max-width: -webkit-fill-available;
+}
+
