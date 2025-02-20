@@ -104,7 +104,7 @@
       "icon": "https://placehold.co/80x80/FF9500/ffffff.png?text=LC",
       "name": "LanClip",
       "short_description": "局域网文件分享工具，支持文本、图片和视频",
-      "long_description": "<div class='app-desc-content'><p>一个功能强大的局域网文件分享工具，支持多种文件类型。</p><p>主要功能：</p><ul><li>📄 支持文本分享</li><li>🖼️ 支持图片上传</li><li>🎥 支持视频分享</li><li>📂 支持文件传输</li><li>🚀 内网高速传输</li><li>💻 Windows托盘程序</li><li>🐳 Docker容器支持</li></ul><p>使用方法：Windows用户可以直接下载exe运行，服务器用户可以使用Docker部署。支持在任何能使用浏览器的设备上访问。</p></div>",
+      "long_description": "<div class='app-desc-content'><p>一个功能强大的局域网文件分享工具，支持多种文件类型。</p> <img src='http://139.196.171.60:88/images/tu/image1.jpg' alt='图片'> <p>主要功能：</p><ul><li>📄 支持文本分享</li><li>🖼️ 支持图片上传</li><li>🎥 支持视频分享</li><li>📂 支持文件传输</li><li>🚀 内网高速传输</li><li>💻 Windows托盘程序</li><li>🐳 Docker容器支持</li></ul><p>使用方法：Windows用户可以直接下载exe运行，服务器用户可以使用Docker部署。支持在任何能使用浏览器的设备上访问。</p></div>",
       "download_link": "https://github.com/cornradio/LANwebclipboard-win-flask",
       "tags": ["Docker"]
     },
