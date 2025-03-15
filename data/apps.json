@@ -117,5 +117,16 @@
       "download_link": "https://github.com/cornradio/watchTV",
       "tags": ["Web"]
     }
+    ,
+    {
+  "id": "app_014",
+  "icon": "https://placehold.co/80x80/4CAF50/ffffff.png?text=La",
+  "name": "QuickLauncher",
+  "short_description": "一个简洁高效的快速启动工具，支持拖拽、自定义图标与配置",
+  "long_description": "<div class='app-desc-content'><p>一款轻量级的快速启动器，支持拖放文件/文件夹创建快捷方式，提供高效的桌面整理体验。</p>  <img src='https://h1.appinn.me/file/1742004806109_image.png' alt='图片'> <p>主要功能：</p><ul><li>🚀 支持拖放程序创建快捷方式</li><li>📝 txt配置存储，支持外部修改自动刷新</li><li>🔄 支持图标拖拽互换位置</li></ul><p>使用方法：启动程序后，可将文件、文件夹、程序图标拖入，支持左键启动、中键定位、右键删除，还可直接修改配置文件实现快速更新。</p></div>",
+  "download_link": "https://github.com/cornradio/launcher",
+  "tags": ["Windows", "Launcher", "Utility"]
+    }
+
   ]
 } 
