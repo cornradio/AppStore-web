@@ -126,7 +126,16 @@
   "long_description": "<div class='app-desc-content'><p>一款轻量级的快速启动器，支持拖放文件/文件夹创建快捷方式，提供高效的桌面整理体验。</p>  <img src='https://h1.appinn.me/file/1742004806109_image.png' alt='图片'> <p>主要功能：</p><ul><li>🚀 支持拖放程序创建快捷方式</li><li>📝 txt配置存储，支持外部修改自动刷新</li><li>🔄 支持图标拖拽互换位置</li></ul><p>使用方法：启动程序后，可将文件、文件夹、程序图标拖入，支持左键启动、中键定位、右键删除，还可直接修改配置文件实现快速更新。</p></div>",
   "download_link": "https://github.com/cornradio/launcher",
   "tags": ["Windows", "Launcher", "Utility"]
-    }
+    },
+    {
+  "id": "app_015",
+  "icon": "https://emojidb.org/static/media/favico.f4f77760d5b0c6f40666.png",
+  "name": "EmojiDB",
+  "short_description": "一个全面易用的在线表情符号数据库和搜索引擎",
+  "long_description": "<div class='app-desc-content'><p>EmojiDB 是一个提供丰富表情符号资源的在线平台，用户可以轻松查找、复制和学习关于各种表情符号的信息。</p><img src='https://emojidb.org/static/media/screenshot_desktop.447a83c250146bb2912f.jpg' alt='EmojiDB Screenshot'><p>主要功能：</p><ul><li>🔍 强大的表情符号搜索功能，支持关键词和分类查找</li><li>📋 一键复制表情符号到剪贴板</li><li>📚 提供详细的表情符号信息，包括 Unicode 版本、别名和跨平台显示差异</li><li>🌐 支持多语言搜索</li></ul><p>使用方法：访问网站后，在搜索框中输入关键词即可查找相关表情符号，点击表情符号即可复制。</p></div>",
+  "download_link": "https://emojidb.org/",
+  "tags": ["Web", "Emoji", "Database","3rd"]
+}
 
   ]
 } 
