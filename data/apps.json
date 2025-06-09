@@ -135,6 +135,35 @@
   "long_description": "<div class='app-desc-content'><p>EmojiDB 是一个提供丰富表情符号资源的在线平台，用户可以轻松查找、复制和学习关于各种表情符号的信息。</p><img src='https://emojidb.org/static/media/screenshot_desktop.447a83c250146bb2912f.jpg' alt='EmojiDB Screenshot'><p>主要功能：</p><ul><li>🔍 强大的表情符号搜索功能，支持关键词和分类查找</li><li>📋 一键复制表情符号到剪贴板</li><li>📚 提供详细的表情符号信息，包括 Unicode 版本、别名和跨平台显示差异</li><li>🌐 支持多语言搜索</li></ul><p>使用方法：访问网站后，在搜索框中输入关键词即可查找相关表情符号，点击表情符号即可复制。</p></div>",
   "download_link": "https://emojidb.org/",
   "tags": ["Web", "Emoji", "Database","3rd"]
+},
+{
+  "id": "app_016",
+  "icon": "https://placehold.co/80x80/4CAF50/ffffff.png?text=yt",
+  "name": "ytdlpgui",
+  "short_description": "ytdlp下载器的图形界面",
+  "long_description": "<div class='app-desc-content'><p>ytdlpgui 是流行且强大的命令行视频下载工具 <a href=\"https://github.com/yt-dlp/yt-dlp\">yt-dlp</a> 的图形用户界面 (GUI)。它旨在提供一个简单易用的界面，让用户无需输入复杂的命令行指令即可轻松下载来自 YouTube、Bilibili 等众多网站的视频和音频。</p><p>对于不熟悉命令行的用户来说，ytdlpgui 提供了一个直观的入口来利用 yt-dlp 的全部功能。</p><p>主要功能特性：</p><ul><li>🖥️ 提供图形化操作界面，告别命令行</li><li>🔗 轻松粘贴和处理视频或播放列表链接</li><li>⚙️ 提供选项配置，如选择视频/音频格式、质量、字幕等</li><li>📂 设定下载保存路径</li><li>🚀 简化 yt-dlp 的使用流程，支持其广泛的网站兼容性</li></ul><p>通过 ytdlpgui，你可以方便快捷地下载在线视频资源到本地。</p></div>",
+  "download_link": "https://github.com/cornradio/ytdlpgui",
+  "tags": [ "Downloader", "python"]
+}
+,
+{
+  "id": "app_017",
+  "icon": "https://placehold.co/80x80/607D8B/ffffff.png?text=⏰",
+  "name": "clock",
+  "short_description": "高度可定制的在线钟表，集成实时天气信息",
+  "long_description": "<div class='app-desc-content'><p>这款在线时钟应用提供了一个美观且功能丰富的网页版时间显示界面。它不仅能精确显示当前的北京时间或其他时区的时间，更巧妙地集成了实时天气信息，让你一眼掌握时间和天气状况。</p><p>该应用最大的特色在于其强大的自定义能力。用户可以根据个人喜好调整界面元素，创造独一无二的时钟样式。</p><p>主要功能特性：</p><ul><li>⏰ 显示当前准确时间，支持多种字体</li><li>☁️ 集成实时天气显示</li><li>🎨 丰富的个性化定制选项，包括但不限于：<ul><li>更换背景图片或颜色</li><li>调整字体样式、大小和颜色</li></ul></li><li>🌐 在线访问，无需安装，跨平台使用</li><li>🖱️ 简洁直观的用户界面</li></ul><p>通过访问其网页链接，你可以随时随地获得一个既实用又个性化的时间与天气显示工具。</p></div>",
+  "download_link": "https://b.cornradio.org/clock/",
+  "tags": ["Web", "Clock"]
+}
+,
+{
+  "id": "app_018",
+  "icon": "https://placehold.co/80x80/333/ffffff.png?text=>_",
+  "name": "jandannode",
+  "short_description": "基于 Node.js 的命令行工具，在终端查看煎蛋网的树洞和问答",
+  "long_description": "<div class='app-desc-content'><p>jandannode 是一个基于 <a href=\"https://nodejs.org/\">Node.js</a> 的命令行 (CLI) 工具，用于方便地在终端中浏览和查看知名网站 <a href=\"https://jandan.net/\">煎蛋网 (jandan.net)</a> 。</p><p>对于习惯于命令行操作或希望快速(摸鱼）查看煎蛋树洞和问答板块的用户来说，jandannode 提供了一个简洁高效的途径，无需打开浏览器即可获取信息。</p><p>主要功能特性：</p><ul><li>⌨️ 纯命令行界面，轻量高效，无需浏览器</li><li>📄 支持查看煎蛋网的「树洞」(Treehole) 板块内容</li><li>❓ 支持查看煎蛋网的「问答」(QA) 板块内容</li><li>🚀 左右：上一条下一条，上下: 展开收起吐槽</li><li>🛠️ 基于 Node.js 开发，易于安装和运行（需要先安装 Node.js 环境）</li></ul></div>",
+  "download_link": "https://github.com/cornradio/jandannode",
+  "tags": ["CLI", "Node.js",  "Jandan"]
 }
 
   ]
