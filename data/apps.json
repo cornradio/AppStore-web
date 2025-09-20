@@ -1,112 +1,172 @@
 {
   "apps": [
     {
+      "id": "app_019",
+      "icon": "https://i.imgur.com/5n4GeTG.png",
+      "name": "Cool1",
+      "short_description": "macOS 菜单栏快速启动器，高效启动你的常用应用。",
+      "long_description": "<div class='app-desc-content'><p>Cool1 是一款专为 macOS 设计的轻量级应用快速启动器，让你可以在菜单栏（任务栏）即时访问和启动你最常用的应用程序。</p><p>主要功能：</p><ul><li>⚡️ <strong>极速启动：</strong> 从菜单栏一键启动预设应用，告别繁琐的 Dock 栏查找。</li><li>✨ <strong>简洁界面：</strong> 专注于功能，提供无干扰的用户体验。</li><li>🔋 <strong>轻量高效：</strong> 占用系统资源极少，不影响 Mac 性能。</li></ul><p>使用 Cool1，让你的 macOS 工作流更加顺畅高效，将注意力集中在真正重要的事情上。</p></div>",
+      "download_link": "https://github.com/cornradio/cool1",
+      "tags": [
+        "macOS",
+        "Launcher"
+      ]
+    },
+    {
+      "id": "app_020",
+      "icon": "https://i.imgur.com/cRgZGsr.png",
+      "name": "Tray chrome",
+      "short_description": "可缩小到任务栏的快捷浏览器",
+      "long_description": "<div class='app-desc-content'><p>tray-chrome 是一款类似 <strong> MenubarX</strong> 、的轻量级浏览器应用，支持将任意网页以独立窗口的形式固定在系统任务栏，随时一键访问，无需切换主浏览器窗口。</p><p>主要功能：</p><ul><li>🧊 让网页像原生应用一样驻留在任务栏/菜单栏，提升多任务效率。</li><li>🌐 <strong>多标签支持：</strong> 可同时固定多个常用网页，快速切换。</li><li>🔒 <strong>安全隔离：</strong> 独立进程运行，与您的主要浏览器网页安全互不干扰。</li><li>⚡ <strong>极致轻量：</strong> 占用资源低，适合长时间后台运行。</li></ul><p>无论是常用工具、社交网站还是工作后台，tray-chrome 都能让你一键直达。</p></div>",
+      "download_link": "https://github.com/cornradio/tray-chrome",
+      "tags": [
+        "windwos",
+        "web"
+      ]
+    },
+    {
+      "id": "app_021",
+      "icon": "https://i.imgur.com/nUPidXC.png",
+      "name": "Youlog",
+      "short_description": "ios 图片记录软件 -- 不存相册",
+"long_description": "<div class='app-desc-content'><p>Youlog 是一款专为 iOS 用户打造的图片记录工具，帮助你管理那些不适合存入系统相册的照片。无论是饮食打卡、日常生活、健康追踪、体态变化还是脸型管理，Youlog 都能为你提供一个安全、隐私、便捷的图片存储空间。</p><p>主要功能：</p><ul><li>📷 独立存储：照片不会出现在系统相册，保护个人隐私</li><li>🗂 标签管理：支持自定义TAG，便于查找和整理图片</li><li>💾 智能压缩：内置图片压缩算法，节省存储空间</li><li>📅 时间轴浏览：按时间顺序回顾每一刻的变化</li></ul><p>适合需要专属图片记录空间的用户，轻松实现高效、私密的日常管理。</p></div>",
+      "download_link": "https://apps.apple.com/us/app/youlog/id6743986266",
+      "tags": [
+        "IOS"
+      ]
+    },
+    {
       "id": "app_001",
       "icon": "https://placehold.co/80x80/007AFF/ffffff.png?text=VS",
       "name": "GoodNote VSCode",
       "short_description": "在任何网页添加VSCode编辑器功能",
       "long_description": "<div class='app-desc-content'><p>一个强大的浏览器笔记扩展，让您在任何网页上都能使用类似VSCode的编辑器进行笔记。</p><p>主要特性：</p><ul><li>💻 VSCode风格的编辑器界面</li><li>🎨 支持多种编程语言的语法高亮</li><li>💾 自动保存笔记内容</li><li>🌈 优雅的界面动画和模糊背景</li></ul><p>使用方法：按下 Ctrl + Shift + L 或点击右下角的代码图标即可打开编辑器。</p></div>",
       "download_link": "https://goodnote-vscode.cornradio.org/",
-      "tags": ["油猴脚本"]
+      "tags": [
+        "油猴脚本"
+      ]
     },
     {
       "id": "app_002",
-      "icon": "https://placehold.co/80x80/34C759/ffffff.png?text=GN",
+      "icon": "https://i.imgur.com/JpZ9ljP.png",
       "name": "GoodNote 笔记助手",
       "short_description": "在任何网页添加笔记功能",
       "long_description": "<div class='app-desc-content'><p>一个简单易用的网页笔记工具，让您随时记录重要内容。</p><p>主要特性：</p><ul><li>✨ 自动分类：每个网站专属笔记空间</li><li>🔒 安全可靠：笔记仅存本地</li><li>💡 便捷操作：点击右上角按钮</li><li>📌 即写即存：自动保存内容</li><li>🎈 快捷键：Ctrl + Shift + M 快速呼出</li></ul><p>支持链接自动转换，界面简洁直观。</p></div>",
       "download_link": "https://github.com/cornradio/GoodNote-js",
-      "tags": ["油猴脚本"]
+      "tags": [
+        "油猴脚本"
+      ]
     },
     {
       "id": "app_003",
-      "icon": "https://placehold.co/80x80/FF3B30/ffffff.png?text=JD",
+      "icon": "https://i.imgur.com/JJ0wqUT.png",
       "name": "煎蛋用户搜索",
       "short_description": "快速查找煎蛋网用户发言的工具",
       "long_description": "<div class='app-desc-content'><p>一个帮助在煎蛋网快速查找用户发言的油猴脚本。</p><p>主要功能：</p><ul><li>在页面右上角添加搜索框</li><li>支持按用户名搜索评论</li><li>自动翻页查找</li><li>高亮显示匹配结果</li></ul><p>使用方法：安装后在煎蛋网页右上角输入用户名即可搜索。</p></div>",
       "download_link": "https://github.com/cornradio/jandanusersearch",
-      "tags": ["油猴脚本"]
+      "tags": [
+        "油猴脚本"
+      ]
     },
     {
       "id": "app_004",
-      "icon": "https://placehold.co/80x80/5856D6/ffffff.png?text=SD",
+      "icon": "https://i.imgur.com/amkh2rw.png",
       "name": "自动关机助手",
       "short_description": "简单易用的Windows定时关机工具",
       "long_description": "<div class='app-desc-content'><p>一个便捷的Windows自动关机工具，支持定时关机、倒计时提醒和配置保存功能。</p><p>主要功能：</p><ul><li>📅 支持设置定时关机时间</li><li>🔄 自动保存配置，下次启动自动恢复</li><li>🔔 关机前声音提醒</li><li>💻 系统托盘图标操作</li><li>⏰ 实时显示剩余时间</li><li>❌ 随时可以取消关机计划</li></ul><p>使用方法：在系统托盘找到关机图标，右键点击可以设置关机时间、查看剩余时间或取消关机计划。</p></div>",
       "download_link": "https://github.com/cornradio/autoshutdown-ahk",
-      "tags": ["AHK"]
+      "tags": [
+        "AHK"
+      ]
     },
     {
       "id": "app_005",
-      "icon": "https://placehold.co/80x80/FF9500/ffffff.png?text=KM",
+      "icon": "https://i.imgur.com/wXHZpFH.png",
       "name": "快捷键管理器",
       "short_description": "轻松管理和设置Windows快捷键",
-      "long_description": "<div class='app-desc-content'><p>一个简单易用的快捷键注册和管理工具，基于AutoHotkey开发。</p><p>主要功能：</p><ul><li>🚀 支持多种操作类型：打开网页、运行程序、打开文件夹、发送文本</li><li>💡 简单的图形界面，无需编写代码</li><li>🔧 支持Win键组合</li><li>💾 自动保存配置</li><li>🔄 支持手动重载配置文件</li></ul><p>使用方法：通过图形界面轻松设置和管理各种快捷键操作。</p></div>",
+      "long_description": "<div class='app-desc-content'><p>一个简单易用的快捷键注册和管理工具，基于AutoHotkey开发。</p><p>主要功能：</p><ul><li>🚀 支持多种操作类型：打开网页、运行程序、打开文件夹、发送文本</li><li>💡 简单的图形界面，无需编写代码</li><li>🔧 支持ALT键组合</li><li>💾 自动保存配置</li><li>🔄 支持手动重载配置文件</li></ul><p>使用方法：通过图形界面轻松设置和管理各种快捷键操作。</p></div>",
       "download_link": "https://github.com/cornradio/ahkshortcut",
-      "tags": ["AHK"]
+      "tags": [
+        "AHK"
+      ]
     },
     {
       "id": "app_006",
-      "icon": "https://placehold.co/80x80/30B0C7/ffffff.png?text=LS",
+      "icon": "https://i.imgur.com/74Cg90H.png",
       "name": "光速启动",
       "short_description": "快速启动器，支持快捷键启动程序和文件夹",
       "long_description": "<div class='app-desc-content'><p>一个快速启动器，支持快速拖放新文件/快捷方式到快速文件夹，支持快捷键启动任意文件/快捷方式/文件夹。</p><p>主要功能：</p><ul><li>⚡ 快速启动程序和文件夹</li><li>🎯 支持拖放添加新项目</li><li>⌨️ 自定义快捷键绑定</li><li>📂 文件夹快速访问</li><li>🔄 窗口导航功能</li></ul><p>使用方法：使用Ctrl+Alt+Z打开主窗口，Alt+数字键快速访问文件夹。</p></div>",
       "download_link": "https://github.com/cornradio/lightspeed-UI",
-      "tags": ["AHK","Windows"]
+      "tags": [
+        "AHK",
+        "Windows"
+      ]
     },
     {
       "id": "app_007",
-      "icon": "https://placehold.co/80x80/007AFF/ffffff.png?text=WM",
-      "name": "Win键窗口管理",
-      "short_description": "使用Win+鼠标快速管理窗口",
-      "long_description": "<div class='app-desc-content'><p>一个基于AutoHotkey的Windows窗口管理工具，让你能够更方便快捷地控制窗口。</p><p>主要功能：</p><ul><li>🖱️ 按住win+左键拖动任意位置移动窗口</li><li>📐 按住win+右键拖动调整窗口大小</li><li>⚡ 240Hz高刷新率，移动/调整更流畅</li><li>🔒 最小窗口限制保护</li></ul><p>使用方法：按住Win键，使用鼠标左键拖动移动窗口，右键拖动调整大小。</p></div>",
-      "download_link": "https://github.com/cornradio/Win-Mouse-Window-Control",
-      "tags": ["AHK"]
+      "icon": "https://i.imgur.com/XnvLZUE.png",
+      "name": "ALT-DRAG 窗口管理",
+      "short_description": "使用alt+鼠标快速管理窗口",
+      "long_description": "<div class='app-desc-content'><p>一个基于AutoHotkey的Windows窗口管理工具，让你能够更方便快捷地控制窗口。</p><p>主要功能：</p><ul><li>🖱️ 按住win+左键拖动任意位置移动窗口</li><li>📐 按住win+右键拖动调整窗口大小</li><li>⚡ 240Hz高刷新率，移动/调整更流畅</li><li>🔒 最小窗口限制保护</li></ul><p>使用方法：按住ALT键，使用鼠标左键拖动移动窗口，右键拖动调整大小。</p></div>",
+      "download_link": "https://github.com/cornradio/alt-drag-mac",
+      "tags": [
+        "AHK"
+      ]
     },
     {
       "id": "app_008",
-      "icon": "https://placehold.co/80x80/FF3B30/ffffff.png?text=AP",
+      "icon": "https://i.imgur.com/YXAGHj6.png",
       "name": "Apex启动器",
       "short_description": "一键启动Apex并优化游戏体验",
       "long_description": "<div class='app-desc-content'><p>一个专为Apex玩家设计的启动工具，帮助优化游戏体验。</p><p>主要功能：</p><ul><li>🎮 屏蔽Windows键，避免游戏中误触</li><li>⌨️ 自动切换英语输入法</li><li>🚀 一键启动加速器</li><li>🔄 自动关闭其他AHK脚本</li><li>🖥️ 支持高DPI显示</li></ul><p>使用方法：运行程序后，自动完成所有优化设置，让你专注游戏体验。</p></div>",
       "download_link": "https://github.com/cornradio/apex_runner",
-      "tags": ["Windows"]
+      "tags": [
+        "Windows"
+      ]
     },
     {
       "id": "app_009",
-      "icon": "https://placehold.co/80x80/34C759/ffffff.png?text=PG",
-      "name": "暂停游戏",
+      "icon": "https://i.imgur.com/6g133Ju.png",
+      "name": "Pause My game -暂停游戏",
       "short_description": "轻松暂停任何游戏进程，释放系统资源",
       "long_description": "<div class='app-desc-content'><p>一个简单的游戏进程管理工具，让你随时暂停游戏释放CPU资源。</p><p>主要功能：</p><ul><li>⏸️ 一键暂停任何游戏进程</li><li>▶️ 随时恢复游戏运行</li><li>💻 释放CPU资源</li><li>🎯 支持通过进程名快速定位</li><li>📊 实时显示进程状态</li></ul><p>使用方法：选择要暂停的游戏进程，点击暂停按钮即可，需要时再点击恢复继续游戏。</p></div>",
       "download_link": "https://github.com/cornradio/pausemygame",
-      "tags": ["Windows"]
+      "tags": [
+        "Windows"
+      ]
     },
     {
       "id": "app_010",
-      "icon": "https://placehold.co/80x80/007AFF/ffffff.png?text=TM",
-      "name": "迷你时钟",
+      "icon": "https://i.imgur.com/pPEIGTq.png",
+      "name": "win迷你时钟",
       "short_description": "极简的数字时钟，适合任务栏隐藏时使用",
       "long_description": "<div class='app-desc-content'><p>一个轻量级的桌面时钟工具，特别适合使用RoundedTB或隐藏任务栏的用户。</p><p>主要功能：</p><ul><li>🕒 简洁的数字时钟显示</li><li>⌨️ 支持快捷键操作(S=设置, E=退出)</li><li>📍 支持左中右三种位置</li><li>🎨 支持自定义主题</li><li>🔍 支持透明背景</li><li>⚡ 极低系统资源占用</li></ul><p>使用方法：运行后自动显示时间，右键可以访问设置选项。</p></div>",
       "download_link": "https://github.com/cornradio/miniclock",
-      "tags": ["Windows"]
+      "tags": [
+        "Windows"
+      ]
     },
     {
       "id": "app_011",
-      "icon": "https://placehold.co/80x80/30B0C7/ffffff.png?text=WC",
+      "icon": "https://i.imgur.com/zN92BkD.png",
       "name": "WebClip",
       "short_description": "清爽的在线剪贴板，支持Docker部署",
       "long_description": "<div class='app-desc-content'><p>一个简洁的在线剪贴板项目，支持快速部署和文本分享。</p><p>主要功能：</p><ul><li>📝 支持文本存储和分享</li><li>🔄 自动保存历史记录</li><li>🎨 简洁美观的界面</li><li>🐳 支持Docker一键部署</li><li>📱 移动端友好</li><li>💾 支持本地部署</li></ul><p>部署方法：使用Docker命令一键部署，或者通过源码在本地运行。支持阿里云容器服务。</p></div>",
       "download_link": "https://github.com/cornradio/webclipboard",
-      "tags": ["Docker"]
+      "tags": [
+        "Docker"
+      ]
     },
     {
       "id": "app_012",
-      "icon": "https://placehold.co/80x80/FF9500/ffffff.png?text=LC",
+      "icon": "https://i.imgur.com/IYw1MUX.png",
       "name": "LanClip",
       "short_description": "局域网文件分享工具，支持文本、图片和视频",
       "long_description": "<div class='app-desc-content'><p>一个功能强大的局域网文件分享工具，支持多种文件类型。</p> <img src='https://i.imgur.com/Sy1A7hT.png' alt='图片'> <p>主要功能：</p><ul><li>📄 支持文本分享</li><li>🖼️ 支持图片上传</li><li>🎥 支持视频分享</li><li>📂 支持文件传输</li><li>🚀 内网高速传输</li><li>💻 Windows托盘程序</li><li>🐳 Docker容器支持</li></ul><p>使用方法：Windows用户可以直接下载exe运行，服务器用户可以使用Docker部署。支持在任何能使用浏览器的设备上访问。</p></div>",
-      "download_link": "https://github.com/cornradio/LANwebclipboard-win-flask",
-      "tags": ["Docker"]
+      "download_link": "https://github.com/cornradio/lan-clip",
+      "tags": [
+        "Docker"
+      ]
     },
     {
       "id": "app_013",
@@ -115,66 +175,73 @@
       "short_description": "一个好看的导航页面，支持JSON自定义",
       "long_description": "<div class='app-desc-content'><p>一个美观的网站导航页面，支持使用JSON格式自定义内容，每个图标都支持右键菜单。</p><p>主要功能：</p><ul><li>🎨 优雅的渐变背景</li><li>📝 支持JSON自定义内容</li><li>🔄 支持多个JSON配置切换</li><li>📱 完美支持移动端</li><li>🌙 支持暗色模式</li><li>⚡ 支持URL参数加载配置</li><li>💾 通过Cookie保存设置</li><li>📋 支持右键菜单操作</li></ul><p>使用方法：可以直接访问示例站点，或者部署自己的导航页并使用自定义JSON配置。支持通过Cookie编辑器修改配置。</p></div>",
       "download_link": "https://github.com/cornradio/watchTV",
-      "tags": ["Web"]
-    }
-    ,
-    {
-  "id": "app_014",
-  "icon": "https://placehold.co/80x80/4CAF50/ffffff.png?text=La",
-  "name": "QuickLauncher",
-  "short_description": "一个简洁高效的快速启动工具，支持拖拽、自定义图标与配置",
-  "long_description": "<div class='app-desc-content'><p>一款轻量级的快速启动器，支持拖放文件/文件夹创建快捷方式，提供高效的桌面整理体验。</p>  <img src='https://h1.appinn.me/file/1742004806109_image.png' alt='图片'> <p>主要功能：</p><ul><li>🚀 支持拖放程序创建快捷方式</li><li>📝 txt配置存储，支持外部修改自动刷新</li><li>🔄 支持图标拖拽互换位置</li></ul><p>使用方法：启动程序后，可将文件、文件夹、程序图标拖入，支持左键启动、中键定位、右键删除，还可直接修改配置文件实现快速更新。</p></div>",
-  "download_link": "https://github.com/cornradio/launcher",
-  "tags": ["Windows", "Launcher", "Utility"]
+      "tags": [
+        "Web"
+      ]
     },
     {
-  "id": "app_015",
-  "icon": "https://cdn.glitch.me/4733404f-fac7-44c0-9994-ad38268ee641%2Fopen-file-folder_1f4c2.png",
-  "name": "EmojiDB",
-  "short_description": "一个全面易用的在线表情符号数据库和搜索引擎",
-  "long_description": "<div class='app-desc-content'><p>EmojiDB 是一个提供丰富表情符号资源的在线平台，用户可以轻松查找、复制和学习关于各种表情符号的信息。</p><img src='https://emojidb.org/static/media/screenshot_desktop.447a83c250146bb2912f.jpg' alt='EmojiDB Screenshot'><p>主要功能：</p><ul><li>🔍 强大的表情符号搜索功能，支持关键词和分类查找</li><li>📋 一键复制表情符号到剪贴板</li><li>📚 提供详细的表情符号信息，包括 Unicode 版本、别名和跨平台显示差异</li><li>🌐 支持多语言搜索</li></ul><p>使用方法：访问网站后，在搜索框中输入关键词即可查找相关表情符号，点击表情符号即可复制。</p></div>",
-  "download_link": "https://emojidb.org/",
-  "tags": ["Web", "Emoji", "Database","3rd"]
-},
-{
-  "id": "app_016",
-  "icon": "https://placehold.co/80x80/4CAF50/ffffff.png?text=yt",
-  "name": "ytdlpgui",
-  "short_description": "ytdlp下载器的图形界面",
-  "long_description": "<div class='app-desc-content'><p>ytdlpgui 是流行且强大的命令行视频下载工具 <a href=\"https://github.com/yt-dlp/yt-dlp\">yt-dlp</a> 的图形用户界面 (GUI)。它旨在提供一个简单易用的界面，让用户无需输入复杂的命令行指令即可轻松下载来自 YouTube、Bilibili 等众多网站的视频和音频。</p><p>对于不熟悉命令行的用户来说，ytdlpgui 提供了一个直观的入口来利用 yt-dlp 的全部功能。</p><p>主要功能特性：</p><ul><li>🖥️ 提供图形化操作界面，告别命令行</li><li>🔗 轻松粘贴和处理视频或播放列表链接</li><li>⚙️ 提供选项配置，如选择视频/音频格式、质量、字幕等</li><li>📂 设定下载保存路径</li><li>🚀 简化 yt-dlp 的使用流程，支持其广泛的网站兼容性</li></ul><p>通过 ytdlpgui，你可以方便快捷地下载在线视频资源到本地。</p></div>",
-  "download_link": "https://github.com/cornradio/ytdlpgui",
-  "tags": [ "Downloader", "python"]
-}
-,
-{
-  "id": "app_017",
-  "icon": "https://placehold.co/80x80/607D8B/ffffff.png?text=⏰",
-  "name": "clock",
-  "short_description": "高度可定制的在线钟表，集成实时天气信息",
-  "long_description": "<div class='app-desc-content'><p>这款在线时钟应用提供了一个美观且功能丰富的网页版时间显示界面。它不仅能精确显示当前的北京时间或其他时区的时间，更巧妙地集成了实时天气信息，让你一眼掌握时间和天气状况。</p><p>该应用最大的特色在于其强大的自定义能力。用户可以根据个人喜好调整界面元素，创造独一无二的时钟样式。</p><p>主要功能特性：</p><ul><li>⏰ 显示当前准确时间，支持多种字体</li><li>☁️ 集成实时天气显示</li><li>🎨 丰富的个性化定制选项，包括但不限于：<ul><li>更换背景图片或颜色</li><li>调整字体样式、大小和颜色</li></ul></li><li>🌐 在线访问，无需安装，跨平台使用</li><li>🖱️ 简洁直观的用户界面</li></ul><p>通过访问其网页链接，你可以随时随地获得一个既实用又个性化的时间与天气显示工具。</p></div>",
-  "download_link": "https://b.cornradio.org/clock/",
-  "tags": ["Web", "Clock"]
-}
-,
-{
-  "id": "app_018",
-  "icon": "https://placehold.co/80x80/333/ffffff.png?text=>_",
-  "name": "jandannode",
-  "short_description": "基于 Node.js 的命令行工具，在终端查看煎蛋网的树洞和问答",
-  "long_description": "<div class='app-desc-content'><p>jandannode 是一个基于 <a href=\"https://nodejs.org/\">Node.js</a> 的命令行 (CLI) 工具，用于方便地在终端中浏览和查看知名网站 <a href=\"https://jandan.net/\">煎蛋网 (jandan.net)</a> 。</p><p>对于习惯于命令行操作或希望快速(摸鱼）查看煎蛋树洞和问答板块的用户来说，jandannode 提供了一个简洁高效的途径，无需打开浏览器即可获取信息。</p><p>主要功能特性：</p><ul><li>⌨️ 纯命令行界面，轻量高效，无需浏览器</li><li>📄 支持查看煎蛋网的「树洞」(Treehole) 板块内容</li><li>❓ 支持查看煎蛋网的「问答」(QA) 板块内容</li><li>🚀 左右：上一条下一条，上下: 展开收起吐槽</li><li>🛠️ 基于 Node.js 开发，易于安装和运行（需要先安装 Node.js 环境）</li></ul></div>",
-  "download_link": "https://github.com/cornradio/jandannode",
-  "tags": ["CLI", "Node.js",  "Jandan"]
-}
-    ,
-  {
-  "id": "app_019",
-  "icon": "https://placehold.co/80x80/333/ffffff.png?text=C1",
-  "name": "Cool1",
-  "short_description": "macOS 菜单栏快速启动器，高效启动你的常用应用。",
-  "long_description": "<div class='app-desc-content'><p>Cool1 是一款专为 macOS 设计的轻量级应用快速启动器，让你可以在菜单栏（任务栏）即时访问和启动你最常用的应用程序。</p><p>主要功能：</p><ul><li>⚡️ <strong>极速启动：</strong> 从菜单栏一键启动预设应用，告别繁琐的 Dock 栏查找。</li><li>✨ <strong>简洁界面：</strong> 专注于功能，提供无干扰的用户体验。</li><li>🔋 <strong>轻量高效：</strong> 占用系统资源极少，不影响 Mac 性能。</li></ul><p>使用 Cool1，让你的 macOS 工作流更加顺畅高效，将注意力集中在真正重要的事情上。</p></div>",
-  "download_link": "https://github.com/cornradio/cool1",
-  "tags": ["macOS", "Productivity", "Launcher"]
-}
-
+      "id": "app_014",
+      "icon": "https://placehold.co/80x80/4CAF50/ffffff.png?text=La",
+      "name": "QuickLauncher",
+      "short_description": "一个简洁高效的快速启动工具，支持拖拽、自定义图标与配置",
+      "long_description": "<div class='app-desc-content'><p>一款轻量级的快速启动器，支持拖放文件/文件夹创建快捷方式，提供高效的桌面整理体验。</p>  <img src='https://h1.appinn.me/file/1742004806109_image.png' alt='图片'> <p>主要功能：</p><ul><li>🚀 支持拖放程序创建快捷方式</li><li>📝 txt配置存储，支持外部修改自动刷新</li><li>🔄 支持图标拖拽互换位置</li></ul><p>使用方法：启动程序后，可将文件、文件夹、程序图标拖入，支持左键启动、中键定位、右键删除，还可直接修改配置文件实现快速更新。</p></div>",
+      "download_link": "https://github.com/cornradio/launcher",
+      "tags": [
+        "Windows",
+        "Launcher",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_015",
+      "icon": "https://cdn.glitch.me/4733404f-fac7-44c0-9994-ad38268ee641%2Fopen-file-folder_1f4c2.png",
+      "name": "EmojiDB",
+      "short_description": "一个全面易用的在线表情符号数据库和搜索引擎",
+      "long_description": "<div class='app-desc-content'><p>EmojiDB 是一个提供丰富表情符号资源的在线平台，用户可以轻松查找、复制和学习关于各种表情符号的信息。</p><img src='https://emojidb.org/static/media/screenshot_desktop.447a83c250146bb2912f.jpg' alt='EmojiDB Screenshot'><p>主要功能：</p><ul><li>🔍 强大的表情符号搜索功能，支持关键词和分类查找</li><li>📋 一键复制表情符号到剪贴板</li><li>📚 提供详细的表情符号信息，包括 Unicode 版本、别名和跨平台显示差异</li><li>🌐 支持多语言搜索</li></ul><p>使用方法：访问网站后，在搜索框中输入关键词即可查找相关表情符号，点击表情符号即可复制。</p></div>",
+      "download_link": "https://emojidb.org/",
+      "tags": [
+        "Web",
+        "Emoji",
+        "Database",
+        "3rd"
+      ]
+    },
+    {
+      "id": "app_016",
+      "icon": "https://placehold.co/80x80/4CAF50/ffffff.png?text=yt",
+      "name": "ytdlpgui",
+      "short_description": "ytdlp下载器的图形界面",
+      "long_description": "<div class='app-desc-content'><p>ytdlpgui 是流行且强大的命令行视频下载工具 <a href=\"https://github.com/yt-dlp/yt-dlp\">yt-dlp</a> 的图形用户界面 (GUI)。它旨在提供一个简单易用的界面，让用户无需输入复杂的命令行指令即可轻松下载来自 YouTube、Bilibili 等众多网站的视频和音频。</p><p>对于不熟悉命令行的用户来说，ytdlpgui 提供了一个直观的入口来利用 yt-dlp 的全部功能。</p><p>主要功能特性：</p><ul><li>🖥️ 提供图形化操作界面，告别命令行</li><li>🔗 轻松粘贴和处理视频或播放列表链接</li><li>⚙️ 提供选项配置，如选择视频/音频格式、质量、字幕等</li><li>📂 设定下载保存路径</li><li>🚀 简化 yt-dlp 的使用流程，支持其广泛的网站兼容性</li></ul><p>通过 ytdlpgui，你可以方便快捷地下载在线视频资源到本地。</p></div>",
+      "download_link": "https://github.com/cornradio/ytdlpgui",
+      "tags": [
+        "Downloader",
+        "python"
+      ]
+    },
+    {
+      "id": "app_017",
+      "icon": "https://i.imgur.com/2Hzf6rs.png",
+      "name": "clock",
+      "short_description": "高度可定制的在线钟表，集成实时天气信息",
+      "long_description": "<div class='app-desc-content'><p>这款在线时钟应用提供了一个美观且功能丰富的网页版时间显示界面。它不仅能精确显示当前的北京时间或其他时区的时间，更巧妙地集成了实时天气信息，让你一眼掌握时间和天气状况。</p><p>该应用最大的特色在于其强大的自定义能力。用户可以根据个人喜好调整界面元素，创造独一无二的时钟样式。</p><p>主要功能特性：</p><ul><li>⏰ 显示当前准确时间，支持多种字体</li><li>☁️ 集成实时天气显示</li><li>🎨 丰富的个性化定制选项，包括但不限于：<ul><li>更换背景图片或颜色</li><li>调整字体样式、大小和颜色</li></ul></li><li>🌐 在线访问，无需安装，跨平台使用</li><li>🖱️ 简洁直观的用户界面</li></ul><p>通过访问其网页链接，你可以随时随地获得一个既实用又个性化的时间与天气显示工具。</p></div>",
+      "download_link": "https://b.cornradio.org/clock/",
+      "tags": [
+        "Web",
+        "Clock"
+      ]
+    },
+    {
+      "id": "app_018",
+      "icon": "https://placehold.co/80x80/333/ffffff.png?text=>_",
+      "name": "jandannode",
+      "short_description": "基于 Node.js 的命令行工具，在终端查看煎蛋网的树洞和问答",
+      "long_description": "<div class='app-desc-content'><p>jandannode 是一个基于 <a href=\"https://nodejs.org/\">Node.js</a> 的命令行 (CLI) 工具，用于方便地在终端中浏览和查看知名网站 <a href=\"https://jandan.net/\">煎蛋网 (jandan.net)</a> 。</p><p>对于习惯于命令行操作或希望快速(摸鱼）查看煎蛋树洞和问答板块的用户来说，jandannode 提供了一个简洁高效的途径，无需打开浏览器即可获取信息。</p><p>主要功能特性：</p><ul><li>⌨️ 纯命令行界面，轻量高效，无需浏览器</li><li>📄 支持查看煎蛋网的「树洞」(Treehole) 板块内容</li><li>❓ 支持查看煎蛋网的「问答」(QA) 板块内容</li><li>🚀 左右：上一条下一条，上下: 展开收起吐槽</li><li>🛠️ 基于 Node.js 开发，易于安装和运行（需要先安装 Node.js 环境）</li></ul></div>",
+      "download_link": "https://github.com/cornradio/jandannode",
+      "tags": [
+        "CLI",
+        "Node.js",
+        "Jandan"
+      ]
+    }
   ]
-} 
+}
