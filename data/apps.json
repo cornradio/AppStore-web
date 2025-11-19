@@ -2,6 +2,30 @@
   "apps": [
     {
       "id": "app_019",
+      "icon": "https://github.com/dyang886/Game-Save-Manager/raw/main/src/assets/logo.png",
+      "name": "game-save-manager",
+      "short_description": "基于ssh的游戏存档双端同步工具（PC - win掌机）",
+      "long_description": "多游戏存档管理，可以一键从掌机上pull存档到本地，或者push本地存档到掌机。*需要掌机开启sshd服务。<img  src='https://github.com/user-attachments/assets/963b5bbc-2e78-4637-bdd0-332514f5d40d' />",
+      "download_link": "https://github.com/cornradio/game-save-manager",
+      "tags": [
+        "Game",
+        "Node.js"
+      ]
+    },
+    {
+      "id": "app_019",
+      "icon": "https://shot.cornradio.org/icon.png",
+      "name": "shot-a-lot",
+      "short_description": "每天同位置拍照，记录变化，做成gif",
+      "long_description": " 在线体验：<a href=\"https://shot.cornradio.org/\" target=\"_blank\">点我</a> 一个基于web的拍照工具，帮助你每天在同一位置拍照，记录生活的变化，并将这些照片制作成gif动图。只需使用支持摄像头的浏览器访问，即可开始拍照和管理照片。",
+      "download_link": "https://github.com/cornradio/shot-a-lot",
+      "tags": [
+        "web",
+        "camera"
+      ]
+    },
+    {
+      "id": "app_019",
       "icon": "https://i.imgur.com/5n4GeTG.png",
       "name": "Cool1",
       "short_description": "macOS 菜单栏快速启动器，高效启动你的常用应用。",
