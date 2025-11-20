@@ -1,6 +1,17 @@
 {
   "apps": [
     {
+      "id": "app_022",
+      "icon": "https://placehold.co/80x80/333/ffffff.png?text=Qz",
+      "name": "掐指神通",
+      "short_description": "小六壬占卜",
+      "long_description": "使用当前日期的农历+时辰进行小六壬占卜，提供占卜结果和解析。",
+      "download_link": "http://139.196.171.60/qz/",
+      "tags": [
+        "web"
+      ]
+    },
+    {
       "id": "app_019",
       "icon": "https://github.com/dyang886/Game-Save-Manager/raw/main/src/assets/logo.png",
       "name": "GSM",
