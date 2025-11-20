@@ -39,24 +39,104 @@ body {
 }
 
 .header {
-    background-color: rgb(0 147 255 / 80%);
-    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     position: sticky;
     top: 0;
     z-index: 100;
-    padding: 1rem 0;
+    padding: 12px 0;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: 1px solid var(--border-color);
+}
+
+:root[data-theme="dark"] .header {
+    background-color: rgba(28, 28, 30, 0.72);
+}
+
+.header-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand {
+    order: 1;
+}
+
+.header-controls {
+    order: 2;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.search-bar {
+    order: 3;
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+
+/* 桌面端布局 */
+@media (min-width: 768px) {
+    .header-layout {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .search-bar {
+        order: 2;
+        width: auto;
+        flex-grow: 1;
+        max-width: 600px;
+    }
+
+    .header-controls {
+        order: 3;
+    }
+}
+
+.brand h1 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--text-color) 0%, var(--secondary-text) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header.header-hidden {
+    transform: translateY(-100%);
 }
 
 .search-bar input {
     width: 100%;
-    max-width: 680px;
-    padding: 12px 20px;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    margin: 1rem 0;
-    font-size: 1rem;
-    background: var(--card-background);
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background: rgba(118, 118, 128, 0.12);
     color: var(--text-color);
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.search-bar input:focus {
+    background: var(--card-background);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.15);
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    color: var(--secondary-text);
 }
 
 .search-bar input::placeholder {
@@ -84,13 +164,17 @@ body {
     height: auto;
     transform-origin: center;
     z-index: 1;
-    border: 2px solid transparent; /* 添加透明边框作为占位 */
+    border: 2px solid transparent;
+    /* 添加透明边框作为占位 */
 }
 
 /* 修改悬停效果 */
-.app-card:hover:not(.expanded) {  /* 添加 :not(.expanded) 来排除展开状态 */
-    transform: none;  /* 移除上移动画 */
-    border-color: var(--primary-color);  /* 悬停时显示主题色边框 */
+.app-card:hover:not(.expanded) {
+    /* 添加 :not(.expanded) 来排除展开状态 */
+    transform: none;
+    /* 移除上移动画 */
+    border-color: var(--primary-color);
+    /* 悬停时显示主题色边框 */
 }
 
 /* 确保展开状态下没有悬停效果 */
@@ -106,7 +190,8 @@ body {
     max-height: 90vh;
     overflow-y: auto;
     z-index: 1000;
-    scrollbar-gutter: stable; /* 防止滚动条出现时内容跳动 */
+    scrollbar-gutter: stable;
+    /* 防止滚动条出现时内容跳动 */
 }
 
 .app-card.expanded .app-description {
@@ -120,29 +205,35 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0);  /* 初始透明 */
+    background: rgba(0, 0, 0, 0);
+    /* 初始透明 */
     z-index: 999;
-    transition: background-color 0.3s ease;  /* 添加过渡效果 */
+    transition: background-color 0.3s ease;
+    /* 添加过渡效果 */
 }
 
 .overlay.active {
     display: block;
     backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.5);  /* 最终的透明度 */
+    background: rgba(0, 0, 0, 0.5);
+    /* 最终的透明度 */
 }
 
 /* 为了使过渡效果生效，我们需要修改显示/隐藏的方式 */
 .overlay {
     visibility: hidden;
     opacity: 0;
-    display: block;  /* 改为一直显示，但通过 visibility 和 opacity 来控制 */
-    transition: visibility 0s 0.3s, opacity 0.3s ease;  /* visibility 延迟到 opacity 动画结束后 */
+    display: block;
+    /* 改为一直显示，但通过 visibility 和 opacity 来控制 */
+    transition: visibility 0s 0.3s, opacity 0.3s ease;
+    /* visibility 延迟到 opacity 动画结束后 */
 }
 
 .overlay.active {
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s, opacity 0.3s ease;  /* visibility 立即生效 */
+    transition: visibility 0s, opacity 0.3s ease;
+    /* visibility 立即生效 */
 }
 
 /* 详情视图样式 */
@@ -202,7 +293,8 @@ body {
 
 .app-info {
     flex-grow: 1;
-    min-width: 0; /* 防止文本溢出 */
+    min-width: 0;
+    /* 防止文本溢出 */
 }
 
 .app-name {
@@ -261,12 +353,15 @@ body {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     /* 隐藏滚动条但保持功能 */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
 }
 
 .tags-filter-container::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
+    /* Chrome, Safari, Opera */
 }
 
 .tags-filter {
@@ -320,7 +415,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
 
@@ -368,13 +463,7 @@ body {
     color: var(--text-color);
 }
 
-/* 标题样式 */
-.header h1 {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 3.5rem
-}
+/* 标题样式 - 已在上方重新定义 */
 
 /* 详情内容样式 */
 .app-desc-content {
@@ -448,15 +537,7 @@ body {
     background: var(--primary-color);
 }
 
-/* 头部控制按钮容器 */
-.header-controls {
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    display: flex;
-    gap: 1rem;  /* 按钮之间的间距 */
-    z-index: 1000;
-}
+/* 头部控制按钮容器 - 已在上方重新定义 */
 
 /* 设置按钮样式 */
 .settings-button {
@@ -558,7 +639,6 @@ body {
     transform: scale(1.05);
 }
 
-.expanded img{
+.expanded img {
     max-width: -webkit-fill-available;
 }
-

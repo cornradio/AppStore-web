@@ -211,9 +211,36 @@ function initializeTheme() {
 // 添加主题切换事件监听
 themeToggle.addEventListener('click', toggleTheme);
 
+// 智能顶部栏逻辑
+function initSmartHeader() {
+    let lastScrollTop = 0;
+    const header = document.querySelector('.header');
+    const scrollThreshold = 10; // 触发变化的最小滚动距离
+
+    window.addEventListener('scroll', () => {
+        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // 忽略负滚动（例如 iOS 回弹效果）
+        if (currentScrollTop < 0) return;
+
+        // 只有当滚动距离超过阈值时才触发
+        if (Math.abs(currentScrollTop - lastScrollTop) > scrollThreshold) {
+            if (currentScrollTop > lastScrollTop && currentScrollTop > header.offsetHeight) {
+                // 向下滚动且已滚过头部高度 -> 隐藏
+                header.classList.add('header-hidden');
+            } else {
+                // 向上滚动 -> 显示
+                header.classList.remove('header-hidden');
+            }
+            lastScrollTop = currentScrollTop;
+        }
+    }, { passive: true });
+}
+
 // 初始化应用
 async function initializeApp() {
     initializeTheme();
+    initSmartHeader(); // 初始化智能顶部栏
     const apps = await loadApps();
     
     // 初始化搜索功能

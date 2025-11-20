@@ -3,7 +3,7 @@
     {
       "id": "app_019",
       "icon": "https://github.com/dyang886/Game-Save-Manager/raw/main/src/assets/logo.png",
-      "name": "game-save-manager",
+      "name": "GSM",
       "short_description": "基于ssh的游戏存档双端同步工具（PC - win掌机）",
       "long_description": "多游戏存档管理，可以一键从掌机上pull存档到本地，或者push本地存档到掌机。*需要掌机开启sshd服务。<img  src='https://github.com/user-attachments/assets/963b5bbc-2e78-4637-bdd0-332514f5d40d' />",
       "download_link": "https://github.com/cornradio/game-save-manager",
@@ -53,7 +53,7 @@
       "icon": "https://i.imgur.com/nUPidXC.png",
       "name": "Youlog",
       "short_description": "ios 图片记录软件 -- 不存相册",
-"long_description": "<div class='app-desc-content'><p>Youlog 是一款专为 iOS 用户打造的图片记录工具，帮助你管理那些不适合存入系统相册的照片。无论是饮食打卡、日常生活、健康追踪、体态变化还是脸型管理，Youlog 都能为你提供一个安全、隐私、便捷的图片存储空间。</p><p>主要功能：</p><ul><li>📷 独立存储：照片不会出现在系统相册，保护个人隐私</li><li>🗂 标签管理：支持自定义TAG，便于查找和整理图片</li><li>💾 智能压缩：内置图片压缩算法，节省存储空间</li><li>📅 时间轴浏览：按时间顺序回顾每一刻的变化</li></ul><p>适合需要专属图片记录空间的用户，轻松实现高效、私密的日常管理。</p></div>",
+      "long_description": "<div class='app-desc-content'><p>Youlog 是一款专为 iOS 用户打造的图片记录工具，帮助你管理那些不适合存入系统相册的照片。无论是饮食打卡、日常生活、健康追踪、体态变化还是脸型管理，Youlog 都能为你提供一个安全、隐私、便捷的图片存储空间。</p><p>主要功能：</p><ul><li>📷 独立存储：照片不会出现在系统相册，保护个人隐私</li><li>🗂 标签管理：支持自定义TAG，便于查找和整理图片</li><li>💾 智能压缩：内置图片压缩算法，节省存储空间</li><li>📅 时间轴浏览：按时间顺序回顾每一刻的变化</li></ul><p>适合需要专属图片记录空间的用户，轻松实现高效、私密的日常管理。</p></div>",
       "download_link": "https://apps.apple.com/us/app/youlog/id6743986266",
       "tags": [
         "IOS"
