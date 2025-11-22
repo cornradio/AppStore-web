@@ -13,7 +13,7 @@
     },
     {
       "id": "app_019",
-      "icon": "https://github.com/dyang886/Game-Save-Manager/raw/main/src/assets/logo.png",
+      "icon": "https://i.imgur.com/CrRJ54t.png",
       "name": "GSM",
       "short_description": "基于ssh的游戏存档双端同步工具（PC - win掌机）",
       "long_description": "多游戏存档管理，可以一键从掌机上pull存档到本地，或者push本地存档到掌机。*需要掌机开启sshd服务。<img  src='https://github.com/user-attachments/assets/963b5bbc-2e78-4637-bdd0-332514f5d40d' />",
