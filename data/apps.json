@@ -5,71 +5,11 @@
       "icon": "https://github.com/user-attachments/assets/8e8ecbb8-ab2a-4049-b738-908411bcb1e2",
       "name": "Web-Printer",
       "short_description": "WYSIWYG 标签打印图片编辑器",
-      "long_description": "一个适合多种标签打印机使用的 WYSIWYG（所见即所得）网页图片编辑器。针对德佟 P1 等标签打印机官方网页端打印效果差的问题，使用 Atkinson 抖动算法并结合自定义曝光调整，显著提升黑白标签纸的细节和层次表现。同时支持拖拽/粘贴图片、键盘快捷调整文字大小等便捷操作，以实际使用体验为优先。 github https://github.com/cornradio/web-printer ",
-      "download_link": "https://web-printer.cornradio.org/",
+      "long_description": "<div class='app-desc-content'><p>一个适合多种标签打印机使用的所见即所得网页图片编辑器，旨在解决官方网页端打印效果差的问题。</p><p>主要特性：</p><ul><li>🎯 <strong>算法优化：</strong>使用 Atkinson 抖动算法，显著提升黑白打印的细节和层次表现。</li><li>⌨️ <strong>便捷操作：</strong>支持拖拽/粘贴图片、键盘快捷调整文字大小等。</li><li>🚀 <strong>体验优先：</strong>针对实际使用体验优化，提供流畅的标签编辑流程。</li></ul><p>项目地址：<a href='https://github.com/cornradio/Web-printer' target='_blank'>GitHub</a></p></div>",
+      "download_link": "https://Web-printer.cornradio.org/",
       "tags": [
-        "web",
-        "printer",
-        "tool"
-      ]
-    },
-    {
-      "id": "app_022",
-      "icon": "https://placehold.co/80x80/333/ffffff.png?text=Qz",
-      "name": "掐指神通",
-      "short_description": "小六壬占卜术",
-      "long_description": "使用当前日期的农历+时辰进行小六壬占卜，提供占卜结果和解析。",
-      "download_link": "http://8.153.164.13/qz/",
-      "tags": [
-        "web"
-      ]
-    },
-    {
-      "id": "app_019",
-      "icon": "https://i.imgur.com/CrRJ54t.png",
-      "name": "GSM",
-      "short_description": "基于ssh的游戏存档双端同步工具（PC - win掌机）",
-      "long_description": "多游戏存档管理，可以一键从掌机上pull存档到本地，或者push本地存档到掌机。*需要掌机开启sshd服务。<img  src='https://github.com/user-attachments/assets/963b5bbc-2e78-4637-bdd0-332514f5d40d' />",
-      "download_link": "https://github.com/cornradio/game-save-manager",
-      "tags": [
-        "Game",
-        "Node.js"
-      ]
-    },
-    {
-      "id": "app_019",
-      "icon": "https://shot.cornradio.org/icon.png",
-      "name": "shot-a-lot",
-      "short_description": "每天同位置拍照，记录变化，做成gif",
-      "long_description": " 在线体验：<a href=\"https://shot.cornradio.org/\" target=\"_blank\">点我</a> 一个基于web的拍照工具，帮助你每天在同一位置拍照，记录生活的变化，并将这些照片制作成gif动图。只需使用支持摄像头的浏览器访问，即可开始拍照和管理照片。",
-      "download_link": "https://github.com/cornradio/shot-a-lot",
-      "tags": [
-        "web",
-        "camera"
-      ]
-    },
-    {
-      "id": "app_019",
-      "icon": "https://i.imgur.com/5n4GeTG.png",
-      "name": "Cool1",
-      "short_description": "macOS 菜单栏快速启动器，高效启动你的常用应用。",
-      "long_description": "<div class='app-desc-content'><p>Cool1 是一款 macOS 设计的轻量级应用快速启动器，让你可以在菜单栏（任务栏）即时访问和启动你最常用的应用程序。</p><p>主要功能：</p><ul><li>⚡️ <strong>极速启动：</strong> 从菜单栏一键启动预设应用，告别繁琐的 Dock 栏查找。</li><li>✨ <strong>简洁界面：</strong> 专注于功能，提供无干扰的用户体验。</li><li>🔋 <strong>轻量高效：</strong> 占用系统资源极少，不影响 Mac 性能。</li></ul><p>使用 Cool1，让你的 macOS 工作流更加顺畅高效，将注意力集中在真正重要的事情上。</p> <p>现在也支持windows ： <a href='https://github.com/cornradio/cool1-windows/tree/master/cool1-windows'>cool1-windows</a> 。</p> </div>",
-      "download_link": "https://github.com/cornradio/cool1",
-      "tags": [
-        "macOS",
-        "Launcher"
-      ]
-    },
-    {
-      "id": "app_020",
-      "icon": "https://i.imgur.com/cRgZGsr.png",
-      "name": "Tray chrome",
-      "short_description": "可缩小到任务栏的快捷浏览器",
-      "long_description": "<div class='app-desc-content'><p>tray-chrome 是一款类似 <strong> MenubarX</strong> 、的轻量级浏览器应用，支持将任意网页以独立窗口的形式固定在系统任务栏，随时一键访问，无需切换主浏览器窗口。</p><p>主要功能：</p><ul><li>🧊 让网页像原生应用一样驻留在任务栏/菜单栏，提升多任务效率。</li><li>🌐 <strong>多标签支持：</strong> 可同时固定多个常用网页，快速切换。</li><li>🔒 <strong>安全隔离：</strong> 独立进程运行，与您的主要浏览器网页安全互不干扰。</li><li>⚡ <strong>极致轻量：</strong> 占用资源低，适合长时间后台运行。</li></ul><p>无论是常用工具、社交网站还是工作后台，tray-chrome 都能让你一键直达。</p></div>",
-      "download_link": "https://github.com/cornradio/tray-chrome",
-      "tags": [
-        "windwos",
-        "web"
+        "Web",
+        "Photo"
       ]
     },
     {
@@ -80,9 +20,72 @@
       "long_description": "<div class='app-desc-content'><p>Youlog 是一款专为 iOS 用户打造的图片记录工具，帮助你管理那些不适合存入系统相册的照片。无论是饮食打卡、日常生活、健康追踪、体态变化还是脸型管理，Youlog 都能为你提供一个安全、隐私、便捷的图片存储空间。</p><p>主要功能：</p><ul><li>📷 独立存储：照片不会出现在系统相册，保护个人隐私</li><li>🗂 标签管理：支持自定义TAG，便于查找和整理图片</li><li>💾 智能压缩：内置图片压缩算法，节省存储空间</li><li>📅 时间轴浏览：按时间顺序回顾每一刻的变化</li></ul><p>适合需要专属图片记录空间的用户，轻松实现高效、私密的日常管理。</p></div>",
       "download_link": "https://apps.apple.com/us/app/youlog/id6743986266",
       "tags": [
-        "IOS"
+        "IOS",
+        "Photo"
       ]
     },
+    {
+      "id": "app_019",
+      "icon": "https://i.imgur.com/CrRJ54t.png",
+      "name": "GSM",
+      "short_description": "基于ssh的游戏存档双端同步工具（PC - win掌机）",
+      "long_description": "<div class='app-desc-content'><p>基于 SSH 的游戏存档同步工具，专为 PC 与 Windows 掌机之间的存档管理而设计。</p><img src='https://github.com/user-attachments/assets/963b5bbc-2e78-4637-bdd0-332514f5d40d' /><p>主要功能：</p><ul><li>🔄 <strong>双端同步：</strong>支持从掌机 Pull 或向掌机 Push 游戏存档。</li><li>🎮 <strong>存档管理：</strong>一键管理多款游戏的存档状态。</li><li>🔒 <strong>安全高效：</strong>通过 SSH 协议确保数据传输的安全与稳定。</li></ul><p>注意：需要掌机端开启 SSHD 服务。</p></div>",
+      "download_link": "https://github.com/cornradio/game-save-manager",
+      "tags": [
+        "Game",
+        "Node.js"
+      ]
+    },
+    {
+      "id": "app_020",
+      "icon": "https://i.imgur.com/cRgZGsr.png",
+      "name": "Tray chrome",
+      "short_description": "可缩小到任务栏的快捷浏览器",
+      "long_description": "<div class='app-desc-content'><p>tray-chrome 是一款类似 <strong> MenubarX</strong> 、的轻量级浏览器应用，支持将任意网页以独立窗口的形式固定在系统任务栏，随时一键访问，无需切换主浏览器窗口。</p><p>主要功能：</p><ul><li>🧊 让网页像原生应用一样驻留在任务栏/菜单栏，提升多任务效率。</li><li>🌐 <strong>多标签支持：</strong> 可同时固定多个常用网页，快速切换。</li><li>🔒 <strong>安全隔离：</strong> 独立进程运行，与您的主要浏览器网页安全互不干扰。</li><li>⚡ <strong>极致轻量：</strong> 占用资源低，适合长时间后台运行。</li></ul><p>无论是常用工具、社交网站还是工作后台，tray-chrome 都能让你一键直达。</p></div>",
+      "download_link": "https://github.com/cornradio/tray-chrome",
+      "tags": [
+        "Windows",
+        "Web"
+      ]
+    },
+    {
+      "id": "app_022",
+      "icon": "https://placehold.co/80x80/333/ffffff.png?text=Qz",
+      "name": "掐指神通",
+      "short_description": "小六壬占卜术",
+      "long_description": "<div class='app-desc-content'><p>基于小六壬占卜术的在线工具，通过农历日期和时辰为您提供即时占卜结果和深度解析。</p><p>主要功能：</p><ul><li>🔮 <strong>传统占卜：</strong>采用经典小六壬运算法则进行推算。</li><li>📅 <strong>自动计算：</strong>根据当前农历日期和时辰自动获取占卜结果。</li><li>📝 <strong>详细解析：</strong>提供清晰的占卜结论和对应的生活指引。</li></ul></div>",
+      "download_link": "http://8.153.164.13/qz/",
+      "tags": [
+        "Web"
+      ]
+    },
+
+    {
+      "id": "app_019",
+      "icon": "https://shot.cornradio.org/icon.png",
+      "name": "shot-a-lot",
+      "short_description": "每天同位置拍照，记录变化，做成gif",
+      "long_description": "<div class='app-desc-content'><p>一个基于 Web 的拍照工具，帮助你每天在同一位置拍照，记录生活的细微变化。</p><p>主要功能：</p><ul><li>📸 <strong>辅助拍摄：</strong>帮助你在每天同一位置、同一角度进行记录。</li><li>🎞️ <strong>GIF 生成：</strong>将历史照片一键合成动画，直观展现变化过程。</li><li>🌐 <strong>即时访问：</strong>基于浏览器的轻量化设计，无需安装，随开随拍。</li></ul><p>在线体验：<a href=\"https://shot.cornradio.org/\" target=\"_blank\">点我</a></p></div>",
+      "download_link": "https://github.com/cornradio/shot-a-lot",
+      "tags": [
+        "Web",
+        "camera"
+      ]
+    },
+    {
+      "id": "app_019",
+      "icon": "https://i.imgur.com/5n4GeTG.png",
+      "name": "Cool1",
+      "short_description": "macOS 菜单栏快速启动器，高效启动你的常用应用。",
+      "long_description": "<div class='app-desc-content'><p>Cool1 是一款 macOS 设计的轻量级应用快速启动器，让你可以在菜单栏（任务栏）即时访问和启动你最常用的应用程序。</p><p>主要功能：</p><ul><li>⚡️ <strong>极速启动：</strong> 从菜单栏一键启动预设应用，告别繁琐的 Dock 栏查找。</li><li>✨ <strong>简洁界面：</strong> 专注于功能，提供无干扰的用户体验。</li><li>🔋 <strong>轻量高效：</strong> 占用系统资源极少，不影响 Mac 性能。</li></ul><p>使用 Cool1，让你的 macOS 工作流更加顺畅高效，将注意力集中在真正重要的事情上。</p> <p>现在也支持Windows ： <a href='https://github.com/cornradio/cool1-Windows/tree/master/cool1-Windows'>cool1-Windows</a> 。</p> </div>",
+      "download_link": "https://github.com/cornradio/cool1",
+      "tags": [
+        "macOS",
+        "Windows",
+        "Launcher"
+      ]
+    },
+
     {
       "id": "app_001",
       "icon": "https://placehold.co/80x80/007AFF/ffffff.png?text=VS",
@@ -124,7 +127,8 @@
       "long_description": "<div class='app-desc-content'><p>一个便捷的Windows自动关机工具，支持定时关机、倒计时提醒和配置保存功能。</p><p>主要功能：</p><ul><li>📅 支持设置定时关机时间</li><li>🔄 自动保存配置，下次启动自动恢复</li><li>🔔 关机前声音提醒</li><li>💻 系统托盘图标操作</li><li>⏰ 实时显示剩余时间</li><li>❌ 随时可以取消关机计划</li></ul><p>使用方法：在系统托盘找到关机图标，右键点击可以设置关机时间、查看剩余时间或取消关机计划。</p></div>",
       "download_link": "https://github.com/cornradio/autoshutdown-ahk",
       "tags": [
-        "AHK"
+        "AHK",
+        "Windows"
       ]
     },
     {
@@ -135,7 +139,8 @@
       "long_description": "<div class='app-desc-content'><p>一个简单易用的快捷键注册和管理工具，基于AutoHotkey开发。</p><p>主要功能：</p><ul><li>🚀 支持多种操作类型：打开网页、运行程序、打开文件夹、发送文本</li><li>💡 简单的图形界面，无需编写代码</li><li>🔧 支持ALT键组合</li><li>💾 自动保存配置</li><li>🔄 支持手动重载配置文件</li></ul><p>使用方法：通过图形界面轻松设置和管理各种快捷键操作。</p></div>",
       "download_link": "https://github.com/cornradio/ahkshortcut",
       "tags": [
-        "AHK"
+        "AHK",
+        "Windows"
       ]
     },
     {
@@ -147,7 +152,8 @@
       "download_link": "https://github.com/cornradio/lightspeed-UI",
       "tags": [
         "AHK",
-        "Windows"
+        "Windows",
+        "Launcher"
       ]
     },
     {
@@ -158,7 +164,8 @@
       "long_description": "<div class='app-desc-content'><p>一个基于AutoHotkey的Windows窗口管理工具，让你能够更方便快捷地控制窗口。</p><p>主要功能：</p><ul><li>🖱️ 按住win+左键拖动任意位置移动窗口</li><li>📐 按住win+右键拖动调整窗口大小</li><li>⚡ 240Hz高刷新率，移动/调整更流畅</li><li>🔒 最小窗口限制保护</li></ul><p>使用方法：按住ALT键，使用鼠标左键拖动移动窗口，右键拖动调整大小。</p></div>",
       "download_link": "https://github.com/cornradio/alt-drag-mac",
       "tags": [
-        "AHK"
+        "AHK",
+        "Windows"
       ]
     },
     {
@@ -200,7 +207,7 @@
       "name": "WebClip",
       "short_description": "清爽的在线剪贴板，支持Docker部署",
       "long_description": "<div class='app-desc-content'><p>一个简洁的在线剪贴板项目，支持快速部署和文本分享。</p><p>主要功能：</p><ul><li>📝 支持文本存储和分享</li><li>🔄 自动保存历史记录</li><li>🎨 简洁美观的界面</li><li>🐳 支持Docker一键部署</li><li>📱 移动端友好</li><li>💾 支持本地部署</li></ul><p>部署方法：使用Docker命令一键部署，或者通过源码在本地运行。支持阿里云容器服务。</p></div>",
-      "download_link": "https://github.com/cornradio/webclipboard",
+      "download_link": "https://github.com/cornradio/Webclipboard",
       "tags": [
         "Docker"
       ]
@@ -248,21 +255,18 @@
       "long_description": "<div class='app-desc-content'><p>EmojiDB 是一个提供丰富表情符号资源的在线平台，用户可以轻松查找、复制和学习关于各种表情符号的信息。</p><img src='https://emojidb.org/static/media/screenshot_desktop.447a83c250146bb2912f.jpg' alt='EmojiDB Screenshot'><p>主要功能：</p><ul><li>🔍 强大的表情符号搜索功能，支持关键词和分类查找</li><li>📋 一键复制表情符号到剪贴板</li><li>📚 提供详细的表情符号信息，包括 Unicode 版本、别名和跨平台显示差异</li><li>🌐 支持多语言搜索</li></ul><p>使用方法：访问网站后，在搜索框中输入关键词即可查找相关表情符号，点击表情符号即可复制。</p></div>",
       "download_link": "https://emojidb.org/",
       "tags": [
-        "Web",
-        "Emoji",
-        "Database",
-        "3rd"
+        "Web"
       ]
     },
     {
       "id": "app_016",
-      "icon": "https://placehold.co/80x80/4CAF50/ffffff.png?text=yt",
+      "icon": "https://github.com/user-attachments/assets/9d62974d-0f93-4269-9a7e-518cb811a3e1",
       "name": "ytdlpgui",
       "short_description": "ytdlp下载器的图形界面",
       "long_description": "<div class='app-desc-content'><p>ytdlpgui 是流行且强大的命令行视频下载工具 <a href=\"https://github.com/yt-dlp/yt-dlp\">yt-dlp</a> 的图形用户界面 (GUI)。它旨在提供一个简单易用的界面，让用户无需输入复杂的命令行指令即可轻松下载来自 YouTube、Bilibili 等众多网站的视频和音频。</p><p>对于不熟悉命令行的用户来说，ytdlpgui 提供了一个直观的入口来利用 yt-dlp 的全部功能。</p><p>主要功能特性：</p><ul><li>🖥️ 提供图形化操作界面，告别命令行</li><li>🔗 轻松粘贴和处理视频或播放列表链接</li><li>⚙️ 提供选项配置，如选择视频/音频格式、质量、字幕等</li><li>📂 设定下载保存路径</li><li>🚀 简化 yt-dlp 的使用流程，支持其广泛的网站兼容性</li></ul><p>通过 ytdlpgui，你可以方便快捷地下载在线视频资源到本地。</p></div>",
       "download_link": "https://github.com/cornradio/ytdlpgui",
       "tags": [
-        "Downloader",
+        "Windows",
         "python"
       ]
     },
@@ -287,8 +291,7 @@
       "download_link": "https://github.com/cornradio/jandannode",
       "tags": [
         "CLI",
-        "Node.js",
-        "Jandan"
+        "Node.js"
       ]
     }
   ]
