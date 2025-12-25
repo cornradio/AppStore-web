@@ -53,7 +53,7 @@
       "icon": "https://i.imgur.com/5n4GeTG.png",
       "name": "Cool1",
       "short_description": "macOS 菜单栏快速启动器，高效启动你的常用应用。",
-      "long_description": "<div class='app-desc-content'><p>Cool1 是一款专为 macOS 设计的轻量级应用快速启动器，让你可以在菜单栏（任务栏）即时访问和启动你最常用的应用程序。</p><p>主要功能：</p><ul><li>⚡️ <strong>极速启动：</strong> 从菜单栏一键启动预设应用，告别繁琐的 Dock 栏查找。</li><li>✨ <strong>简洁界面：</strong> 专注于功能，提供无干扰的用户体验。</li><li>🔋 <strong>轻量高效：</strong> 占用系统资源极少，不影响 Mac 性能。</li></ul><p>使用 Cool1，让你的 macOS 工作流更加顺畅高效，将注意力集中在真正重要的事情上。</p></div>",
+      "long_description": "<div class='app-desc-content'><p>Cool1 是一款 macOS 设计的轻量级应用快速启动器，让你可以在菜单栏（任务栏）即时访问和启动你最常用的应用程序。</p><p>主要功能：</p><ul><li>⚡️ <strong>极速启动：</strong> 从菜单栏一键启动预设应用，告别繁琐的 Dock 栏查找。</li><li>✨ <strong>简洁界面：</strong> 专注于功能，提供无干扰的用户体验。</li><li>🔋 <strong>轻量高效：</strong> 占用系统资源极少，不影响 Mac 性能。</li></ul><p>使用 Cool1，让你的 macOS 工作流更加顺畅高效，将注意力集中在真正重要的事情上。</p> <p>现在也支持windows ： <a href='https://github.com/cornradio/cool1-windows/tree/master/cool1-windows'>cool1-windows</a> 。</p> </div>",
       "download_link": "https://github.com/cornradio/cool1",
       "tags": [
         "macOS",
