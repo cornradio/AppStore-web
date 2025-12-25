@@ -2,7 +2,7 @@
   "apps": [
     {
       "id": "app_023",
-      "icon": "https://h1.appinn.me/file/1766665894278_printer.png",
+      "icon": "https://github.com/user-attachments/assets/8e8ecbb8-ab2a-4049-b738-908411bcb1e2",
       "name": "Web-Printer",
       "short_description": "WYSIWYG 标签打印图片编辑器",
       "long_description": "一个适合多种标签打印机使用的 WYSIWYG（所见即所得）网页图片编辑器。针对德佟 P1 等标签打印机官方网页端打印效果差的问题，使用 Atkinson 抖动算法并结合自定义曝光调整，显著提升黑白标签纸的细节和层次表现。同时支持拖拽/粘贴图片、键盘快捷调整文字大小等便捷操作，以实际使用体验为优先。 github https://github.com/cornradio/web-printer ",
