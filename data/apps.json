@@ -1,12 +1,25 @@
 {
   "apps": [
     {
+      "id": "app_023",
+      "icon": "https://placehold.co/80x80/333/ffffff.png?text=WP",
+      "name": "Web-Printer",
+      "short_description": "WYSIWYG 标签打印图片编辑器",
+      "long_description": "一个适合多种标签打印机使用的 WYSIWYG（所见即所得）网页图片编辑器。针对德佟 P1 等标签打印机官方网页端打印效果差的问题，使用 Atkinson 抖动算法并结合自定义曝光调整，显著提升黑白标签纸的细节和层次表现。同时支持拖拽/粘贴图片、键盘快捷调整文字大小等便捷操作，以实际使用体验为优先。",
+      "download_link": "https://web-printer.cornradio.org/",
+      "tags": [
+        "web",
+        "printer",
+        "tool"
+      ]
+    },
+    {
       "id": "app_022",
       "icon": "https://placehold.co/80x80/333/ffffff.png?text=Qz",
       "name": "掐指神通",
-      "short_description": "小六壬占卜",
+      "short_description": "小六壬占卜术",
       "long_description": "使用当前日期的农历+时辰进行小六壬占卜，提供占卜结果和解析。",
-      "download_link": "http://139.196.171.60/qz/",
+      "download_link": "http://8.153.164.13/qz/",
       "tags": [
         "web"
       ]
