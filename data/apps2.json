@@ -1,0 +1,456 @@
+{
+  "apps": [
+    {
+      "id": "app_024",
+      "icon": "https://excalidraw.com/favicon-32x32.png",
+      "name": "Excalidraw",
+      "short_description": "手绘风格的虚拟白板工具",
+      "long_description": "<div class='app-desc-content'><p>Excalidraw 是一款完全免费、开源的绘图工具，它提供了一种独特的手绘草图风格，非常适合用于展示、头脑风暴和简单的架构图。</p><p>主要特性：</p><ul><li>🎨 <strong>手绘风格：</strong> 独特的草图视觉效果，让图表更具亲和力。</li><li>🧱 <strong>丰富的组件库：</strong> 支持加载第三方素材库，如 AWS、Kubernetes 等。</li><li>🤝 <strong>实时协作：</strong> 支持多人同时编辑同一份白板。</li><li>🔒 <strong>端到端加密：</strong> 确保您的协作内容和隐私安全。</li></ul><p>使用方法：访问网站即可开始绘图，支持导出为 PNG、SVG 或分享协作链接。</p></div>",
+      "download_link": "https://excalidraw.com/",
+      "tags": [
+        "Web",
+        "Design",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_025",
+      "icon": "https://gchq.github.io/CyberChef/assets/aecc661b69309290f600.ico",
+      "name": "CyberChef",
+      "short_description": "网络“瑞士军刀”，集各种加解密、编解码于一体",
+      "long_description": "<div class='app-desc-content'><p>CyberChef 是一个简单、直观的 Web 应用，用于在网络环境中执行各种“网络”操作。无论是 Base64 编解码、哈希计算还是复杂的加解密任务，它都能轻松胜任。</p><p>主要特性：</p><ul><li>🛠️ <strong>海量算子：</strong> 内置几百种操作，包括编解码、加解密、压缩等。</li><li>🧪 <strong>配方模式：</strong> 通过简单的拖拽组合成“配方”，自动化处理复杂流程。</li><li>⚡ <strong>即时反馈：</strong> 输入即输出，处理过程透明可视。</li><li>💾 <strong>本地运行：</strong> 纯前端应用，支持离线使用，保护数据安全。</li></ul></div>",
+      "download_link": "https://gchq.github.io/CyberChef/",
+      "tags": [
+        "Web",
+        "Security",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_026",
+      "icon": "https://regex101.com/static/assets/favicon.ico",
+      "name": "Regex101",
+      "short_description": "强大的正则表达式测试和调试工具",
+      "long_description": "<div class='app-desc-content'><p>Regex101 是最受欢迎的正则表达式在线测试器，支持多种语言引擎，并提供详细的匹配解释。</p><p>主要特性：</p><ul><li>🔍 <strong>实时匹配：</strong> 输入正则和文本，即刻高亮匹配结果。</li><li>📖 <strong>详细解释：</strong> 逐条解释正则语法，帮助新手理解。</li><li>🛡️ <strong>多引擎支持：</strong> 支持 PHP, JavaScript, Python, Golang 等多种引擎切换。</li><li>🧪 <strong>单元测试：</strong> 支持编写测试用例，确保正则逻辑的严谨性。</li></ul></div>",
+      "download_link": "https://regex101.com/",
+      "tags": [
+        "Web",
+        "Dev",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_027",
+      "icon": "https://devdocs.io/favicon.ico",
+      "name": "DevDocs",
+      "short_description": "一站式 API 文档查阅平台",
+      "long_description": "<div class='app-desc-content'><p>DevDocs 将各种开发者文档集成到一个干净、快速、可搜索的界面中，让你不再需要在几十个标签页中切换。</p><p>主要特性：</p><ul><li>📚 <strong>全能文档库：</strong> 涵盖了前端、后端、语言、框架等几乎所有主流文档。</li><li>⌨️ <strong>极速搜索：</strong> 支持模糊搜索和键盘快捷键。</li><li>🌙 <strong>离线阅读：</strong> 支持将常用文档下载到本地离线使用。</li><li>🎨 <strong>简洁界面：</strong> 无广告、响应式，专注阅读体验。</li></ul></div>",
+      "download_link": "https://devdocs.io/",
+      "tags": [
+        "Web",
+        "Dev",
+        "Education"
+      ]
+    },
+    {
+      "id": "app_028",
+      "icon": "https://jsonhero.io/favicon.ico",
+      "name": "JSON Hero",
+      "short_description": "让 JSON 数据清晰可读的可视化工具",
+      "long_description": "<div class='app-desc-content'><p>JSON Hero 是一款开源的 JSON 浏览器，它能自动识别 JSON 数据的类型（如日期、图片、颜色等）并进行可视化展示。</p><p>主要特性：</p><ul><li>🌈 <strong>智能识别：</strong> 自动将 URL 识别为图片、颜色值识别为色块。</li><li>🧭 <strong>列式浏览：</strong> 像 macOS Finder 一样浏览复杂的嵌套结构。</li><li>📊 <strong>类型推断：</strong> 显示每个字段的数据类型分布。</li><li>🔗 <strong>深度链接：</strong> 支持分享特定路径的链接。</li></ul></div>",
+      "download_link": "https://jsonhero.io/",
+      "tags": [
+        "Web",
+        "Dev",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_029",
+      "icon": "https://carbon.now.sh/favicon.ico",
+      "name": "Carbon",
+      "short_description": "生成精美的代码截图",
+      "long_description": "<div class='app-desc-content'><p>Carbon 是一款在线工具，可以帮助您创建和分享精美的代码图像，非常适合发布在社交媒体或博客中。</p><p>主要特性：</p><ul><li>🎨 <strong>高度定制：</strong> 自由调整窗口主题、背景颜色、阴影和内边距。</li><li>💻 <strong>语言识别：</strong> 自动识别并高亮显示数百种编程语言。</li><li>🖼️ <strong>多种导出：</strong> 支持导出 PNG、SVG，或者复制 base64 图像。</li><li>🌈 <strong>精美预设：</strong> 内置多种流行的 VS Code 和编辑器主题。</li></ul></div>",
+      "download_link": "https://carbon.now.sh/",
+      "tags": [
+        "Web",
+        "Design",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_030",
+      "icon": "https://tinypng.com/images/favicon.ico",
+      "name": "TinyPNG",
+      "short_description": "智能图片压缩，大幅减小文件体积",
+      "long_description": "<div class='app-desc-content'><p>TinyPNG 使用智能有损压缩技术，在几乎肉眼看不出差异的情况下，大幅减少 WebP、PNG 和 JPEG 文件的体积。</p><p>主要特性：</p><ul><li>📉 <strong>极致压缩：</strong> 通常可减少 50% - 80% 的文件体积。</li><li>🐼 <strong>简单拖拽：</strong> 支持批量上传和处理，一键下载。</li><li>🔌 <strong>生态丰富：</strong> 提供 Photoshop 插件、WordPress 插件和 API。</li><li>🌐 <strong>WebP 支持：</strong> 完美支持现代 Web 格式的压缩。</li></ul></div>",
+      "download_link": "https://tinypng.com/",
+      "tags": [
+        "Web",
+        "Photo",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_031",
+      "icon": "https://www.remove.bg/favicon.ico",
+      "name": "Remove.bg",
+      "short_description": "AI 自动一键去除图片背景",
+      "long_description": "<div class='app-desc-content'><p>Remove.bg 是一款利用人工智能技术自动去除图片背景的工具，只需 5 秒钟，即可获得透明背景。</p><p>主要特性：</p><ul><li>🤖 <strong>全自动去背：</strong> 强大的 AI 算法，自动识别发丝等精细边缘。</li><li>⚡ <strong>极速处理：</strong> 上传后几秒钟即可完成。</li><li>🖼️ <strong>灵活替换：</strong> 内置多种背景模板或自定义背景。</li><li>🔌 <strong>集成广泛：</strong> 支持 Adobe Photoshop、Windows/Mac/Linux 客户端。</li></ul></div>",
+      "download_link": "https://www.remove.bg/",
+      "tags": [
+        "Web",
+        "Photo",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_032",
+      "icon": "https://squoosh.app/favicon.ico",
+      "name": "Squoosh",
+      "short_description": "Google 出品的极致图片压缩工具",
+      "long_description": "<div class='app-desc-content'><p>Squoosh 是 Google Chrome 团队开发的图像压缩 Web 应用，支持在浏览器中实时对比压缩效果。</p><p>主要特性：</p><ul><li>⚖️ <strong>实时对比：</strong> 左右滑动对比原始图和压缩后的效果。</li><li>🛠️ <strong>高级配置：</strong> 深度控制色彩数量、抖动、平滑度等参数。</li><li>🚀 <strong>本地计算：</strong> 图片不出服务器，所有压缩都在浏览器端完成。</li><li>🖼️ <strong>格式转换：</strong> 支持转为 WebP、AVIF、MozJPEG 等高效格式。</li></ul></div>",
+      "download_link": "https://squoosh.app/",
+      "tags": [
+        "Web",
+        "Photo",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_033",
+      "icon": "https://app.diagrams.net/favicon.ico",
+      "name": "Diagrams.net",
+      "short_description": "开源免费的流程图与图表绘制工具",
+      "long_description": "<div class='app-desc-content'><p>Diagrams.net (原 draw.io) 是一款功能强大的图表绘制工具，完全免费且支持多种云端存储。</p><p>主要特性：</p><ul><li>📏 <strong>功能全面：</strong> 支持流程图、架构图、UML、脑图等各种图表。</li><li>☁️ <strong>多端存储：</strong> 支持关联 Google Drive、OneDrive、GitHub 等。</li><li>📦 <strong>离线客户端：</strong> 提供 Windows、macOS 和 Linux 桌面端。</li><li>🛠️ <strong>无限画布：</strong> 灵活的编辑体验，支持自定义组件库。</li></ul></div>",
+      "download_link": "https://app.diagrams.net/",
+      "tags": [
+        "Web",
+        "Design",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_034",
+      "icon": "https://smallpdf.com/favicon.ico",
+      "name": "Smallpdf",
+      "short_description": "简单好用的 PDF 全能处理工具",
+      "long_description": "<div class='app-desc-content'><p>Smallpdf 提供了一系列用于压缩、编辑、转换和签名 PDF 文件的在线工具，深受全球用户喜爱。</p><p>主要特性：</p><ul><li>🔄 <strong>格式转换：</strong> 支持 PDF 转 Word、Excel、PPT 及其互转。</li><li>🗜️ <strong>智能压缩：</strong> 优化 PDF 体积以便于邮件传输。</li><li>🖊️ <strong>电子签名：</strong> 快速为 PDF 文件添加手写或数字签名。</li><li>📂 <strong>页面管理：</strong> 轻松实现 PDF 拆分、合并、旋转。</li></ul></div>",
+      "download_link": "https://smallpdf.com/",
+      "tags": [
+        "Web",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_035",
+      "icon": "https://convertio.co/favicon.ico",
+      "name": "Convertio",
+      "short_description": "万能文件在线格式转换器",
+      "long_description": "<div class='app-desc-content'><p>Convertio 支持超过 300 种文件格式之间的 25600 多种不同的转换方式，是您处理文件转换的首选。</p><p>主要特性：</p><ul><li>📂 <strong>全格式支持：</strong> 涵盖文档、图片、视频、音频、电子书等。</li><li>☁️ <strong>云端处理：</strong> 所有转换都在云端进行，不占用您的本地内存。</li><li>🛡️ <strong>隐私安全：</strong> 24 小时后自动删除上传的文件。</li><li>🎯 <strong>高度可调：</strong> 视频转换支持设置质量、分辨率等参数。</li></ul></div>",
+      "download_link": "https://convertio.co/zh/",
+      "tags": [
+        "Web",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_036",
+      "icon": "https://temp-mail.org/favicon.ico",
+      "name": "Temp Mail",
+      "short_description": "临时邮箱服务，远离垃圾邮件",
+      "long_description": "<div class='app-desc-content'><p>Temp Mail 提供临时、匿名、免费、的一次性电子邮件地址，帮助您注册不信任的网站以保护个人隐私。</p><p>主要特性：</p><ul><li>📩 <strong>即开即用：</strong> 访问网站立即生成一个随机邮箱。</li><li>🛡️ <strong>保护隐私：</strong> 避免主邮箱被垃圾邮件轰炸。</li><li>🗑️ <strong>自动销毁：</strong> 邮箱地址在一段时间后会自动过期。</li><li>📱 <strong>多平台支持：</strong> 提供 Web、安卓和 iOS 客户端。</li></ul></div>",
+      "download_link": "https://temp-mail.org/",
+      "tags": [
+        "Web",
+        "Utility",
+        "Security"
+      ]
+    },
+    {
+      "id": "app_037",
+      "icon": "https://www.virustotal.com/gui/images/favicon.ico",
+      "name": "VirusTotal",
+      "short_description": "集成了 70 多种反病毒引擎的在线扫描服务",
+      "long_description": "<div class='app-desc-content'><p>VirusTotal 是 Google 旗下的安全服务，可以快速分析可疑文件和 URL，发现病毒、蠕虫、木马和其他类型的恶意内容。</p><p>主要特性：</p><ul><li>🛡️ <strong>聚合扫描：</strong> 同时使用几十种杀毒引擎的结果进行对比。</li><li>🌐 <strong>URL 检测：</strong> 扫描可疑网站是否包含恶意代码或钓鱼链接。</li><li>📊 <strong>详细报告：</strong> 提供详细的进程行为、注册表修改等分析数据。</li><li>🤝 <strong>社区互助：</strong> 拥有活跃的社区讨论和威胁情报分享。</li></ul></div>",
+      "download_link": "https://www.virustotal.com/",
+      "tags": [
+        "Web",
+        "Security",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_038",
+      "icon": "https://vercel.com/favicon.ico",
+      "name": "Vercel",
+      "short_description": "现代化的前端托管与部署平台",
+      "long_description": "<div class='app-desc-content'><p>Vercel 是前端开发者的最佳选择，支持一键部署 React, Vue, Next.js 等各种框架，提供极致的部署体验。</p><p>主要特性：</p><ul><li>🚀 <strong>零配置部署：</strong> 关联 GitHub/GitLab 仓库，推送代码即可自动构建部署。</li><li>⚡ <strong>全球 CDN：</strong> 极速的边缘网络加载体验。</li><li>🛠️ <strong>Serverless 函数：</strong> 轻松编写后端逻辑，无需管理服务器。</li><li>📈 <strong>数据统计：</strong> 内置实时 Web Analytics 监控站点性能。</li></ul></div>",
+      "download_link": "https://vercel.com/",
+      "tags": [
+        "Web",
+        "Dev",
+        "Hosting"
+      ]
+    },
+    {
+      "id": "app_039",
+      "icon": "https://tailscale.com/favicon.ico",
+      "name": "Tailscale",
+      "short_description": "基于 WireGuard 的零配置虚拟联网工具",
+      "long_description": "<div class='app-desc-content'><p>Tailscale 让你能在几分钟内建立一个安全的私人网络，连接你的所有设备，无论它们身在何处。</p><p>主要特性：</p><ul><li>🔒 <strong>端到端加密：</strong> 基于现代 WireGuard 协议，确保流量绝对安全。</li><li>🕸️ <strong>穿透内网：</strong> 轻松连接家中或公司的服务器，无需公网 IP。</li><li>💻 <strong>全平台支持：</strong> 覆盖 Windows, macOS, Linux, iOS, Android, NAS。</li><li>🚀 <strong>极简体验：</strong> 使用 SSO 登录即用，无需复杂的防火墙设置。</li></ul></div>",
+      "download_link": "https://tailscale.com/",
+      "tags": [
+        "Windows",
+        "macOS",
+        "Security",
+        "Network"
+      ]
+    },
+    {
+      "id": "app_040",
+      "icon": "https://shields.io/img/favicon.ico",
+      "name": "Shields.io",
+      "short_description": "为你的开源项目生成精美的徽章",
+      "long_description": "<div class='app-desc-content'><p>Shields.io 是 GitHub 开发者最常用的徽章生成服务，展示项目状态、版本、下载量等动态信息。</p><p>主要特性：</p><ul><li>🎨 <strong>高度自定义：</strong> 支持设置颜色、图标、样式（Flat, Plastic 等）。</li><li>📊 <strong>动态统计：</strong> 自动获取 GitHub, NPM, Docker Hub 等平台的实时数据。</li><li>⚡ <strong>高性能：</strong> 秒级响应，支持 SVG 和 PNG 格式。</li><li>💡 <strong>静态徽章：</strong> 也可以生成简单的静态提示标签。</li></ul></div>",
+      "download_link": "https://shields.io/",
+      "tags": [
+        "Web",
+        "Dev",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_041",
+      "icon": "https://bitly.com/favicon.ico",
+      "name": "Bitly",
+      "short_description": "全球领先的短链接缩短与分析平台",
+      "long_description": "<div class='app-desc-content'><p>Bitly 不仅是一个短链接生成器，更是一个强大的链接管理和分析工具，帮助你追踪点击数据。</p><p>主要特性：</p><ul><li>🔗 <strong>短链接缩短：</strong> 将冗长的 URL 转换为简洁的 bit.ly 链接。</li><li>📊 <strong>点击分析：</strong> 查看点击量、来源地理位置、推荐来源等。</li><li>📱 <strong>二维码生成：</strong> 同步生成可追踪的二维码。</li><li>🏷️ <strong>链接管理：</strong> 支持对链接进行分类和历史管理。</li></ul></div>",
+      "download_link": "https://bitly.com/",
+      "tags": [
+        "Web",
+        "Utility",
+        "Data"
+      ]
+    },
+    {
+      "id": "app_042",
+      "icon": "https://glitch.com/favicon.ico",
+      "name": "Glitch",
+      "short_description": "好玩的在线全栈开发与协作平台",
+      "long_description": "<div class='app-desc-content'><p>Glitch 是一个充满活力的开发社区，你可以在浏览器里直接编写后端和前端代码，并即时发布。</p><p>主要特性：</p><ul><li>🧩 <strong>即时开发：</strong> 无需环境配置，在浏览器中编写 Node.js 等应用。</li><li>🤝 <strong>实时协作：</strong> 支持像 Google Docs 一样多人同时编写代码。</li><li>🚀 <strong>自动部署：</strong> 只要修改代码，应用就会立即重新部署。</li><li>🌟 <strong>Remix 模式：</strong> 一键克隆他人的有趣项目并进行二次创作。</li></ul></div>",
+      "download_link": "https://glitch.com/",
+      "tags": [
+        "Web",
+        "Dev",
+        "Education"
+      ]
+    },
+    {
+      "id": "app_043",
+      "icon": "https://www.canva.cn/favicon.ico",
+      "name": "Canva 可画",
+      "short_description": "小白也能上手的平面设计工具",
+      "long_description": "<div class='app-desc-content'><p>Canva 是一款风靡全球的在线设计工具，提供了海量的模板和素材，让非设计专业人士也能做出精美海报、PPT 和社交媒体图。</p><p>主要特性：</p><ul><li>🖼️ <strong>海量模板：</strong> 覆盖社交媒体、演示文稿、视频、海报等。</li><li>🎨 <strong>简单拖拽：</strong> 极其简单的操作界面，上手即会。</li><li>📦 <strong>正版素材库：</strong> 内置数百万高清图片、插画和字体。</li><li>🤝 <strong>团队协作：</strong> 支持多人共同编辑设计稿并共享素材库。</li></ul></div>",
+      "download_link": "https://www.canva.cn/",
+      "tags": [
+        "Web",
+        "Design",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_044",
+      "icon": "https://hoppscotch.io/favicon.ico",
+      "name": "Hoppscotch",
+      "short_description": "开源、轻量的 API 调试工具",
+      "long_description": "<div class='app-desc-content'><p>Hoppscotch 是一款轻量级、开源的 API 开发测试工具，旨在替代 Postman，提供更快速、更简洁的体验。</p><p>主要特性：</p><ul><li>🚀 <strong>极致速度：</strong> 纯浏览器运行，响应极快。</li><li>🌐 <strong>多协议支持：</strong> 支持 REST, GraphQL, WebSocket, SSE 等。</li><li>📂 <strong>集合管理：</strong> 轻松组织、保存和分享您的请求集合。</li><li>🌈 <strong>主题定制：</strong> 提供丰富的配色方案，支持暗色模式。</li></ul></div>",
+      "download_link": "https://hoppscotch.io/",
+      "tags": [
+        "Web",
+        "Dev",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_045",
+      "icon": "https://bitwarden.com/favicon.ico",
+      "name": "Bitwarden",
+      "short_description": "开源、安全的密码管理专家",
+      "long_description": "<div class='app-desc-content'><p>Bitwarden 是一款开源的密码管理解决方案，可以跨设备同步您的所有登录凭据、支付信息和安全备注。</p><p>主要特性：</p><ul><li>🔒 <strong>端到端加密：</strong> 您的数据在设备上加密，连 Bitwarden 也无法查阅。</li><li>💻 <strong>全平台同步：</strong> 支持所有主流浏览器、操作系统和移动端。</li><li>🔑 <strong>自动填充：</strong> 一键填充账号密码，告别手动输入。</li><li>🛡️ <strong>安全审核：</strong> 提供密码强度报告和数据泄露预警。</li></ul></div>",
+      "download_link": "https://bitwarden.com/",
+      "tags": [
+        "Web",
+        "Security",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_046",
+      "icon": "https://getsharex.com/favicon.ico",
+      "name": "ShareX",
+      "short_description": "Windows 平台最强大的全能截图工具",
+      "long_description": "<div class='app-desc-content'><p>ShareX 是一款功能极其丰富的 Windows 开源截图工具，除了截图，还支持录屏、OCR、取色、尺子等几十种辅助功能。</p><p>主要特性：</p><ul><li>📸 <strong>全能截图：</strong> 支持全屏、区域、滚动、多显示器等多种模式。</li><li>🎞️ <strong>GIF/录屏：</strong> 快速录制屏幕并转换为高质量 GIF 或视频。</li><li>🛠️ <strong>工作流：</strong> 支持截图后自动添加水印、上传云端、生成短链接。</li><li>📦 <strong>内置工具：</strong> 包含屏幕取色、图像编辑、OCR 文字识别等。</li></ul></div>",
+      "download_link": "https://getsharex.com/",
+      "tags": [
+        "Windows",
+        "Utility",
+        "Photo"
+      ]
+    },
+    {
+      "id": "app_047",
+      "icon": "https://raw.githubusercontent.com/QL-Win/QuickLook/master/QuickLook.Common/Resources/QuickLook.ico",
+      "name": "QuickLook",
+      "short_description": "为 Windows 带来 macOS 般的空格预览体验",
+      "long_description": "<div class='app-desc-content'><p>QuickLook 是一款让 Windows 也能拥有类似 macOS “空格预览”功能的开源工具。只需按下空格键，即可快速查看文件内容。</p><p>主要特性：</p><ul><li>⚡ <strong>即时预览：</strong> 无需打开软件，按下空格即可查看图片、视频、PDF、压缩包等。</li><li>📦 <strong>插件系统：</strong> 支持扩展预览更多文件类型，如 Office 文档。</li><li>⌨️ <strong>原生体验：</strong> 与 Windows 资源管理器完美集成，操作自然。</li><li>🚀 <strong>轻量高效：</strong> 资源占用极低，不影响系统流畅度。</li></ul></div>",
+      "download_link": "https://github.com/QL-Win/QuickLook",
+      "tags": [
+        "Windows",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_048",
+      "icon": "https://www.voidtools.com/favicon.ico",
+      "name": "Everything",
+      "short_description": "Windows 平台毫秒级文件搜索神器",
+      "long_description": "<div class='app-desc-content'><p>Everything 是一款基于文件名的实时搜索引擎。它体积小巧，界面简洁，搜索速度快到令人惊叹，是 Windows 用户的装机必备。</p><p>主要特性：</p><ul><li>⚡ <strong>瞬间搜索：</strong> 在输入的同时即可显示搜索结果，毫无延迟。</li><li>🗂️ <strong>低资源消耗：</strong> 索引数据库极小，几乎不占用 CPU 资源。</li><li>📂 <strong>远程搜索：</strong> 支持开启 HTTP 或 FTP 服务进行远程文件访问。</li><li>🔍 <strong>高级语法：</strong> 支持通配符、正则表达式等高级搜索功能。</li></ul></div>",
+      "download_link": "https://www.voidtools.com/",
+      "tags": [
+        "Windows",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_049",
+      "icon": "https://raw.githubusercontent.com/microsoft/PowerToys/main/doc/images/logo/icon.ico",
+      "name": "PowerToys",
+      "short_description": "微软出品的 Windows 效率提升套件",
+      "long_description": "<div class='app-desc-content'><p>PowerToys 是由微软开发的一组系统工具合集，旨在帮助高级用户调整和简化其 Windows 体验，以提高工作效率。</p><p>主要特性：</p><ul><li>🖼️ <strong>FancyZones：</strong> 强大的窗口布局管理器，轻松平铺窗口。</li><li>🔍 <strong>PowerToys Run：</strong> 极简的快速启动器（类似 Raycast/Alfred）。</li><li>📷 <strong>颜色选择器：</strong> 随时通过快捷键吸取屏幕任何位置的色值。</li><li>📝 <strong>文本提取器：</strong> 快速识别屏幕图像中的文字（OCR）。</li></ul></div>",
+      "download_link": "https://github.com/microsoft/PowerToys",
+      "tags": [
+        "Windows",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_050",
+      "icon": "https://ditto-cp.sourceforge.io/favicon.ico",
+      "name": "Ditto",
+      "short_description": "强大的剪贴板历史管理器",
+      "long_description": "<div class='app-desc-content'><p>Ditto 是一款 Windows 原生剪贴板增强工具。它能保存你复制过的每一项内容，并允许你随时检索并重新粘贴。</p><p>主要特性：</p><ul><li>📜 <strong>历史记录：</strong> 保存文本、图片、HTML 甚至二进制文件的历史。</li><li>🔍 <strong>快速搜索：</strong> 即使有上万条记录，也能通过关键词瞬间找到。</li><li>🤝 <strong>多机同步：</strong> 支持在局域网内的多台电脑间同步剪贴板。</li><li>⌨️ <strong>完全掌控：</strong> 支持自定义快捷键和多种粘贴模式。</li></ul></div>",
+      "download_link": "https://ditto-cp.sourceforge.io/",
+      "tags": [
+        "Windows",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_051",
+      "icon": "https://zh.snipaste.com/img/logo.png",
+      "name": "Snipaste",
+      "short_description": "截图与贴图的效率天花板",
+      "long_description": "<div class='app-desc-content'><p>Snipaste 是一款将截图与贴图完美结合的工具。它可以让你将截图直接“贴”在屏幕上，方便参考和对比，极大地提升了工作效率。</p><p>主要特性：</p><ul><li>📸 <strong>智能截图：</strong> 自动检测界面元素，支持像素级调整。</li><li>📌 <strong>创新贴图：</strong> 将任何内容（截图、文字、图片）贴在屏幕最前端。</li><li>🎨 <strong>内置标注：</strong> 丰富的画笔、箭头、文字标注功能。</li><li>⚡ <strong>简单极致：</strong> 只有截图和贴图两个核心功能，却无比强大。</li></ul></div>",
+      "download_link": "https://zh.snipaste.com/",
+      "tags": [
+        "Windows",
+        "macOS",
+        "Utility",
+        "Photo"
+      ]
+    },
+    {
+      "id": "app_052",
+      "icon": "https://www.cloudflare.com/favicon.ico",
+      "name": "Cloudflare",
+      "short_description": "全球最强的网络安全与性能专家",
+      "long_description": "<div class='app-desc-content'><p>Cloudflare 为您的网站提供免费的 CDN、DDoS 防护和域名解析服务，它是全球数百万网站的守护神。</p><p>主要特性：</p><ul><li>🛡️ <strong>DDoS 防护：</strong> 业内领先的免费防护，让您的站点免受攻击。</li><li>⚡ <strong>CDN 加速：</strong> 全球边缘节点加速，显著提升加载速度。</li><li>🔒 <strong>免费 SSL：</strong> 一键开启 HTTPS，确保数据传输安全。</li><li>👷 <strong>Workers：</strong> 强大的 Serverless 平台，直接在边缘侧运行代码。</li></ul></div>",
+      "download_link": "https://www.cloudflare.com/",
+      "tags": [
+        "Web",
+        "Security",
+        "Hosting"
+      ]
+    },
+    {
+      "id": "app_053",
+      "icon": "https://desktop.github.com/favicon.ico",
+      "name": "GitHub Desktop",
+      "short_description": "让 Git 协作变得简单直观",
+      "long_description": "<div class='app-desc-content'><p>GitHub Desktop 是官方出品的图形化 Git 工具，消除了繁琐的命令行操作，让代码版本管理变得简单易行。</p><p>主要特性：</p><ul><li>🌳 <strong>分支可视化：</strong> 简单明了的分支切换、合并和冲突解决。</li><li>📝 <strong>提交管理：</strong> 轻松管理 Commit 记录，支持撤销和重写。</li><li>🤝 <strong>完美集成：</strong> 与 GitHub 完美对接，一键拉取 PR。</li><li>🎨 <strong>简洁 UI：</strong> 专为效率设计，无需记忆复杂的 Git 指令。</li></ul></div>",
+      "download_link": "https://desktop.github.com/",
+      "tags": [
+        "Windows",
+        "macOS",
+        "Dev",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_054",
+      "icon": "https://motrix.app/favicon.ico",
+      "name": "Motrix",
+      "short_description": "全能、美观的开源下载管理器",
+      "long_description": "<div class='app-desc-content'><p>Motrix 是一款全能的下载工具，支持下载 HTTP、FTP、BitTorrent、Magnet 等资源，界面清爽且功能强大。</p><p>主要特性：</p><ul><li>⚡ <strong>多线程加速：</strong> 支持最高 64 线程下载，榨干您的带宽。</li><li>🧲 <strong>协议全能：</strong> 完美支持种子下载和磁力链接。</li><li>🎨 <strong>颜值爆表：</strong> 极简的现代 UI，支持暗黑模式。</li><li>🛡️ <strong>自动更新：</strong> 定期更新 Tracker 列表，确保下载速度。</li></ul></div>",
+      "download_link": "https://motrix.app/",
+      "tags": [
+        "Windows",
+        "macOS",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_055",
+      "icon": "https://musicfree.catcat.work/favicon.ico",
+      "name": "MusicFree",
+      "short_description": "一个插件化、定制化的音乐播放器",
+      "long_description": "<div class='app-desc-content'><p>MusicFree 是一款完全免费、开源的音乐播放器，通过安装不同的插件，可以整合全网的音乐资源。</p><p>主要特性：</p><ul><li>🧩 <strong>插件驱动：</strong> 灵活扩展，一个软件即可听遍全网。</li><li>🎵 <strong>无损音质：</strong> 支持播放多种高品质音频格式。</li><li>🎨 <strong>高度定制：</strong> 支持自定义主题、背景和 UI 布局。</li><li>📱 <strong>全平台：</strong> 提供安卓端和桌面端，数据可同步。</li></ul></div>",
+      "download_link": "https://musicfree.catcat.work/",
+      "tags": [
+        "Windows",
+        "Android",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_056",
+      "icon": "https://www.listary.com/favicon.ico",
+      "name": "Listary",
+      "short_description": "Windows 平台最优雅的搜索与快速启动工具",
+      "long_description": "<div class='app-desc-content'><p>Listary 是一款独特的 Windows 增强工具。它不仅能瞬间搜索文件，还能让原本笨拙的文件保存/打开对话框变得极其智能。</p><p>主要特性：</p><ul><li>⚡ <strong>即打即搜：</strong> 在桌面任何地方直接输入文字即可开始搜索。</li><li>📁 <strong>对话框增强：</strong> 快速切换文件夹，让存取文件快如闪电。</li><li>🚀 <strong>动作系统：</strong> 支持自定义各种快捷动作，如搜索百度、打开应用。</li><li>✨ <strong>轻盈体验：</strong> 界面极简，呼之即来，挥之即去。</li></ul></div>",
+      "download_link": "https://www.listary.com/",
+      "tags": [
+        "Windows",
+        "Utility"
+      ]
+    },
+    {
+      "id": "app_057",
+      "icon": "https://obsidian.md/favicon.ico",
+      "name": "Obsidian",
+      "short_description": "构建您的第二大脑，本地优先的知识库",
+      "long_description": "<div class='app-desc-content'><p>Obsidian 是一款强大的知识管理工具，基于本地 Markdown 文件，支持双向链接，帮助您建立交织的知识网络。</p><p>主要特性：</p><ul><li>🧠 <strong>双向链接：</strong> 轻松建立笔记间的关联，形成知识图谱。</li><li>📄 <strong>本地优先：</strong> 您的笔记存在本地，不依赖云端，绝对安全。</li><li>🔌 <strong>万能插件：</strong> 拥有几百个社区插件，可以无限扩展功能。</li><li>📊 <strong>关系图谱：</strong> 可视化您的知识网络，发现隐藏的联系。</li></ul></div>",
+      "download_link": "https://obsidian.md/",
+      "tags": [
+        "Windows",
+        "macOS",
+        "Utility",
+        "Education"
+      ]
+    },
+    {
+      "id": "app_058",
+      "icon": "https://tauri.app/favicon.ico",
+      "name": "Tauri",
+      "short_description": "使用 Web 技术构建更小、更快、更安全的桌面应用",
+      "long_description": "<div class='app-desc-content'><p>Tauri 是 Electron 的强劲竞争对手，它使用 Rust 构建后端，允许开发者用任何前端框架构建极小体积的跨平台桌面应用。</p><p>主要特性：</p><ul><li>🔋 <strong>极致轻量：</strong> 安装包体积通常只有几 MB，远小于 Electron。</li><li>🦀 <strong>Rust 驱动：</strong> 后端使用 Rust，提供极高的安全性和性能。</li><li>🌐 <strong>前端无关：</strong> 支持 React, Vue, Svelte 等任何 Web 框架。</li><li>🔒 <strong>安全隔离：</strong> 默认开启严格的安全策略，保护用户数据。</li></ul></div>",
+      "download_link": "https://tauri.app/",
+      "tags": [
+        "Web",
+        "Dev",
+        "Utility"
+      ]
+    }
+  ]
+}
