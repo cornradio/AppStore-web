@@ -2,7 +2,7 @@
   "apps": [
     {
       "id": "app_023",
-      "icon": "https://github.com/user-attachments/assets/8e8ecbb8-ab2a-4049-b738-908411bcb1e2",
+      "icon": "img/web-printer.png",
       "name": "Web-Printer",
       "short_description": "WYSIWYG 标签打印图片编辑器",
       "long_description": "<div class='app-desc-content'><p>一个适合多种标签打印机使用的所见即所得网页图片编辑器，旨在解决官方网页端打印效果差的问题。</p><p>主要特性：</p><ul><li>🎯 <strong>算法优化：</strong>使用 Atkinson 抖动算法，显著提升黑白打印的细节和层次表现。</li><li>⌨️ <strong>便捷操作：</strong>支持拖拽/粘贴图片、键盘快捷调整文字大小等。</li><li>🚀 <strong>体验优先：</strong>针对实际使用体验优化，提供流畅的标签编辑流程。</li></ul><p>项目地址：<a href='https://github.com/cornradio/Web-printer' target='_blank'>GitHub</a></p></div>",
@@ -13,11 +13,35 @@
       ]
     },
     {
+      "id": "app_009",
+      "icon": "img/pmg.png",
+      "name": "Pause My game -暂停游戏",
+      "short_description": "轻松暂停任何游戏进程，释放系统资源",
+      "long_description": "<div class='app-desc-content'><p>一个简单的游戏进程管理工具，让你随时暂停游戏释放CPU资源。</p><p>主要功能：</p><ul><li>⏸️ 一键暂停任何游戏进程</li><li>▶️ 随时恢复游戏运行</li><li>💻 释放CPU资源</li><li>🎯 支持通过进程名快速定位</li><li>📊 实时显示进程状态</li></ul><p>使用方法：选择要暂停的游戏进程，点击暂停按钮即可，需要时再点击恢复继续游戏。</p></div>",
+      "download_link": "https://github.com/cornradio/pausemygame",
+      "tags": [
+        "Windows"
+      ]
+    },
+    {
+      "id": "app_019",
+      "icon": "img/cool1.png",
+      "name": "Cool1",
+      "short_description": "快速启动器，高效启动你的常用应用。",
+      "long_description": "<div class='app-desc-content'><p>Cool1 是一款 macOS 设计的轻量级应用快速启动器，让你可以在菜单栏（任务栏）即时访问和启动你最常用的应用程序。</p><p>主要功能：</p><ul><li>⚡️ <strong>极速启动：</strong> 从菜单栏一键启动预设应用，告别繁琐的 Dock 栏查找。</li><li>✨ <strong>简洁界面：</strong> 专注于功能，提供无干扰的用户体验。</li><li>🔋 <strong>轻量高效：</strong> 占用系统资源极少，不影响 Mac 性能。</li></ul><p>使用 Cool1，让你的 macOS 工作流更加顺畅高效，将注意力集中在真正重要的事情上。</p> <p>现在也支持Windows ： <a href='https://github.com/cornradio/cool1-Windows/tree/master/cool1-Windows'>cool1-Windows</a> 。</p> </div>",
+      "download_link": "https://github.com/cornradio/cool1",
+      "tags": [
+        "macOS",
+        "Windows",
+        "Launcher"
+      ]
+    },
+    {
       "id": "app_021",
-      "icon": "https://i.imgur.com/nUPidXC.png",
+      "icon": "img/youlog.jpg",
       "name": "Youlog",
       "short_description": "ios 图片记录软件 -- 不存相册",
-      "long_description": "<div class='app-desc-content'><p>Youlog 是一款专为 iOS 用户打造的图片记录工具，帮助你管理那些不适合存入系统相册的照片。无论是饮食打卡、日常生活、健康追踪、体态变化还是脸型管理，Youlog 都能为你提供一个安全、隐私、便捷的图片存储空间。</p><p>主要功能：</p><ul><li>📷 独立存储：照片不会出现在系统相册，保护个人隐私</li><li>🗂 标签管理：支持自定义TAG，便于查找和整理图片</li><li>💾 智能压缩：内置图片压缩算法，节省存储空间</li><li>📅 时间轴浏览：按时间顺序回顾每一刻的变化</li></ul><p>适合需要专属图片记录空间的用户，轻松实现高效、私密的日常管理。</p></div>",
+      "long_description": "<div class='app-desc-content'><p>Youlog 是一款专为 iOS 用户打造的图片记录工具，帮助你管理那些不适合存入系统相册的照片。无论是饮食打卡、日常生活、健康追踪、体态变化还是脸型管理，Youlog 都能为你提供一个安全、隐私、便捷的图片存储空间。</p><p>主要功能：</p><ul><li>📷 独立存储：照片不会出现在系统相册，保护个人隐私</li><li>🗂 标签管理：支持自定义TAG，便于查找和整理图片</li><li>💾 智能压缩：内置图片压缩算法，节省存储空间</li><li>📅 时间轴浏览：按时间顺序回顾每一刻的变化</li></ul><p>适合需要专属图片记录空间的用户，轻松实现高效、私密的日常管理。</p></div> <p>现也支持安卓： <a href='https://youlog-andorid.cornradio.org/' target='_blank'>youlog-andorid</a></p>",
       "download_link": "https://apps.apple.com/us/app/youlog/id6743986266",
       "tags": [
         "IOS",
@@ -50,7 +74,7 @@
     },
     {
       "id": "app_022",
-      "icon": "https://placehold.co/80x80/333/ffffff.png?text=Qz",
+      "icon": "img/qiazhi.png",
       "name": "掐指神通",
       "short_description": "小六壬占卜术",
       "long_description": "<div class='app-desc-content'><p>基于小六壬占卜术的在线工具，通过农历日期和时辰为您提供即时占卜结果和深度解析。</p><p>主要功能：</p><ul><li>🔮 <strong>传统占卜：</strong>采用经典小六壬运算法则进行推算。</li><li>📅 <strong>自动计算：</strong>根据当前农历日期和时辰自动获取占卜结果。</li><li>📝 <strong>详细解析：</strong>提供清晰的占卜结论和对应的生活指引。</li></ul></div>",
@@ -59,7 +83,6 @@
         "Web"
       ]
     },
-
     {
       "id": "app_019",
       "icon": "https://shot.cornradio.org/icon.png",
@@ -73,22 +96,8 @@
       ]
     },
     {
-      "id": "app_019",
-      "icon": "https://i.imgur.com/5n4GeTG.png",
-      "name": "Cool1",
-      "short_description": "macOS 菜单栏快速启动器，高效启动你的常用应用。",
-      "long_description": "<div class='app-desc-content'><p>Cool1 是一款 macOS 设计的轻量级应用快速启动器，让你可以在菜单栏（任务栏）即时访问和启动你最常用的应用程序。</p><p>主要功能：</p><ul><li>⚡️ <strong>极速启动：</strong> 从菜单栏一键启动预设应用，告别繁琐的 Dock 栏查找。</li><li>✨ <strong>简洁界面：</strong> 专注于功能，提供无干扰的用户体验。</li><li>🔋 <strong>轻量高效：</strong> 占用系统资源极少，不影响 Mac 性能。</li></ul><p>使用 Cool1，让你的 macOS 工作流更加顺畅高效，将注意力集中在真正重要的事情上。</p> <p>现在也支持Windows ： <a href='https://github.com/cornradio/cool1-Windows/tree/master/cool1-Windows'>cool1-Windows</a> 。</p> </div>",
-      "download_link": "https://github.com/cornradio/cool1",
-      "tags": [
-        "macOS",
-        "Windows",
-        "Launcher"
-      ]
-    },
-
-    {
       "id": "app_001",
-      "icon": "https://placehold.co/80x80/007AFF/ffffff.png?text=VS",
+      "icon": "img/vscode.png",
       "name": "GoodNote VSCode",
       "short_description": "在任何网页添加VSCode编辑器功能",
       "long_description": "<div class='app-desc-content'><p>一个强大的浏览器笔记扩展，让您在任何网页上都能使用类似VSCode的编辑器进行笔记。</p><p>主要特性：</p><ul><li>💻 VSCode风格的编辑器界面</li><li>🎨 支持多种编程语言的语法高亮</li><li>💾 自动保存笔记内容</li><li>🌈 优雅的界面动画和模糊背景</li></ul><p>使用方法：按下 Ctrl + Shift + L 或点击右下角的代码图标即可打开编辑器。</p></div>",
@@ -99,7 +108,7 @@
     },
     {
       "id": "app_002",
-      "icon": "https://i.imgur.com/JpZ9ljP.png",
+      "icon": "img/goodnote.png",
       "name": "GoodNote 笔记助手",
       "short_description": "在任何网页添加笔记功能",
       "long_description": "<div class='app-desc-content'><p>一个简单易用的网页笔记工具，让您随时记录重要内容。</p><p>主要特性：</p><ul><li>✨ 自动分类：每个网站专属笔记空间</li><li>🔒 安全可靠：笔记仅存本地</li><li>💡 便捷操作：点击右上角按钮</li><li>📌 即写即存：自动保存内容</li><li>🎈 快捷键：Ctrl + Shift + M 快速呼出</li></ul><p>支持链接自动转换，界面简洁直观。</p></div>",
@@ -175,17 +184,6 @@
       "short_description": "一键启动Apex并优化游戏体验",
       "long_description": "<div class='app-desc-content'><p>一个专为Apex玩家设计的启动工具，帮助优化游戏体验。</p><p>主要功能：</p><ul><li>🎮 屏蔽Windows键，避免游戏中误触</li><li>⌨️ 自动切换英语输入法</li><li>🚀 一键启动加速器</li><li>🔄 自动关闭其他AHK脚本</li><li>🖥️ 支持高DPI显示</li></ul><p>使用方法：运行程序后，自动完成所有优化设置，让你专注游戏体验。</p></div>",
       "download_link": "https://github.com/cornradio/apex_runner",
-      "tags": [
-        "Windows"
-      ]
-    },
-    {
-      "id": "app_009",
-      "icon": "https://i.imgur.com/6g133Ju.png",
-      "name": "Pause My game -暂停游戏",
-      "short_description": "轻松暂停任何游戏进程，释放系统资源",
-      "long_description": "<div class='app-desc-content'><p>一个简单的游戏进程管理工具，让你随时暂停游戏释放CPU资源。</p><p>主要功能：</p><ul><li>⏸️ 一键暂停任何游戏进程</li><li>▶️ 随时恢复游戏运行</li><li>💻 释放CPU资源</li><li>🎯 支持通过进程名快速定位</li><li>📊 实时显示进程状态</li></ul><p>使用方法：选择要暂停的游戏进程，点击暂停按钮即可，需要时再点击恢复继续游戏。</p></div>",
-      "download_link": "https://github.com/cornradio/pausemygame",
       "tags": [
         "Windows"
       ]

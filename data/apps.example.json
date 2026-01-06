@@ -7,7 +7,11 @@
       "short_description": "连接亿万用户的即时通讯工具",
       "long_description": "<div class='app-desc-content'><p>微信是一款提供即时通讯服务的免费应用程序，支持通过网络发送语音短信、视频、图片和文字，可以使用朋友圈、视频号等功能。</p><img src='https://placehold.co/600x300/007AFF/ffffff.png' alt='微信界面预览' class='desc-img'><p>主要功能：</p><ul><li>多人聊天</li><li>朋友圈</li><li>视频号</li></ul></div>",
       "download_link": "https://weixin.qq.com/",
-      "tags": ["社交", "通讯", "热门"]
+      "tags": [
+        "社交",
+        "通讯",
+        "热门"
+      ]
     },
     {
       "id": "app_002",
@@ -16,7 +20,11 @@
       "short_description": "智能生活，一支付全搞定",
       "long_description": "支付宝是一款集支付、生活服务、政务服务、理财、保险等功能于一体的超级生活APP，为用户提供安全、便捷的支付和生活服务。",
       "download_link": "https://www.alipay.com/",
-      "tags": ["支付", "金融", "生活"]
+      "tags": [
+        "支付",
+        "金融",
+        "生活"
+      ]
     },
     {
       "id": "app_003",
@@ -25,7 +33,11 @@
       "short_description": "年轻人的视频社区",
       "long_description": "哔哩哔哩是国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到许多欢乐。",
       "download_link": "https://www.bilibili.com/",
-      "tags": ["视频", "娱乐", "二次元"]
+      "tags": [
+        "视频",
+        "娱乐",
+        "二次元"
+      ]
     },
     {
       "id": "app_004",
@@ -34,7 +46,11 @@
       "short_description": "淘我喜欢，爱逛淘宝",
       "long_description": "淘宝是阿里巴巴集团旗下网上购物平台，提供海量商品、丰富的选择以及便捷的购物体验。享受淘宝特色的娱乐购物体验。",
       "download_link": "https://www.taobao.com/",
-      "tags": ["购物", "电商", "生活"]
+      "tags": [
+        "购物",
+        "电商",
+        "生活"
+      ]
     },
     {
       "id": "app_005",
@@ -43,7 +59,11 @@
       "short_description": "记录美好生活",
       "long_description": "抖音是一个帮助用户表达自我，记录美好生活的短视频平台。平台汇聚各类创意短视频，帮助用户轻松发现有趣的人和内容。",
       "download_link": "https://www.douyin.com/",
-      "tags": ["短视频", "社交", "娱乐"]
+      "tags": [
+        "短视频",
+        "社交",
+        "娱乐"
+      ]
     },
     {
       "id": "app_006",
@@ -52,7 +72,11 @@
       "short_description": "吃喝玩乐全都有",
       "long_description": "美团是一个生活服务电子商务平台，提供团购、外卖、酒店预订、电影票等多种生活服务预订和购买功能。",
       "download_link": "https://www.meituan.com/",
-      "tags": ["生活", "外卖", "团购"]
+      "tags": [
+        "生活",
+        "外卖",
+        "团购"
+      ]
     }
   ]
-} 
+}
