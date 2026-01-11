@@ -49,6 +49,18 @@
       ]
     },
     {
+      "id": "app_020",
+      "icon": "https://github.com/cornradio/ahkshortcut/raw/main/icon.png",
+      "name": "快捷键管理器",
+      "short_description": "轻松管理和设置Windows快捷键",
+      "long_description": "<div class='app-desc-content'><p>一个简单易用的快捷键注册和管理工具，基于AutoHotkey开发。</p><p>主要功能：</p><ul><li>🚀 支持多种操作类型：打开网页、运行程序、打开文件夹、发送文本</li><li>💡 简单的图形界面，无需编写代码</li><li>🔧 支持ALT键组合</li><li>💾 自动保存配置</li><li>🔄 支持手动重载配置文件</li></ul><p>使用方法：通过图形界面轻松设置和管理各种快捷键操作。</p></div>",
+      "download_link": "https://github.com/cornradio/ahkshortcut",
+      "tags": [
+        "AHK",
+        "Windows"
+      ]
+    },
+    {
       "id": "app_011",
       "icon": "https://i.imgur.com/zN92BkD.png",
       "name": "WebClip",
@@ -157,18 +169,6 @@
       "short_description": "简单易用的Windows定时关机工具",
       "long_description": "<div class='app-desc-content'><p>一个便捷的Windows自动关机工具，支持定时关机、倒计时提醒和配置保存功能。</p><p>主要功能：</p><ul><li>📅 支持设置定时关机时间</li><li>🔄 自动保存配置，下次启动自动恢复</li><li>🔔 关机前声音提醒</li><li>💻 系统托盘图标操作</li><li>⏰ 实时显示剩余时间</li><li>❌ 随时可以取消关机计划</li></ul><p>使用方法：在系统托盘找到关机图标，右键点击可以设置关机时间、查看剩余时间或取消关机计划。</p></div>",
       "download_link": "https://github.com/cornradio/autoshutdown-ahk",
-      "tags": [
-        "AHK",
-        "Windows"
-      ]
-    },
-    {
-      "id": "app_005",
-      "icon": "https://i.imgur.com/wXHZpFH.png",
-      "name": "快捷键管理器",
-      "short_description": "轻松管理和设置Windows快捷键",
-      "long_description": "<div class='app-desc-content'><p>一个简单易用的快捷键注册和管理工具，基于AutoHotkey开发。</p><p>主要功能：</p><ul><li>🚀 支持多种操作类型：打开网页、运行程序、打开文件夹、发送文本</li><li>💡 简单的图形界面，无需编写代码</li><li>🔧 支持ALT键组合</li><li>💾 自动保存配置</li><li>🔄 支持手动重载配置文件</li></ul><p>使用方法：通过图形界面轻松设置和管理各种快捷键操作。</p></div>",
-      "download_link": "https://github.com/cornradio/ahkshortcut",
       "tags": [
         "AHK",
         "Windows"
