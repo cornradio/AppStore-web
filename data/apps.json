@@ -1,6 +1,30 @@
 {
   "apps": [
     {
+      "id": "app_025",
+      "icon": "img/oil-assist.png",
+      "name": "Oil-Assist",
+      "short_description": "油耗记录与维保提醒助手",
+      "long_description": "<div class='app-desc-content'><p>油耗助手是一款用于记录油耗、其他花费以及按照公里数提醒维保的工具。支持 Node 源码部署和 Docker 部署。</p><p>主要功能：</p><ul><li>⛽ <strong>记录加油信息：</strong>能够记录每次加油的升数、价格和里程数。</li><li>🛠️ <strong>车辆维保提醒：</strong>根据车辆的里程数自动提醒进行定期的车辆保养。</li><li>📊 <strong>油耗与费用统计：</strong>提供详细的统计图表，包括油耗趋势图、加油费用图和油价趋势图。</li></ul><p>项目地址：<a href='https://github.com/cornradio/oil-assist' target='_blank'>GitHub</a></p></div>",
+      "download_link": "https://oil-assist.cornradio.org/",
+      "tags": [
+        "Vehicle",
+        "Web"
+      ]
+    },
+    {
+      "id": "app_024",
+      "icon": "img/gemini.jpg",
+      "name": "Gemi-AHK",
+      "short_description": "AI 驱动的 AHK 脚本管理与循环工具",
+      "long_description": "<div class='app-desc-content'><p>这是一个专为“AI 时代”打造的 AHK 脚本管理与循环工具，旨在简化复杂的脚本操作，解放用户的时间与精力。</p><p>核心理念：</p><ul><li>🎤 <strong>语言驱动：</strong>通过语音或文字描述，AI 可以帮助你生成所需的 AHK 代码。</li><li>🔄 <strong>自动化管理：</strong>工具可以自动管理代码的循环执行、次数控制以及启动/暂停等复杂操作。</li><li>⚙️ <strong>简化工作流：</strong>无需手动修改脚本，只需将 AI 生成的代码“扔进来”，其余的交给 Gemi-AHK。</li></ul><p>项目地址：<a href='https://github.com/cornradio/gemi-ahk' target='_blank'>GitHub</a></p></div>",
+      "download_link": "https://github.com/cornradio/gemi-ahk",
+      "tags": [
+        "Windows",
+        "AHK"
+      ]
+    },
+    {
       "id": "app_023",
       "icon": "img/web-printer.png",
       "name": "Web-Printer",
@@ -27,10 +51,10 @@
     {
       "id": "app_009",
       "icon": "img/pmg.png",
-      "name": "Pause My game -暂停游戏",
-      "short_description": "轻松暂停任何游戏进程，释放系统资源",
+      "name": "Pause My game",
+      "short_description": "轻松暂停任何游戏/进程，释放系统资源",
       "long_description": "<div class='app-desc-content'><p>一个简单的游戏进程管理工具，让你随时暂停游戏释放CPU资源。</p><p>主要功能：</p><ul><li>⏸️ 一键暂停任何游戏进程</li><li>▶️ 随时恢复游戏运行</li><li>💻 释放CPU资源</li><li>🎯 支持通过进程名快速定位</li><li>📊 实时显示进程状态</li></ul><p>使用方法：选择要暂停的游戏进程，点击暂停按钮即可，需要时再点击恢复继续游戏。</p></div>",
-      "download_link": "https://github.com/cornradio/pausemygame",
+      "download_link": "https://github.com/cornradio/pausemygameW",
       "tags": [
         "Windows"
       ]
