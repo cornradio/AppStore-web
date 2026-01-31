@@ -541,7 +541,8 @@ body {
     cursor: pointer;
 }
 
-/* 主题切换按钮样式 */
+/* 编辑器链接与主题切换按钮样式 */
+.editor-link,
 .theme-toggle {
     width: 40px;
     height: 40px;
@@ -554,8 +555,11 @@ body {
     align-items: center;
     justify-content: center;
     transition: transform 0.2s;
+    text-decoration: none;
+    color: var(--text-color);
 }
 
+.editor-link:hover,
 .theme-toggle:hover {
     transform: scale(1.1);
 }
@@ -661,6 +665,7 @@ body {
     transform: scale(1.1);
 }
 
+.editor-link svg,
 .settings-button svg {
     width: 24px;
     height: 24px;

@@ -1,6 +1,32 @@
 {
   "apps": [
     {
+      "id": "app_airmouse",
+      "icon": "img/airmouse.png",
+      "name": "AirMouse",
+      "short_description": "将手机变成电脑的无线触控板、键盘和语音输入工具",
+      "long_description": "<div class='app-desc-content'><p><h3>一款基于python和浏览器的远程触控板/键盘/语音输入工具</h3> <p><ul><li><strong>触控板模式</strong> - 单指移动/点击，双指滚动/右键，三指拖拽/中键</li><li><strong>陀螺仪飞鼠</strong> - 使用手机陀螺仪控制鼠标，体感操作</li><li><strong>虚拟键盘</strong> - 完整键盘布局，支持所有功能键和快捷键</li><li><strong>语音输入</strong> - 语音转文字，实时上屏或输入框模式</li><li><strong>宏按键面板</strong> - 自定义快捷操作，一键执行复杂命令</li></ul></p></div>",
+      "download_link": "https://github.com/cornradio/airmouse",
+      "tags": [
+        "Python",
+        "Windows",
+        "macOS",
+        "语音输入"
+      ]
+    },
+    {
+      "id": "app_026",
+      "icon": "img/feed-enhancer.png",
+      "name": "信息流增强",
+      "short_description": "键盘快捷键操作、大屏浏览、高效刷图的浏览器脚本",
+      "long_description": "<div class='app-desc-content'><p>适配 <a href='https://jandan.net/' target='_blank'>jandan</a>、<a href='https://x.com/' target='_blank'>x</a>、<a href='https://www.xiaohongshu.com/' target='_blank'>小红书</a></p><p>---</p><ul><li><a href='https://greasyfork.org/zh-CN/scripts/564520' target='_blank'>煎蛋无聊图增强</a></li><li><a href='https://greasyfork.org/zh-CN/scripts/564566' target='_blank'>X (Twitter) 信息流增强</a></li><li><a href='https://greasyfork.org/zh-CN/scripts/564583' target='_blank'>小红书增强</a></li></ul><p>---</p><p>⌨️ 通用快捷键</p><p>快捷键功能J K / ↓  ↑内容滚动</p><ul><li>D 切换大屏模式</li><li>Space 进入详情页</li><li>S 下载当前图片</li><li>Z 点赞</li></ul></div>",
+      "download_link": "https://greasyfork.org/zh-CN/users/734613-cornradio",
+      "tags": [
+        "油猴脚本",
+        "Web"
+      ]
+    },
+    {
       "id": "app_025",
       "icon": "img/oil-assist.png",
       "name": "Oil-Assist",
@@ -161,7 +187,8 @@
       "long_description": "<div class='app-desc-content'><p>一个强大的浏览器笔记扩展，让您在任何网页上都能使用类似VSCode的编辑器进行笔记。</p><p>主要特性：</p><ul><li>💻 VSCode风格的编辑器界面</li><li>🎨 支持多种编程语言的语法高亮</li><li>💾 自动保存笔记内容</li><li>🌈 优雅的界面动画和模糊背景</li></ul><p>使用方法：按下 Ctrl + Shift + L 或点击右下角的代码图标即可打开编辑器。</p></div>",
       "download_link": "https://goodnote-vscode.cornradio.org/",
       "tags": [
-        "油猴脚本"
+        "油猴脚本",
+        "Web"
       ]
     },
     {
@@ -172,7 +199,8 @@
       "long_description": "<div class='app-desc-content'><p>一个简单易用的网页笔记工具，让您随时记录重要内容。</p><p>主要特性：</p><ul><li>✨ 自动分类：每个网站专属笔记空间</li><li>🔒 安全可靠：笔记仅存本地</li><li>💡 便捷操作：点击右上角按钮</li><li>📌 即写即存：自动保存内容</li><li>🎈 快捷键：Ctrl + Shift + M 快速呼出</li></ul><p>支持链接自动转换，界面简洁直观。</p></div>",
       "download_link": "https://github.com/cornradio/GoodNote-js",
       "tags": [
-        "油猴脚本"
+        "油猴脚本",
+        "Web"
       ]
     },
     {
@@ -183,7 +211,8 @@
       "long_description": "<div class='app-desc-content'><p>一个帮助在煎蛋网快速查找用户发言的油猴脚本。</p><p>主要功能：</p><ul><li>在页面右上角添加搜索框</li><li>支持按用户名搜索评论</li><li>自动翻页查找</li><li>高亮显示匹配结果</li></ul><p>使用方法：安装后在煎蛋网页右上角输入用户名即可搜索。</p></div>",
       "download_link": "https://github.com/cornradio/jandanusersearch",
       "tags": [
-        "油猴脚本"
+        "油猴脚本",
+        "Web"
       ]
     },
     {

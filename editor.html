@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Store 描述编辑器</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="icon" href="https://www.emojiall.com/en/header-svg/%F0%9F%90%9D.svg">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-layout">
+            <div class="brand">
+                <h1>📝 Description Editor</h1>
+            </div>
+            <div class="header-controls">
+                <a href="index.html" class="back-link">返回商店</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container editor-main">
+        <div class="editor-grid">
+            <!-- 左侧：简单编辑 (Markdown) -->
+            <div class="editor-column">
+                <div class="column-header">
+                    <h3>简单编辑 (Markdown)</h3>
+                    <button id="convertToHtml" class="action-btn">生成 HTML ➔</button>
+                </div>
+                <textarea id="markdownInput" placeholder="在此输入简单的描述内容...
+例如：
+### 功能特点
+- 实时同步
+- 现代界面
+- 夸张的描述"></textarea>
+            </div>
+
+            <!-- 右侧：JSON 字符串 (Escaped HTML) -->
+            <div class="editor-column">
+                <div class="column-header">
+                    <button id="convertFromHtml" class="action-btn">↞ 反向转换</button>
+                    <h3>JSON 字符串 (long_description)</h3>
+                </div>
+                <textarea id="htmlOutput" placeholder="生成的 HTML 字符串将显示在这里，可直接填入 apps.json..."></textarea>
+                <div class="column-footer">
+                    <button id="copyBtn" class="secondary-btn">复制到剪贴板</button>
+                </div>
+            </div>
+
+            <!-- 预览区 -->
+            <div class="editor-column preview-column">
+                <div class="column-header">
+                    <h3>预览效果</h3>
+                </div>
+                <div id="previewArea" class="preview-container">
+                    <!-- 预览内容展示在这里 -->
+                    <p style="color: #888; text-align: center; margin-top: 50px;">实时预览区域</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/converter.js"></script>
+    <script src="js/editor.js"></script>
+</body>
+
+</html>

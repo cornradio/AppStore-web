@@ -1,0 +1,169 @@
+.editor-main {
+    margin-top: 2rem;
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+}
+
+.editor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    flex: 1;
+    min-height: 0;
+}
+
+.editor-column {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--card-shadow);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+:root[data-theme="dark"] .editor-column {
+    background: var(--card-background);
+    border-color: var(--border-color);
+}
+
+.column-header {
+    padding: 1rem;
+    background: rgba(128, 128, 128, 0.05);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+:root[data-theme="dark"] .column-header {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.column-header h3 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-color, #333);
+}
+
+textarea {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    resize: none;
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    outline: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.preview-container {
+    padding: 1.5rem;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.action-btn {
+    background: var(--primary-color, #007aff);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.action-btn:hover {
+    background: var(--primary-hover, #0063d1);
+    transform: translateY(-1px);
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 1px solid var(--primary-color, #007aff);
+    color: var(--primary-color, #007aff);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.column-footer {
+    padding: 0.8rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--primary-color, #007aff);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* 适配现有 apps-grid 内部的样式 */
+.app-desc-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.app-desc-content h3 {
+    margin-top: 1.2rem;
+    margin-bottom: 0.6rem;
+    color: var(--primary-color);
+}
+
+.app-desc-content ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.app-desc-content li {
+    margin-bottom: 0.4rem;
+}
+
+.app-desc-content a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    opacity: 0.9;
+}
+
+.app-desc-content a:hover {
+    opacity: 1;
+}
+
+.app-desc-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.app-desc-content th,
+.app-desc-content td {
+    border: 1px solid #eee;
+    padding: 8px;
+    text-align: left;
+}
+
+:root[data-theme="dark"] .app-desc-content th,
+:root[data-theme="dark"] .app-desc-content td {
+    border-color: var(--border-color);
+}
+
+@media (max-width: 1024px) {
+    .editor-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    textarea {
+        height: 300px;
+    }
+}
