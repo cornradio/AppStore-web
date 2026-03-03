@@ -1,6 +1,18 @@
 {
   "apps": [
     {
+  "id": "app_wallpaper_lab",
+  "icon": "img/bzsys.png",
+  "name": "壁纸实验室 Pro Max",
+  "short_description": "轻量级在线壁纸合成工具，快速制作简约卡片风格壁纸",
+  "long_description": "<div class='app-desc-content'><h3>卡片美学在线壁纸制作工具</h3><ul><li><strong>多端适配</strong> - 支持电脑全屏及手机(9:19.5)比例模拟</li><li><strong>卡片自定义</strong> - 自由调整主体卡片的垂直位置、缩放比例、圆角幅度及阴影强度</li><li><strong>沉浸式预览</strong> - 一键进入沉浸模式进行无干扰截图，支持快捷键缩放与模糊级别调节</li><li><strong>组合管理</strong> - 拥有本地历史库功能，支持保存多个设计组合以便随时回溯</li><li><strong>便捷操作</strong> - 支持 CTRL+V 直接粘贴图片或拖入图片，流程极度精简</li></ul></div>",
+  "download_link": "https://wallpaper-tool.cornradio.org/",
+  "tags": [
+    "chrome",
+    "壁纸"
+  ]
+},
+    {
       "id": "app_airmouse",
       "icon": "img/airmouse.png",
       "name": "AirMouse",
@@ -32,7 +44,7 @@
       "name": "Oil-Assist",
       "short_description": "油耗记录与维保提醒助手",
       "long_description": "<div class='app-desc-content'><p>油耗助手是一款用于记录油耗、其他花费以及按照公里数提醒维保的工具。支持 Node 源码部署和 Docker 部署。</p><p>主要功能：</p><ul><li>⛽ <strong>记录加油信息：</strong>能够记录每次加油的升数、价格和里程数。</li><li>🛠️ <strong>车辆维保提醒：</strong>根据车辆的里程数自动提醒进行定期的车辆保养。</li><li>📊 <strong>油耗与费用统计：</strong>提供详细的统计图表，包括油耗趋势图、加油费用图和油价趋势图。</li></ul><p>项目地址：<a href='https://github.com/cornradio/oil-assist' target='_blank'>GitHub</a></p></div>",
-      "download_link": "https://oil-assist.cornradio.org/",
+      "download_link": "https://github.com/cornradio/oil-assist",
       "tags": [
         "Vehicle",
         "Web"
