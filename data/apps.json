@@ -1,25 +1,61 @@
 {
   "apps": [
     {
-  "id": "app_wallpaper_lab",
-  "icon": "img/bzsys.png",
-  "name": "壁纸实验室 Pro Max",
-  "short_description": "轻量级在线壁纸合成工具，快速制作简约卡片风格壁纸",
-  "long_description": "<div class='app-desc-content'><h3>卡片美学在线壁纸制作工具</h3><ul><li><strong>多端适配</strong> - 支持电脑全屏及手机(9:19.5)比例模拟</li><li><strong>卡片自定义</strong> - 自由调整主体卡片的垂直位置、缩放比例、圆角幅度及阴影强度</li><li><strong>沉浸式预览</strong> - 一键进入沉浸模式进行无干扰截图，支持快捷键缩放与模糊级别调节</li><li><strong>组合管理</strong> - 拥有本地历史库功能，支持保存多个设计组合以便随时回溯</li><li><strong>便捷操作</strong> - 支持 CTRL+V 直接粘贴图片或拖入图片，流程极度精简</li></ul></div>",
-  "download_link": "https://wallpaper-tool.cornradio.org/",
-  "tags": [
-    "chrome",
-    "壁纸"
-  ]
-},
+      "id": "app_020",
+      "icon": "img/traychrome.png",
+      "name": "Tray chrome",
+      "short_description": "可缩小到任务栏的快捷浏览器",
+      "long_description": "<div class='app-desc-content'><p>tray-chrome 是一款类似 <strong> MenubarX</strong> 、的轻量级浏览器应用，支持将任意网页以独立窗口的形式固定在系统任务栏，随时一键访问，无需切换主浏览器窗口。</p><p>主要功能：</p><ul><li>🧊 让网页像原生应用一样驻留在任务栏/菜单栏，提升多任务效率。</li><li>🌐 <strong>多标签支持：</strong> 可同时固定多个常用网页，快速切换。</li><li>🔒 <strong>安全隔离：</strong> 独立进程运行，与您的主要浏览器网页安全互不干扰。</li><li>⚡ <strong>极致轻量：</strong> 占用资源低，适合长时间后台运行。</li></ul><p>无论是常用工具、社交网站还是工作后台，tray-chrome 都能让你一键直达。</p> <img src='img/traychrome-1.png' alt='图片'> </div>",
+      "download_link": "https://github.com/cornradio/tray-chrome",
+      "tags": [
+        "超人气",
+        "Windows"
+      ]
+    },
+    {
+      "id": "app_jarvis",
+      "icon": "img/jarvis.jpg",
+      "name": "Jarvis",
+      "short_description": "使用siri语音控制PC执行任意操作",
+      "long_description": "<div class='app-desc-content'><p>🛡️ JARVIS v7.6 | Windows API 远程指挥官</p><p>项目定义：一个以 API 为核心的 Windows 远程控制引擎，旨在将你的 PC 变为可通过云端或语音操纵的“智能中枢”。</p><p>核心用途</p><p>iOS/Siri 联动：通过快捷指令实现“嘿 Siri，锁定电脑”等零接触语音控制。</p><p>远程自动化：利用标准 HTTP POST 请求，从任何设备远程触发系统级操作。</p><p>静默管理：支持开机自启与后台运行，通过系统托盘实现无感交互。</p><p>核心功能</p><p>指令执行：一键实现锁屏、静音、运行脚本或自定义 Python 动作。</p><p>真人播报：集成微软 Edge-TTS，提供电影级的高质量语音回馈。</p><p>网页仪表盘：可视化监控状态、测试功能及热重载配置文件。</p><p>异步响应：毫秒级指令响应，操作与语音播报互不阻塞。</p><p>Jarvis v7.6 - Designed for absolute control.</p><p><img src='img/PixPin_2026-03-30_10-11-33.png' alt='图片'></p></div>",
+      "download_link": "https://github.com/cornradio/jarvis/",
+      "tags": [
+        "web",
+        "Windows"
+      ]
+    },
+    {
+      "id": "app_tlp",
+      "icon": "img/tlp.png",
+      "name": "塔罗牌",
+      "short_description": "在线抽取塔罗牌,并提供AI分析跳转",
+      "long_description": " <div class='app-desc-content'><p>快速抽取3张牌。</p><p>塔罗牌占卜。</p><p><img src='img/image_o5erdn.png' alt='图片'></p></div>",
+      "download_link": "https://tlp.cornradio.org/",
+      "tags": [
+        "web"
+      ]
+    },
+    {
+      "id": "app_wallpaper_lab",
+      "icon": "img/wallpaper.jpg",
+      "name": "壁纸实验室",
+      "short_description": "快速制作简约卡片风格壁纸",
+      "long_description": "<div class='app-desc-content'><h3>卡片美学在线壁纸制作工具</h3><ul><li><strong>多端适配</strong> - 支持电脑全屏及手机(9:19.5)比例模拟</li><li><strong>卡片自定义</strong> - 自由调整主体卡片的垂直位置、缩放比例、圆角幅度及阴影强度</li><li><strong>沉浸式预览</strong> - 一键进入沉浸模式进行无干扰截图，支持快捷键缩放与模糊级别调节</li><li><strong>组合管理</strong> - 拥有本地历史库功能，支持保存多个设计组合以便随时回溯</li><li><strong>便捷操作</strong> - 支持 CTRL+V 直接粘贴图片或拖入图片，流程极度精简</li></ul><p><img src='img/image_dem4db.png' alt='图片'></p></div>",
+      "download_link": "https://wallpaper-tool.cornradio.org/",
+      "tags": [
+        "web",
+        "壁纸"
+      ]
+    },
     {
       "id": "app_airmouse",
       "icon": "img/airmouse.png",
       "name": "AirMouse",
       "short_description": "将手机变成电脑的无线触控板、键盘和语音输入工具",
-      "long_description": "<div class='app-desc-content'><p><h3>一款基于python和浏览器的远程触控板/键盘/语音输入工具</h3> <p><ul><li><strong>触控板模式</strong> - 单指移动/点击，双指滚动/右键，三指拖拽/中键</li><li><strong>陀螺仪飞鼠</strong> - 使用手机陀螺仪控制鼠标，体感操作</li><li><strong>虚拟键盘</strong> - 完整键盘布局，支持所有功能键和快捷键</li><li><strong>语音输入</strong> - 语音转文字，实时上屏或输入框模式</li><li><strong>宏按键面板</strong> - 自定义快捷操作，一键执行复杂命令</li></ul></p></div>",
+      "long_description": "<div class='app-desc-content'><p><h3>一款基于python和浏览器的远程触控板/键盘/语音输入工具</h3> <p><ul><li><strong>触控板模式</strong> - 单指移动/点击，双指滚动/右键，三指拖拽/中键</li><li><strong>陀螺仪飞鼠</strong> - 使用手机陀螺仪控制鼠标，体感操作</li><li><strong>虚拟键盘</strong> - 完整键盘布局，支持所有功能键和快捷键</li><li><strong>语音输入</strong> - 语音转文字，实时上屏或输入框模式</li><li><strong>宏按键面板</strong> - 自定义快捷操作，一键执行复杂命令</li></ul></p><p><img src='img/image_mt079d.png' alt='图片'></p></div>",
       "download_link": "https://github.com/cornradio/airmouse",
       "tags": [
+        "超人气",
         "Python",
         "Windows",
         "macOS",
@@ -35,7 +71,7 @@
       "download_link": "https://greasyfork.org/zh-CN/users/734613-cornradio",
       "tags": [
         "油猴脚本",
-        "Web"
+        "web"
       ]
     },
     {
@@ -43,11 +79,11 @@
       "icon": "img/oil-assist.png",
       "name": "Oil-Assist",
       "short_description": "油耗记录与维保提醒助手",
-      "long_description": "<div class='app-desc-content'><p>油耗助手是一款用于记录油耗、其他花费以及按照公里数提醒维保的工具。支持 Node 源码部署和 Docker 部署。</p><p>主要功能：</p><ul><li>⛽ <strong>记录加油信息：</strong>能够记录每次加油的升数、价格和里程数。</li><li>🛠️ <strong>车辆维保提醒：</strong>根据车辆的里程数自动提醒进行定期的车辆保养。</li><li>📊 <strong>油耗与费用统计：</strong>提供详细的统计图表，包括油耗趋势图、加油费用图和油价趋势图。</li></ul><p>项目地址：<a href='https://github.com/cornradio/oil-assist' target='_blank'>GitHub</a></p></div>",
+      "long_description": "<div class='app-desc-content'><p>油耗助手是一款用于记录油耗、其他花费以及按照公里数提醒维保的工具。支持 Node 源码部署和 Docker 部署。</p><p>主要功能：</p><ul><li>⛽ <strong>记录加油信息：</strong>能够记录每次加油的升数、价格和里程数。</li><li>🛠️ <strong>车辆维保提醒：</strong>根据车辆的里程数自动提醒进行定期的车辆保养。</li><li>📊 <strong>油耗与费用统计：</strong>提供详细的统计图表，包括油耗趋势图、加油费用图和油价趋势图。</li></ul><p>项目地址：<a href='https://github.com/cornradio/oil-assist' target='_blank'>GitHub</a></p><p><img src='img/image_gqn9kb.png' alt='图片'></p></div>",
       "download_link": "https://github.com/cornradio/oil-assist",
       "tags": [
         "Vehicle",
-        "Web"
+        "web"
       ]
     },
     {
@@ -55,7 +91,7 @@
       "icon": "img/gemini.jpg",
       "name": "Gemi-AHK",
       "short_description": "AI 驱动的 AHK 脚本管理与循环工具",
-      "long_description": "<div class='app-desc-content'><p>这是一个专为“AI 时代”打造的 AHK 脚本管理与循环工具，旨在简化复杂的脚本操作，解放用户的时间与精力。</p><p>核心理念：</p><ul><li>🎤 <strong>语言驱动：</strong>通过语音或文字描述，AI 可以帮助你生成所需的 AHK 代码。</li><li>🔄 <strong>自动化管理：</strong>工具可以自动管理代码的循环执行、次数控制以及启动/暂停等复杂操作。</li><li>⚙️ <strong>简化工作流：</strong>无需手动修改脚本，只需将 AI 生成的代码“扔进来”，其余的交给 Gemi-AHK。</li></ul><p>项目地址：<a href='https://github.com/cornradio/gemi-ahk' target='_blank'>GitHub</a></p></div>",
+      "long_description": "<div class='app-desc-content'><p>这是一个专为“AI 时代”打造的 AHK 脚本管理与循环工具，旨在简化复杂的脚本操作，解放用户的时间与精力。</p><p>核心理念：</p><ul><li>🎤 <strong>语言驱动：</strong>通过语音或文字描述，AI 可以帮助你生成所需的 AHK 代码。</li><li>🔄 <strong>自动化管理：</strong>工具可以自动管理代码的循环执行、次数控制以及启动/暂停等复杂操作。</li><li>⚙️ <strong>简化工作流：</strong>无需手动修改脚本，只需将 AI 生成的代码“扔进来”，其余的交给 Gemi-AHK。</li></ul><p>项目地址：<a href='https://github.com/cornradio/gemi-ahk' target='_blank'>GitHub</a></p><p><img src='img/image_utafor.png' alt='图片'></p></div>",
       "download_link": "https://github.com/cornradio/gemi-ahk",
       "tags": [
         "Windows",
@@ -65,12 +101,12 @@
     {
       "id": "app_023",
       "icon": "img/web-printer.png",
-      "name": "Web-Printer",
+      "name": "web-Printer",
       "short_description": "WYSIWYG 标签打印图片编辑器",
-      "long_description": "<div class='app-desc-content'><p>一个适合多种标签打印机使用的所见即所得网页图片编辑器，旨在解决官方网页端打印效果差的问题。</p><p>主要特性：</p><ul><li>🎯 <strong>算法优化：</strong>使用 Atkinson 抖动算法，显著提升黑白打印的细节和层次表现。</li><li>⌨️ <strong>便捷操作：</strong>支持拖拽/粘贴图片、键盘快捷调整文字大小等。</li><li>🚀 <strong>体验优先：</strong>针对实际使用体验优化，提供流畅的标签编辑流程。</li></ul><p>项目地址：<a href='https://github.com/cornradio/Web-printer' target='_blank'>GitHub</a></p></div>",
-      "download_link": "https://Web-printer.cornradio.org/",
+      "long_description": "<div class='app-desc-content'><p>一个适合多种标签打印机使用的所见即所得网页图片编辑器，旨在解决官方网页端打印效果差的问题。</p><p>主要特性：</p><ul><li>🎯 <strong>算法优化：</strong>使用 Atkinson 抖动算法，显著提升黑白打印的细节和层次表现。</li><li>⌨️ <strong>便捷操作：</strong>支持拖拽/粘贴图片、键盘快捷调整文字大小等。</li><li>🚀 <strong>体验优先：</strong>针对实际使用体验优化，提供流畅的标签编辑流程。</li></ul><p>项目地址：<a href='https://github.com/cornradio/web-printer' target='_blank'>GitHub</a></p><p><img src='img/image_e08v9p.png' alt='图片'></p></div>",
+      "download_link": "https://web-printer.cornradio.org/",
       "tags": [
-        "Web",
+        "web",
         "Photo"
       ]
     },
@@ -79,9 +115,10 @@
       "icon": "img/youlog.jpg",
       "name": "Youlog",
       "short_description": "ios 图片记录软件 -- 不存相册",
-      "long_description": "<div class='app-desc-content'><p>Youlog 是一款专为 iOS 用户打造的图片记录工具，帮助你管理那些不适合存入系统相册的照片。无论是饮食打卡、日常生活、健康追踪、体态变化还是脸型管理，Youlog 都能为你提供一个安全、隐私、便捷的图片存储空间。</p><p>主要功能：</p><ul><li>📷 独立存储：照片不会出现在系统相册，保护个人隐私</li><li>🗂 标签管理：支持自定义TAG，便于查找和整理图片</li><li>💾 智能压缩：内置图片压缩算法，节省存储空间</li><li>📅 时间轴浏览：按时间顺序回顾每一刻的变化</li></ul><p>适合需要专属图片记录空间的用户，轻松实现高效、私密的日常管理。</p></div> <p>现也支持安卓： <a href='https://youlog-andorid.cornradio.org/' target='_blank'>youlog-andorid</a></p>",
+      "long_description": "<div class='app-desc-content'><p>Youlog 是一款专为 iOS 用户打造的图片记录工具，帮助你管理那些不适合存入系统相册的照片。无论是饮食打卡、日常生活、健康追踪、体态变化还是脸型管理，Youlog 都能为你提供一个安全、隐私、便捷的图片存储空间。</p><p>主要功能：</p><ul><li>📷 独立存储：照片不会出现在系统相册，保护个人隐私</li><li>🗂 标签管理：支持自定义TAG，便于查找和整理图片</li><li>💾 智能压缩：内置图片压缩算法，节省存储空间</li><li>📅 时间轴浏览：按时间顺序回顾每一刻的变化</li></ul><p>适合需要专属图片记录空间的用户，轻松实现高效、私密的日常管理。</p></div> <p>现也支持安卓： <a href='https://youlog-andorid.cornradio.org/' target='_blank'>youlog-andorid</a></p> <p><img src='img/image_6jxomq.png' alt='图片'></p>",
       "download_link": "https://apps.apple.com/us/app/youlog/id6743986266",
       "tags": [
+        "超人气",
         "IOS",
         "Photo"
       ]
@@ -94,6 +131,7 @@
       "long_description": "<div class='app-desc-content'><p>一个简单的游戏进程管理工具，让你随时暂停游戏释放CPU资源。</p><p>主要功能：</p><ul><li>⏸️ 一键暂停任何游戏进程</li><li>▶️ 随时恢复游戏运行</li><li>💻 释放CPU资源</li><li>🎯 支持通过进程名快速定位</li><li>📊 实时显示进程状态</li></ul><p>使用方法：选择要暂停的游戏进程，点击暂停按钮即可，需要时再点击恢复继续游戏。</p></div>",
       "download_link": "https://github.com/cornradio/pausemygameW",
       "tags": [
+        "超人气",
         "Windows"
       ]
     },
@@ -113,29 +151,32 @@
     {
       "id": "app_020",
       "icon": "https://github.com/cornradio/ahkshortcut/raw/main/icon.png",
-      "name": "快捷键管理器",
-      "short_description": "轻松管理和设置Windows快捷键",
+      "name": "AHK shortcut",
+      "short_description": "使用快捷键，打开链接和程序、文件以及发送短语",
       "long_description": "<div class='app-desc-content'><p>一个简单易用的快捷键注册和管理工具，基于AutoHotkey开发。</p><p>主要功能：</p><ul><li>🚀 支持多种操作类型：打开网页、运行程序、打开文件夹、发送文本</li><li>💡 简单的图形界面，无需编写代码</li><li>🔧 支持ALT键组合</li><li>💾 自动保存配置</li><li>🔄 支持手动重载配置文件</li></ul><p>使用方法：通过图形界面轻松设置和管理各种快捷键操作。</p></div>",
       "download_link": "https://github.com/cornradio/ahkshortcut",
       "tags": [
+        "超人气",
         "AHK",
         "Windows"
       ]
     },
     {
       "id": "app_011",
-      "icon": "https://i.imgur.com/zN92BkD.png",
-      "name": "WebClip",
+      "icon": "img/webclip.png",
+      "name": "webClip",
       "short_description": "清爽的在线剪贴板，支持Docker部署",
       "long_description": "<div class='app-desc-content'><p>一个简洁的在线剪贴板项目，支持快速部署和文本分享。</p><p>主要功能：</p><ul><li>📝 支持文本存储和分享</li><li>🔄 自动保存历史记录</li><li>🎨 简洁美观的界面</li><li>🐳 支持Docker一键部署</li><li>📱 移动端友好</li><li>💾 支持本地部署</li></ul><p>部署方法：使用Docker命令一键部署，或者通过源码在本地运行。支持阿里云容器服务。</p></div>",
-      "download_link": "https://github.com/cornradio/Webclipboard",
+      "download_link": "https://github.com/cornradio/webclipboard",
       "tags": [
+        "超人气",
+        "web",
         "Docker"
       ]
     },
     {
       "id": "app_012",
-      "icon": "https://i.imgur.com/IYw1MUX.png",
+      "icon": "img/lanclip.png",
       "name": "LanClip",
       "short_description": "局域网文件分享工具，支持文本、图片和视频",
       "long_description": "<div class='app-desc-content'><p>一个功能强大的局域网文件分享工具，支持多种文件类型。</p> <img src='https://i.imgur.com/Sy1A7hT.png' alt='图片'> <p>主要功能：</p><ul><li>📄 支持文本分享</li><li>🖼️ 支持图片上传</li><li>🎥 支持视频分享</li><li>📂 支持文件传输</li><li>🚀 内网高速传输</li><li>💻 Windows托盘程序</li><li>🐳 Docker容器支持</li></ul><p>使用方法：Windows用户可以直接下载exe运行，服务器用户可以使用Docker部署。支持在任何能使用浏览器的设备上访问。</p></div>",
@@ -146,10 +187,10 @@
     },
     {
       "id": "app_019",
-      "icon": "https://i.imgur.com/CrRJ54t.png",
+      "icon": "img/gsm.png",
       "name": "GSM",
       "short_description": "基于ssh的游戏存档双端同步工具（PC - win掌机）",
-      "long_description": "<div class='app-desc-content'><p>基于 SSH 的游戏存档同步工具，专为 PC 与 Windows 掌机之间的存档管理而设计。</p><img src='https://github.com/user-attachments/assets/963b5bbc-2e78-4637-bdd0-332514f5d40d' /><p>主要功能：</p><ul><li>🔄 <strong>双端同步：</strong>支持从掌机 Pull 或向掌机 Push 游戏存档。</li><li>🎮 <strong>存档管理：</strong>一键管理多款游戏的存档状态。</li><li>🔒 <strong>安全高效：</strong>通过 SSH 协议确保数据传输的安全与稳定。</li></ul><p>注意：需要掌机端开启 SSHD 服务。</p></div>",
+      "long_description": "<div class='app-desc-content'><p>基于 SSH 的游戏存档同步工具，专为 PC 与 Windows 掌机之间的存档管理而设计。</p><img src='img/image_nvooyg.png' /><p>主要功能：</p><ul><li>🔄 <strong>双端同步：</strong>支持从掌机 Pull 或向掌机 Push 游戏存档。</li><li>🎮 <strong>存档管理：</strong>一键管理多款游戏的存档状态。</li><li>🔒 <strong>安全高效：</strong>通过 SSH 协议确保数据传输的安全与稳定。</li></ul><p>注意：需要掌机端开启 SSHD 服务。</p></div>",
       "download_link": "https://github.com/cornradio/game-save-manager",
       "tags": [
         "Game",
@@ -157,26 +198,14 @@
       ]
     },
     {
-      "id": "app_020",
-      "icon": "https://i.imgur.com/cRgZGsr.png",
-      "name": "Tray chrome",
-      "short_description": "可缩小到任务栏的快捷浏览器",
-      "long_description": "<div class='app-desc-content'><p>tray-chrome 是一款类似 <strong> MenubarX</strong> 、的轻量级浏览器应用，支持将任意网页以独立窗口的形式固定在系统任务栏，随时一键访问，无需切换主浏览器窗口。</p><p>主要功能：</p><ul><li>🧊 让网页像原生应用一样驻留在任务栏/菜单栏，提升多任务效率。</li><li>🌐 <strong>多标签支持：</strong> 可同时固定多个常用网页，快速切换。</li><li>🔒 <strong>安全隔离：</strong> 独立进程运行，与您的主要浏览器网页安全互不干扰。</li><li>⚡ <strong>极致轻量：</strong> 占用资源低，适合长时间后台运行。</li></ul><p>无论是常用工具、社交网站还是工作后台，tray-chrome 都能让你一键直达。</p></div>",
-      "download_link": "https://github.com/cornradio/tray-chrome",
-      "tags": [
-        "Windows",
-        "Web"
-      ]
-    },
-    {
       "id": "app_022",
       "icon": "img/qiazhi.png",
       "name": "掐指神通",
       "short_description": "小六壬占卜术",
-      "long_description": "<div class='app-desc-content'><p>基于小六壬占卜术的在线工具，通过农历日期和时辰为您提供即时占卜结果和深度解析。</p><p>主要功能：</p><ul><li>🔮 <strong>传统占卜：</strong>采用经典小六壬运算法则进行推算。</li><li>📅 <strong>自动计算：</strong>根据当前农历日期和时辰自动获取占卜结果。</li><li>📝 <strong>详细解析：</strong>提供清晰的占卜结论和对应的生活指引。</li></ul></div>",
+      "long_description": "<div class='app-desc-content'><p>基于小六壬占卜术的在线工具，通过农历日期和时辰为您提供即时占卜结果和深度解析。</p><p>主要功能：</p><ul><li>🔮 <strong>传统占卜：</strong>采用经典小六壬运算法则进行推算。</li><li>📅 <strong>自动计算：</strong>根据当前农历日期和时辰自动获取占卜结果。</li><li>📝 <strong>详细解析：</strong>提供清晰的占卜结论和对应的生活指引。</li></ul> <img src='img/image_s44igr.png' alt='图片'></div>",
       "download_link": "http://8.153.164.13/qz/",
       "tags": [
-        "Web"
+        "web"
       ]
     },
     {
@@ -184,10 +213,10 @@
       "icon": "https://shot.cornradio.org/icon.png",
       "name": "shot-a-lot",
       "short_description": "每天同位置拍照，记录变化，做成gif",
-      "long_description": "<div class='app-desc-content'><p>一个基于 Web 的拍照工具，帮助你每天在同一位置拍照，记录生活的细微变化。</p><p>主要功能：</p><ul><li>📸 <strong>辅助拍摄：</strong>帮助你在每天同一位置、同一角度进行记录。</li><li>🎞️ <strong>GIF 生成：</strong>将历史照片一键合成动画，直观展现变化过程。</li><li>🌐 <strong>即时访问：</strong>基于浏览器的轻量化设计，无需安装，随开随拍。</li></ul><p>在线体验：<a href=\"https://shot.cornradio.org/\" target=\"_blank\">点我</a></p></div>",
+      "long_description": "<div class='app-desc-content'><p>一个基于 web 的拍照工具，帮助你每天在同一位置拍照，记录生活的细微变化。</p><p>主要功能：</p><ul><li>📸 <strong>辅助拍摄：</strong>帮助你在每天同一位置、同一角度进行记录。</li><li>🎞️ <strong>GIF 生成：</strong>将历史照片一键合成动画，直观展现变化过程。</li><li>🌐 <strong>即时访问：</strong>基于浏览器的轻量化设计，无需安装，随开随拍。</li></ul><p>在线体验：<a href=\"https://shot.cornradio.org/\" target=\"_blank\">点我</a></p></div>",
       "download_link": "https://github.com/cornradio/shot-a-lot",
       "tags": [
-        "Web",
+        "web",
         "camera"
       ]
     },
@@ -200,7 +229,7 @@
       "download_link": "https://goodnote-vscode.cornradio.org/",
       "tags": [
         "油猴脚本",
-        "Web"
+        "web"
       ]
     },
     {
@@ -212,24 +241,24 @@
       "download_link": "https://github.com/cornradio/GoodNote-js",
       "tags": [
         "油猴脚本",
-        "Web"
+        "web"
       ]
     },
     {
       "id": "app_003",
-      "icon": "https://i.imgur.com/JJ0wqUT.png",
+      "icon": "img/jandan.png",
       "name": "煎蛋用户搜索",
       "short_description": "快速查找煎蛋网用户发言的工具",
       "long_description": "<div class='app-desc-content'><p>一个帮助在煎蛋网快速查找用户发言的油猴脚本。</p><p>主要功能：</p><ul><li>在页面右上角添加搜索框</li><li>支持按用户名搜索评论</li><li>自动翻页查找</li><li>高亮显示匹配结果</li></ul><p>使用方法：安装后在煎蛋网页右上角输入用户名即可搜索。</p></div>",
       "download_link": "https://github.com/cornradio/jandanusersearch",
       "tags": [
         "油猴脚本",
-        "Web"
+        "web"
       ]
     },
     {
       "id": "app_004",
-      "icon": "https://i.imgur.com/amkh2rw.png",
+      "icon": "img/autoshutdown.png",
       "name": "自动关机助手",
       "short_description": "简单易用的Windows定时关机工具",
       "long_description": "<div class='app-desc-content'><p>一个便捷的Windows自动关机工具，支持定时关机、倒计时提醒和配置保存功能。</p><p>主要功能：</p><ul><li>📅 支持设置定时关机时间</li><li>🔄 自动保存配置，下次启动自动恢复</li><li>🔔 关机前声音提醒</li><li>💻 系统托盘图标操作</li><li>⏰ 实时显示剩余时间</li><li>❌ 随时可以取消关机计划</li></ul><p>使用方法：在系统托盘找到关机图标，右键点击可以设置关机时间、查看剩余时间或取消关机计划。</p></div>",
@@ -241,7 +270,7 @@
     },
     {
       "id": "app_006",
-      "icon": "https://i.imgur.com/74Cg90H.png",
+      "icon": "img/lightspeed.png",
       "name": "光速启动",
       "short_description": "快速启动器，支持快捷键启动程序和文件夹",
       "long_description": "<div class='app-desc-content'><p>一个快速启动器，支持快速拖放新文件/快捷方式到快速文件夹，支持快捷键启动任意文件/快捷方式/文件夹。</p><p>主要功能：</p><ul><li>⚡ 快速启动程序和文件夹</li><li>🎯 支持拖放添加新项目</li><li>⌨️ 自定义快捷键绑定</li><li>📂 文件夹快速访问</li><li>🔄 窗口导航功能</li></ul><p>使用方法：使用Ctrl+Alt+Z打开主窗口，Alt+数字键快速访问文件夹。</p></div>",
@@ -254,7 +283,7 @@
     },
     {
       "id": "app_007",
-      "icon": "https://i.imgur.com/XnvLZUE.png",
+      "icon": "img/altsnap.png",
       "name": "ALT-DRAG 窗口管理",
       "short_description": "使用alt+鼠标快速管理窗口",
       "long_description": "<div class='app-desc-content'><p>一个基于AutoHotkey的Windows窗口管理工具，让你能够更方便快捷地控制窗口。</p><p>主要功能：</p><ul><li>🖱️ 按住win+左键拖动任意位置移动窗口</li><li>📐 按住win+右键拖动调整窗口大小</li><li>⚡ 240Hz高刷新率，移动/调整更流畅</li><li>🔒 最小窗口限制保护</li></ul><p>使用方法：按住ALT键，使用鼠标左键拖动移动窗口，右键拖动调整大小。</p></div>",
@@ -266,18 +295,19 @@
     },
     {
       "id": "app_008",
-      "icon": "https://i.imgur.com/YXAGHj6.png",
+      "icon": "img/gouzi.png",
       "name": "Apex启动器",
       "short_description": "一键启动Apex并优化游戏体验",
       "long_description": "<div class='app-desc-content'><p>一个专为Apex玩家设计的启动工具，帮助优化游戏体验。</p><p>主要功能：</p><ul><li>🎮 屏蔽Windows键，避免游戏中误触</li><li>⌨️ 自动切换英语输入法</li><li>🚀 一键启动加速器</li><li>🔄 自动关闭其他AHK脚本</li><li>🖥️ 支持高DPI显示</li></ul><p>使用方法：运行程序后，自动完成所有优化设置，让你专注游戏体验。</p></div>",
       "download_link": "https://github.com/cornradio/apex_runner",
       "tags": [
+        "超人气",
         "Windows"
       ]
     },
     {
       "id": "app_010",
-      "icon": "https://i.imgur.com/pPEIGTq.png",
+      "icon": "img/miniclock.png",
       "name": "win迷你时钟",
       "short_description": "极简的数字时钟，适合任务栏隐藏时使用",
       "long_description": "<div class='app-desc-content'><p>一个轻量级的桌面时钟工具，特别适合使用RoundedTB或隐藏任务栏的用户。</p><p>主要功能：</p><ul><li>🕒 简洁的数字时钟显示</li><li>⌨️ 支持快捷键操作(S=设置, E=退出)</li><li>📍 支持左中右三种位置</li><li>🎨 支持自定义主题</li><li>🔍 支持透明背景</li><li>⚡ 极低系统资源占用</li></ul><p>使用方法：运行后自动显示时间，右键可以访问设置选项。</p></div>",
@@ -294,7 +324,7 @@
       "long_description": "<div class='app-desc-content'><p>一个美观的网站导航页面，支持使用JSON格式自定义内容，每个图标都支持右键菜单。</p><p>主要功能：</p><ul><li>🎨 优雅的渐变背景</li><li>📝 支持JSON自定义内容</li><li>🔄 支持多个JSON配置切换</li><li>📱 完美支持移动端</li><li>🌙 支持暗色模式</li><li>⚡ 支持URL参数加载配置</li><li>💾 通过Cookie保存设置</li><li>📋 支持右键菜单操作</li></ul><p>使用方法：可以直接访问示例站点，或者部署自己的导航页并使用自定义JSON配置。支持通过Cookie编辑器修改配置。</p></div>",
       "download_link": "https://github.com/cornradio/watchTV",
       "tags": [
-        "Web"
+        "web"
       ]
     },
     {
@@ -312,36 +342,37 @@
     },
     {
       "id": "app_015",
-      "icon": "https://cdn.glitch.me/4733404f-fac7-44c0-9994-ad38268ee641%2Fopen-file-folder_1f4c2.png",
+      "icon": "img/emojidb.jpg",
       "name": "EmojiDB",
       "short_description": "一个全面易用的在线表情符号数据库和搜索引擎",
       "long_description": "<div class='app-desc-content'><p>EmojiDB 是一个提供丰富表情符号资源的在线平台，用户可以轻松查找、复制和学习关于各种表情符号的信息。</p><img src='https://emojidb.org/static/media/screenshot_desktop.447a83c250146bb2912f.jpg' alt='EmojiDB Screenshot'><p>主要功能：</p><ul><li>🔍 强大的表情符号搜索功能，支持关键词和分类查找</li><li>📋 一键复制表情符号到剪贴板</li><li>📚 提供详细的表情符号信息，包括 Unicode 版本、别名和跨平台显示差异</li><li>🌐 支持多语言搜索</li></ul><p>使用方法：访问网站后，在搜索框中输入关键词即可查找相关表情符号，点击表情符号即可复制。</p></div>",
       "download_link": "https://emojidb.org/",
       "tags": [
-        "Web"
+        "web"
       ]
     },
     {
       "id": "app_016",
-      "icon": "https://github.com/user-attachments/assets/9d62974d-0f93-4269-9a7e-518cb811a3e1",
+      "icon": "img/ytdlp.png",
       "name": "ytdlpgui",
       "short_description": "ytdlp下载器的图形界面",
       "long_description": "<div class='app-desc-content'><p>ytdlpgui 是流行且强大的命令行视频下载工具 <a href=\"https://github.com/yt-dlp/yt-dlp\">yt-dlp</a> 的图形用户界面 (GUI)。它旨在提供一个简单易用的界面，让用户无需输入复杂的命令行指令即可轻松下载来自 YouTube、Bilibili 等众多网站的视频和音频。</p><p>对于不熟悉命令行的用户来说，ytdlpgui 提供了一个直观的入口来利用 yt-dlp 的全部功能。</p><p>主要功能特性：</p><ul><li>🖥️ 提供图形化操作界面，告别命令行</li><li>🔗 轻松粘贴和处理视频或播放列表链接</li><li>⚙️ 提供选项配置，如选择视频/音频格式、质量、字幕等</li><li>📂 设定下载保存路径</li><li>🚀 简化 yt-dlp 的使用流程，支持其广泛的网站兼容性</li></ul><p>通过 ytdlpgui，你可以方便快捷地下载在线视频资源到本地。</p></div>",
       "download_link": "https://github.com/cornradio/ytdlpgui",
       "tags": [
+        "超人气",
         "Windows",
         "python"
       ]
     },
     {
       "id": "app_017",
-      "icon": "https://i.imgur.com/2Hzf6rs.png",
+      "icon": "img/clock.png",
       "name": "clock",
       "short_description": "高度可定制的在线钟表，集成实时天气信息",
       "long_description": "<div class='app-desc-content'><p>这款在线时钟应用提供了一个美观且功能丰富的网页版时间显示界面。它不仅能精确显示当前的北京时间或其他时区的时间，更巧妙地集成了实时天气信息，让你一眼掌握时间和天气状况。</p><p>该应用最大的特色在于其强大的自定义能力。用户可以根据个人喜好调整界面元素，创造独一无二的时钟样式。</p><p>主要功能特性：</p><ul><li>⏰ 显示当前准确时间，支持多种字体</li><li>☁️ 集成实时天气显示</li><li>🎨 丰富的个性化定制选项，包括但不限于：<ul><li>更换背景图片或颜色</li><li>调整字体样式、大小和颜色</li></ul></li><li>🌐 在线访问，无需安装，跨平台使用</li><li>🖱️ 简洁直观的用户界面</li></ul><p>通过访问其网页链接，你可以随时随地获得一个既实用又个性化的时间与天气显示工具。</p></div>",
       "download_link": "https://b.cornradio.org/clock/",
       "tags": [
-        "Web",
+        "web",
         "Clock"
       ]
     },
