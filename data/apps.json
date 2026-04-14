@@ -1,6 +1,18 @@
 {
   "apps": [
     {
+      "id": "app_pt",
+      "icon": "img/pticon.png",
+      "name": "Piano Trainer",
+      "short_description": "电钢琴实用工具",
+      "long_description": "<div class='app-desc-content'><p>PIANO TRAINER 是一块电钢琴实用工具，可以用来练习识别五线谱、录制midi以及回放；</p><p>建议使用chrome浏览器。如果你使用的是ios设备，需要下载 MIDIWeb Browser 才能正常使用。</p><ul><li><a href='https://github.com/cornradio/piano-trainer' target='_blank'>github</a></li></ul></div><img src='img/pt-1.jpg' alt='图片'>",
+      "download_link": "https://pt.cornradio.org/",
+      "tags": [
+        "web",
+        "钢琴"
+      ]
+    },
+    {
       "id": "app_020",
       "icon": "img/traychrome.png",
       "name": "Tray chrome",
@@ -58,8 +70,7 @@
         "超人气",
         "Python",
         "Windows",
-        "macOS",
-        "语音输入"
+        "macOS"
       ]
     },
     {
