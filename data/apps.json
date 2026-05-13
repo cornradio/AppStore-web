@@ -1,5 +1,18 @@
 {
   "apps": [
+      {
+      "id": "app_006",
+      "icon": "img/lightspeed.png",
+      "name": "lightspeed",
+      "short_description": "快速启动器，支持快捷键启动程序和文件夹",
+      "long_description": "<div class='app-desc-content'><p>一个快速启动器，支持快速拖放新文件/快捷方式到快速文件夹，支持快捷键启动任意文件/快捷方式/文件夹。</p><p>主要功能：</p><ul><li>⚡ 快速启动程序和文件夹</li><li>🎯 支持拖放添加新项目</li><li>⌨️ 自定义快捷键绑定</li><li>📂 文件夹快速访问</li><li>🔄 窗口导航功能</li></ul><p>使用方法：使用Ctrl+Alt+Z打开主窗口，Alt+数字键快速访问文件夹。</p></div>",
+      "download_link": "https://lightspeed.cornradio.org/",
+      "tags": [
+        "AHK",
+        "Windows",
+        "Launcher"
+      ]
+    },
     {
       "id": "app_pt",
       "icon": "img/pticon.png",
@@ -277,19 +290,6 @@
       "tags": [
         "AHK",
         "Windows"
-      ]
-    },
-    {
-      "id": "app_006",
-      "icon": "img/lightspeed.png",
-      "name": "光速启动",
-      "short_description": "快速启动器，支持快捷键启动程序和文件夹",
-      "long_description": "<div class='app-desc-content'><p>一个快速启动器，支持快速拖放新文件/快捷方式到快速文件夹，支持快捷键启动任意文件/快捷方式/文件夹。</p><p>主要功能：</p><ul><li>⚡ 快速启动程序和文件夹</li><li>🎯 支持拖放添加新项目</li><li>⌨️ 自定义快捷键绑定</li><li>📂 文件夹快速访问</li><li>🔄 窗口导航功能</li></ul><p>使用方法：使用Ctrl+Alt+Z打开主窗口，Alt+数字键快速访问文件夹。</p></div>",
-      "download_link": "https://github.com/cornradio/lightspeed-UI",
-      "tags": [
-        "AHK",
-        "Windows",
-        "Launcher"
       ]
     },
     {
