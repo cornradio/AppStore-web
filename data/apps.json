@@ -5,12 +5,48 @@
       "icon": "img/lightspeed.png",
       "name": "lightspeed",
       "short_description": "快速启动器，支持快捷键启动程序和文件夹",
-      "long_description": "<div class='app-desc-content'><p>一个快速启动器，支持快速拖放新文件/快捷方式到快速文件夹，支持快捷键启动任意文件/快捷方式/文件夹。</p><p>主要功能：</p><ul><li>⚡ 快速启动程序和文件夹</li><li>🎯 支持拖放添加新项目</li><li>⌨️ 自定义快捷键绑定</li><li>📂 文件夹快速访问</li><li>🔄 窗口导航功能</li></ul><p>使用方法：使用Ctrl+Alt+Z打开主窗口，Alt+数字键快速访问文件夹。</p></div>",
+      "long_description": "<div class='app-desc-content'><p>一个快速启动器，支持快速拖放新文件/快捷方式到快速文件夹，支持快捷键启动任意文件/快捷方式/文件夹。</p><p>主要功能：</p><ul><li>⚡ 快速启动程序和文件夹</li><li>🎯 支持拖放添加新项目</li><li>⌨️ 自定义快捷键绑定</li><li>📂 文件夹快速访问</li><li>🔄 窗口导航功能</li></ul><p>使用方法：使用Ctrl+Alt+Z打开主窗口，Alt+数字键快速访问文件夹。</p></div> <p><img width='300px' src='img/image-1.jpg' alt='图片'></p>",
       "download_link": "https://lightspeed.cornradio.org/",
       "tags": [
         "AHK",
         "Windows",
         "Launcher"
+      ]
+    },
+      {
+      "id": "app_006",
+      "icon": "img/x.png",
+      "name": "x-sport",
+      "short_description": "极限运动进阶checklist和视频教程导航",
+      "long_description": "<div class='app-desc-content'><p>x-sport 是一个极限运动爱好者的进阶checklist和视频教程导航工具，帮助你系统学习和提升技能。</p><p>主要功能：</p><ul><li>📋 <strong>技能checklist：</strong>涵盖滑板、BMX、轮滑等多种极限运动的技能树，帮助你规划学习路径。</li><li>🎥 <strong>视频教程导航：</strong>可以方便快速的搜索视频教学，涵盖YouTube、b站多个搜索源。</li><li>📈 <strong>进阶追踪：</strong>记录你的学习进度，随时查看已掌握和待提升的技能。</li></ul><p>导入导出：你可以通过导入导出配置文件的方式，在不同设备上同步你的技能树。</p></div><p><img src='img/image_3c7cw8.png' alt='图片'></p>",
+      "download_link": "https://x-sport.cornradio.org/",
+      "tags": [
+        "户外"
+      ]
+    },
+      {
+      "id": "app_006",
+      "icon": "img/hdr2sdr.png",
+      "name": "hdr2sdr",
+      "short_description": "游戏截屏颜色转换工具",
+      "long_description": "<div class='app-desc-content'><p>HDR2SDR 游戏截屏颜色转换工具</p><p>主要功能：进行批量的图片调色、转换</p></div><p><img src='img/image-4.jpg' alt='图片'></p>",
+      "download_link": "https://hdr2sdr.cornradio.org/",
+      "tags": [
+        "AHK",
+        "Windows",
+        "Launcher"
+      ]
+    },
+    {
+      "id": "app_oilhelperios",
+      "icon": "img/oilhelperios.png",
+      "name": "油耗助手",
+      "short_description": "iOS设备加油记录和车辆管理工具",
+      "long_description": "<div class='app-desc-content'><p>Oil Helper for iOS 是一款专为iOS设备设计的油品管理工具</p><p>主要功能：记录和管理车辆的加油信息</p></div><p><img src='img/image_93snc2.png' alt='图片'></p>",
+      "download_link": "https://apps.apple.com/cn/app/id6768849521",
+      "tags": [
+        "tools",
+        "IOS"
       ]
     },
     {
@@ -22,7 +58,7 @@
       "download_link": "https://pt.cornradio.org/",
       "tags": [
         "web",
-        "钢琴"
+        "image"
       ]
     },
     {
@@ -332,8 +368,8 @@
       "icon": "https://placehold.co/80x80/5856D6/ffffff.png?text=TV",
       "name": "WatchTV",
       "short_description": "一个好看的导航页面，支持JSON自定义",
-      "long_description": "<div class='app-desc-content'><p>一个美观的网站导航页面，支持使用JSON格式自定义内容，每个图标都支持右键菜单。</p><p>主要功能：</p><ul><li>🎨 优雅的渐变背景</li><li>📝 支持JSON自定义内容</li><li>🔄 支持多个JSON配置切换</li><li>📱 完美支持移动端</li><li>🌙 支持暗色模式</li><li>⚡ 支持URL参数加载配置</li><li>💾 通过Cookie保存设置</li><li>📋 支持右键菜单操作</li></ul><p>使用方法：可以直接访问示例站点，或者部署自己的导航页并使用自定义JSON配置。支持通过Cookie编辑器修改配置。</p></div>",
-      "download_link": "https://github.com/cornradio/watchTV",
+      "long_description": "<div class='app-desc-content'><p>一个美观的网站导航页面，支持使用JSON格式自定义内容，每个图标都支持右键菜单。</p><p>主要功能：</p><ul><li>🎨 优雅的渐变背景</li><li>📝 支持JSON自定义内容</li><li>🔄 支持多个JSON配置切换</li><li>📱 完美支持移动端</li><li>🌙 支持暗色模式</li><li>⚡ 支持URL参数加载配置</li><li>💾 通过Cookie保存设置</li><li>📋 支持右键菜单操作</li></ul><p>使用方法：可以直接访问示例站点，或者部署自己的导航页并使用自定义JSON配置。支持通过Cookie编辑器修改配置。 https://kasusa.lanzoul.com/b0j1evt2h 密码:fmca </p></div>",
+      "download_link": "https://kasusa.lanzoul.com/b0j1evt2h",
       "tags": [
         "web"
       ]
