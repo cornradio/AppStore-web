@@ -2,6 +2,30 @@
   "apps": [
       {
       "id": "app_006",
+      "icon": "img/rbtodo.png",
+      "name": "rbtodo ",
+      "short_description": "专为职场人设计的工作台(todo + 随时记录 + 周报导出）",
+      "long_description": "<div class='app-desc-content'><p>暂未开放下载，可预约</p></p>",
+      "download_link": "https://rbtodo.cornradio.org/",
+      "tags": [
+        "windows",
+        "macos"
+      ]
+    },
+      {
+      "id": "app_006",
+      "icon": "img/kindler.png",
+      "name": "Kindler ",
+      "short_description": "kindle 书籍局域网传输和转换工具",
+      "long_description": "<div class='app-desc-content'><p>在局域网内通过浏览器上传和下载电子书到 Kindle。</p><img width='' src='img/kindler-z.jpg' alt='图片'></p>",
+      "download_link": "https://github.com/cornradio/kindler/",
+      "tags": [
+        "web",
+        "kindle"
+      ]
+    },
+      {
+      "id": "app_006",
       "icon": "img/lightspeed.png",
       "name": "lightspeed",
       "short_description": "快速启动器，支持快捷键启动程序和文件夹",
