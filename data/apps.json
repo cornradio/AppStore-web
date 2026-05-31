@@ -4,9 +4,9 @@
       "id": "app_006",
       "icon": "img/rbtodo.png",
       "name": "rbtodo ",
-      "short_description": "专为职场人设计的工作台(todo + 随时记录 + 周报导出）",
-      "long_description": "<div class='app-desc-content'><p>暂未开放下载，可预约</p></p>",
-      "download_link": "https://rbtodo.cornradio.org/",
+      "short_description": "为工作场景设计的工作台(todo + 记录 + 周报）",
+      "long_description": "<div class='app-desc-content'><p>公测版已开放下载！</p><p>详细文档可以参考</p><a href='https://docs.rbtodo.cornradio.org/' target='_blank'>rbtodo文档</a></div><img width='' src='img/clipboard_1780240193.jpg' alt='图片'>",
+      "download_link": "https://github.com/cornradio/rbtodo/releases/tag/v1.0.0",
       "tags": [
         "windows",
         "macos"
