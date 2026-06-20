@@ -30,10 +30,16 @@ function filterApps() {
 function updateResults() {
     const filteredApps = filterApps();
     const appsGrid = document.getElementById('appsGrid');
-    
+
+    // 如果处于详情模式，关闭详情
+    const mainEl = document.querySelector('main.container');
+    if (mainEl && mainEl.classList.contains('detail-mode') && typeof closeDetailView === 'function') {
+        closeDetailView();
+    }
+
     // 清空现有内容
     appsGrid.innerHTML = '';
-    
+
     if (filteredApps.length === 0) {
         appsGrid.innerHTML = `
             <div class="no-results">

@@ -8,8 +8,8 @@
       "long_description": "<div class='app-desc-content'><h3>桌面划词 AI 助手</h3><strong>WinTranslator</strong> 是一款轻量级桌面划词 AI 助手。<ul><li><strong>极简操作</strong>：选中文字，按 `Alt + T`（Mac 为 `Option + T`）即刻在鼠标旁弹窗输出 AI 翻译结果，支持 `Esc` 快速关闭。</li><li><strong>高自定义</strong>：支持接入 DeepSeek 等大模型，可自由修改快捷键、自定义 Prompt 提示词组（不仅限翻译，可用于润色、分析等）及外观。</li></ul></div> <img width='' src='img/clipboard_1781956906.jpg' alt='图片'>",
       "download_link": "https://github.com/cornradio/wintranslator",
       "tags": [
-        "windows",
-        "macos",
+        "Windows",
+        "macOS",
         "AI"
       ]
     },
@@ -21,8 +21,8 @@
       "long_description": "<div class='app-desc-content'><p>详细文档可以参考</p><a href='https://rbtodo.cornradio.org/' target='_blank'>介绍页</a> || <a href='https://docs.rbtodo.cornradio.org/' target='_blank'>使用文档</a></div><img width='' src='img/clipboard_1780240193.jpg' alt='图片'>",
       "download_link": "https://github.com/cornradio/rbtodo/releases",
       "tags": [
-        "windows",
-        "macos"
+        "Windows",
+        "macOS"
       ]
     },
       {
@@ -44,6 +44,7 @@
       "short_description": "快速启动器，支持快捷键启动程序和文件夹",
       "long_description": "<div class='app-desc-content'><p>一个快速启动器，支持快速拖放新文件/快捷方式到快速文件夹，支持快捷键启动任意文件/快捷方式/文件夹。</p><p>主要功能：</p><ul><li>⚡ 快速启动程序和文件夹</li><li>🎯 支持拖放添加新项目</li><li>⌨️ 自定义快捷键绑定</li><li>📂 文件夹快速访问</li><li>🔄 窗口导航功能</li></ul><p>使用方法：使用Ctrl+Alt+Z打开主窗口，Alt+数字键快速访问文件夹。</p></div> <p><img width='300px' src='img/image-1.jpg' alt='图片'></p>",
       "download_link": "https://lightspeed.cornradio.org/",
+      "download_label": "打开网站",
       "tags": [
         "AHK",
         "Windows",
@@ -57,6 +58,7 @@
       "short_description": "极限运动进阶checklist和视频教程导航",
       "long_description": "<div class='app-desc-content'><p>x-sport 是一个极限运动爱好者的进阶checklist和视频教程导航工具，帮助你系统学习和提升技能。</p><p>主要功能：</p><ul><li>📋 <strong>技能checklist：</strong>涵盖滑板、BMX、轮滑等多种极限运动的技能树，帮助你规划学习路径。</li><li>🎥 <strong>视频教程导航：</strong>可以方便快速的搜索视频教学，涵盖YouTube、b站多个搜索源。</li><li>📈 <strong>进阶追踪：</strong>记录你的学习进度，随时查看已掌握和待提升的技能。</li></ul><p>导入导出：你可以通过导入导出配置文件的方式，在不同设备上同步你的技能树。</p></div><p><img src='img/image_3c7cw8.png' alt='图片'></p>",
       "download_link": "https://x-sport.cornradio.org/",
+      "download_label": "打开网站",
       "tags": [
         "户外"
       ]
@@ -68,6 +70,7 @@
       "short_description": "游戏截屏颜色转换工具",
       "long_description": "<div class='app-desc-content'><p>HDR2SDR 游戏截屏颜色转换工具</p><p>主要功能：进行批量的图片调色、转换</p></div><p><img src='img/image-4.jpg' alt='图片'></p>",
       "download_link": "https://hdr2sdr.cornradio.org/",
+      "download_label": "打开网站",
       "tags": [
         "AHK",
         "Windows",
@@ -81,9 +84,9 @@
       "short_description": "iOS设备加油记录和车辆管理工具",
       "long_description": "<div class='app-desc-content'><p>Oil Helper for iOS 是一款专为iOS设备设计的油品管理工具</p><p>主要功能：记录和管理车辆的加油信息</p></div><p><img src='img/image_93snc2.png' alt='图片'></p>",
       "download_link": "https://apps.apple.com/cn/app/id6768849521",
+      "download_label": "App Store",
       "tags": [
-        "tools",
-        "IOS"
+        "iOS"
       ]
     },
     {
@@ -93,6 +96,7 @@
       "short_description": "电钢琴实用工具",
       "long_description": "<div class='app-desc-content'><p>PIANO TRAINER 是一块电钢琴实用工具，可以用来练习识别五线谱、录制midi以及回放；</p><p>建议使用chrome浏览器。如果你使用的是ios设备，需要下载 MIDIWeb Browser 才能正常使用。</p><ul><li><a href='https://github.com/cornradio/piano-trainer' target='_blank'>github</a></li></ul></div><img src='img/pt-1.jpg' alt='图片'>",
       "download_link": "https://pt.cornradio.org/",
+      "download_label": "打开网站",
       "tags": [
         "web",
         "image"
@@ -129,6 +133,7 @@
       "short_description": "在线抽取塔罗牌,并提供AI分析跳转",
       "long_description": " <div class='app-desc-content'><p>快速抽取3张牌。</p><p>塔罗牌占卜。</p><p><img src='img/image_o5erdn.png' alt='图片'></p></div>",
       "download_link": "https://tlp.cornradio.org/",
+      "download_label": "打开网站",
       "tags": [
         "web"
       ]
@@ -140,6 +145,7 @@
       "short_description": "快速制作简约卡片风格壁纸",
       "long_description": "<div class='app-desc-content'><h3>卡片美学在线壁纸制作工具</h3><ul><li><strong>多端适配</strong> - 支持电脑全屏及手机(9:19.5)比例模拟</li><li><strong>卡片自定义</strong> - 自由调整主体卡片的垂直位置、缩放比例、圆角幅度及阴影强度</li><li><strong>沉浸式预览</strong> - 一键进入沉浸模式进行无干扰截图，支持快捷键缩放与模糊级别调节</li><li><strong>组合管理</strong> - 拥有本地历史库功能，支持保存多个设计组合以便随时回溯</li><li><strong>便捷操作</strong> - 支持 CTRL+V 直接粘贴图片或拖入图片，流程极度精简</li></ul><p><img src='img/image_dem4db.png' alt='图片'></p></div>",
       "download_link": "https://wallpaper-tool.cornradio.org/",
+      "download_label": "打开网站",
       "tags": [
         "web",
         "壁纸"
@@ -166,6 +172,7 @@
       "short_description": "键盘快捷键操作、大屏浏览、高效刷图的浏览器脚本",
       "long_description": "<div class='app-desc-content'><p>适配 <a href='https://jandan.net/' target='_blank'>jandan</a>、<a href='https://x.com/' target='_blank'>x</a>、<a href='https://www.xiaohongshu.com/' target='_blank'>小红书</a>、Youtube 、 threads</p><p>---</p><ul><li><a href='https://greasyfork.org/zh-CN/scripts/564520' target='_blank'>煎蛋无聊图增强</a></li><li><a href='https://greasyfork.org/zh-CN/scripts/564566' target='_blank'>X (Twitter) 信息流增强</a></li><li><a href='https://greasyfork.org/zh-CN/scripts/564583' target='_blank'>小红书增强</a></li><li><a href='https://greasyfork.org/zh-CN/scripts/564646-threads-%E4%BF%A1%E6%81%AF%E6%B5%81%E5%A2%9E%E5%BC%BA%E6%8F%92%E4%BB%B6' target='_blank'>threads增强</a></li><li><a href='https://greasyfork.org/zh-CN/scripts/564766-youtube-comment-enhancer' target='_blank'>youtube-视频页优化</a></li><li><a href='https://greasyfork.org/zh-CN/scripts/564767-youtube-enhancer-simple' target='_blank'>youtube-主页优化</a></li></ul><p>---</p><p>⌨️ 通用快捷键</p><p>快捷键功能J K / ↓  ↑内容滚动</p><ul><li>D 切换大屏模式</li><li>Space 进入详情页</li><li>S 下载当前图片</li><li>Z 点赞</li></ul></div>",
       "download_link": "https://greasyfork.org/zh-CN/users/734613-cornradio",
+      "download_label": "安装脚本",
       "tags": [
         "油猴脚本",
         "web"
@@ -202,6 +209,7 @@
       "short_description": "WYSIWYG 标签打印图片编辑器",
       "long_description": "<div class='app-desc-content'><p>一个适合多种标签打印机使用的所见即所得网页图片编辑器，旨在解决官方网页端打印效果差的问题。</p><p>主要特性：</p><ul><li>🎯 <strong>算法优化：</strong>使用 Atkinson 抖动算法，显著提升黑白打印的细节和层次表现。</li><li>⌨️ <strong>便捷操作：</strong>支持拖拽/粘贴图片、键盘快捷调整文字大小等。</li><li>🚀 <strong>体验优先：</strong>针对实际使用体验优化，提供流畅的标签编辑流程。</li></ul><p>项目地址：<a href='https://github.com/cornradio/web-printer' target='_blank'>GitHub</a></p><p><img src='img/image_e08v9p.png' alt='图片'></p></div>",
       "download_link": "https://web-printer.cornradio.org/",
+      "download_label": "打开网站",
       "tags": [
         "web",
         "Photo"
@@ -214,9 +222,10 @@
       "short_description": "ios 图片记录软件 -- 不存相册",
       "long_description": "<div class='app-desc-content'><p>Youlog 是一款专为 iOS 用户打造的图片记录工具，帮助你管理那些不适合存入系统相册的照片。无论是饮食打卡、日常生活、健康追踪、体态变化还是脸型管理，Youlog 都能为你提供一个安全、隐私、便捷的图片存储空间。</p><p>主要功能：</p><ul><li>📷 独立存储：照片不会出现在系统相册，保护个人隐私</li><li>🗂 标签管理：支持自定义TAG，便于查找和整理图片</li><li>💾 智能压缩：内置图片压缩算法，节省存储空间</li><li>📅 时间轴浏览：按时间顺序回顾每一刻的变化</li></ul><p>适合需要专属图片记录空间的用户，轻松实现高效、私密的日常管理。</p></div> <p>现也支持安卓： <a href='https://youlog-andorid.cornradio.org/' target='_blank'>youlog-andorid</a></p> <p><img src='img/image_6jxomq.png' alt='图片'></p>",
       "download_link": "https://apps.apple.com/us/app/youlog/id6743986266",
+      "download_label": "App Store",
       "tags": [
         "超人气",
-        "IOS",
+        "iOS",
         "Photo"
       ]
     },
@@ -324,6 +333,7 @@
       "short_description": "在任何网页添加VSCode编辑器功能",
       "long_description": "<div class='app-desc-content'><p>一个强大的浏览器笔记扩展，让您在任何网页上都能使用类似VSCode的编辑器进行笔记。</p><p>主要特性：</p><ul><li>💻 VSCode风格的编辑器界面</li><li>🎨 支持多种编程语言的语法高亮</li><li>💾 自动保存笔记内容</li><li>🌈 优雅的界面动画和模糊背景</li></ul><p>使用方法：按下 Ctrl + Shift + L 或点击右下角的代码图标即可打开编辑器。</p></div>",
       "download_link": "https://goodnote-vscode.cornradio.org/",
+      "download_label": "打开网站",
       "tags": [
         "油猴脚本",
         "web"
@@ -431,6 +441,7 @@
       "short_description": "一个全面易用的在线表情符号数据库和搜索引擎",
       "long_description": "<div class='app-desc-content'><p>EmojiDB 是一个提供丰富表情符号资源的在线平台，用户可以轻松查找、复制和学习关于各种表情符号的信息。</p><img src='https://emojidb.org/static/media/screenshot_desktop.447a83c250146bb2912f.jpg' alt='EmojiDB Screenshot'><p>主要功能：</p><ul><li>🔍 强大的表情符号搜索功能，支持关键词和分类查找</li><li>📋 一键复制表情符号到剪贴板</li><li>📚 提供详细的表情符号信息，包括 Unicode 版本、别名和跨平台显示差异</li><li>🌐 支持多语言搜索</li></ul><p>使用方法：访问网站后，在搜索框中输入关键词即可查找相关表情符号，点击表情符号即可复制。</p></div>",
       "download_link": "https://emojidb.org/",
+      "download_label": "打开网站",
       "tags": [
         "web"
       ]
@@ -455,6 +466,7 @@
       "short_description": "高度可定制的在线钟表，集成实时天气信息",
       "long_description": "<div class='app-desc-content'><p>这款在线时钟应用提供了一个美观且功能丰富的网页版时间显示界面。它不仅能精确显示当前的北京时间或其他时区的时间，更巧妙地集成了实时天气信息，让你一眼掌握时间和天气状况。</p><p>该应用最大的特色在于其强大的自定义能力。用户可以根据个人喜好调整界面元素，创造独一无二的时钟样式。</p><p>主要功能特性：</p><ul><li>⏰ 显示当前准确时间，支持多种字体</li><li>☁️ 集成实时天气显示</li><li>🎨 丰富的个性化定制选项，包括但不限于：<ul><li>更换背景图片或颜色</li><li>调整字体样式、大小和颜色</li></ul></li><li>🌐 在线访问，无需安装，跨平台使用</li><li>🖱️ 简洁直观的用户界面</li></ul><p>通过访问其网页链接，你可以随时随地获得一个既实用又个性化的时间与天气显示工具。</p></div>",
       "download_link": "https://b.cornradio.org/clock/",
+      "download_label": "打开网站",
       "tags": [
         "web",
         "Clock"
