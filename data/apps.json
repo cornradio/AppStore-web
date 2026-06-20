@@ -2,11 +2,24 @@
   "apps": [
       {
       "id": "app_006",
+      "icon": "img/wintranslator.png",
+      "name": "Win translator ",
+      "short_description": "全平台桌面划词 AI 助手",
+      "long_description": "<div class='app-desc-content'><h3>桌面划词 AI 助手</h3><strong>WinTranslator</strong> 是一款轻量级桌面划词 AI 助手。<ul><li><strong>极简操作</strong>：选中文字，按 `Alt + T`（Mac 为 `Option + T`）即刻在鼠标旁弹窗输出 AI 翻译结果，支持 `Esc` 快速关闭。</li><li><strong>高自定义</strong>：支持接入 DeepSeek 等大模型，可自由修改快捷键、自定义 Prompt 提示词组（不仅限翻译，可用于润色、分析等）及外观。</li></ul></div> <img width='' src='img/clipboard_1781956906.jpg' alt='图片'>",
+      "download_link": "https://github.com/cornradio/wintranslator",
+      "tags": [
+        "windows",
+        "macos",
+        "AI"
+      ]
+    },
+      {
+      "id": "app_006",
       "icon": "img/rbtodo.png",
       "name": "rbtodo ",
-      "short_description": "为工作场景设计的工作台(todo + 记录 + 周报）",
-      "long_description": "<div class='app-desc-content'><p>公测版已开放下载！</p><p>详细文档可以参考</p><a href='https://docs.rbtodo.cornradio.org/' target='_blank'>rbtodo文档</a></div><img width='' src='img/clipboard_1780240193.jpg' alt='图片'>",
-      "download_link": "https://github.com/cornradio/rbtodo/releases/tag/v1.0.0",
+      "short_description": "随手召唤类似raycast的Todo工作台",
+      "long_description": "<div class='app-desc-content'><p>详细文档可以参考</p><a href='https://rbtodo.cornradio.org/' target='_blank'>介绍页</a> || <a href='https://docs.rbtodo.cornradio.org/' target='_blank'>使用文档</a></div><img width='' src='img/clipboard_1780240193.jpg' alt='图片'>",
+      "download_link": "https://github.com/cornradio/rbtodo/releases",
       "tags": [
         "windows",
         "macos"
