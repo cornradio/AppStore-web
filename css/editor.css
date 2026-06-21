@@ -3,11 +3,13 @@
     height: calc(100vh - 120px);
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
-.editor-grid {
+/* Two-column layout */
+.editor-two-col {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     flex: 1;
     min-height: 0;
@@ -23,29 +25,69 @@
     border: 1px solid var(--border-color);
 }
 
-:root[data-theme="dark"] .editor-column {
-    background: var(--card-background);
-    border-color: var(--border-color);
-}
-
 .column-header {
-    padding: 1rem;
+    padding: 0.8rem 1rem;
     background: rgba(128, 128, 128, 0.05);
     border-bottom: 1px solid var(--border-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-:root[data-theme="dark"] .column-header {
-    background: rgba(255, 255, 255, 0.03);
+    gap: 0.5rem;
 }
 
 .column-header h3 {
     margin: 0;
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--text-color, #333);
+    color: var(--text-color);
+    white-space: nowrap;
+}
+
+.header-actions-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.filename-input {
+    padding: 0.35rem 0.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.8rem;
+    background: var(--background-color);
+    color: var(--text-color);
+    width: 160px;
+    outline: none;
+}
+
+.filename-input:focus {
+    border-color: var(--primary-color);
+}
+
+/* Syntax hints bar */
+.syntax-hints {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.4rem 1rem;
+    background: rgba(99, 102, 241, 0.04);
+    border-bottom: 1px solid var(--border-color);
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.syntax-hints::-webkit-scrollbar {
+    display: none;
+}
+
+.syntax-hints span {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.7rem;
+    color: var(--secondary-text);
+    background: rgba(128, 128, 128, 0.08);
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    cursor: default;
 }
 
 textarea {
@@ -55,10 +97,11 @@ textarea {
     resize: none;
     font-family: 'Fira Code', 'Consolas', monospace;
     font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.6;
     outline: none;
     background: transparent;
     color: var(--text-color);
+    tab-size: 2;
 }
 
 .preview-container {
@@ -67,56 +110,72 @@ textarea {
     flex: 1;
 }
 
+/* Buttons */
 .action-btn {
     background: var(--primary-color, #007aff);
-    color: rgb(0, 0, 0);
+    color: var(--card-background);
     border: none;
     padding: 0.4rem 0.8rem;
     border-radius: 6px;
     font-size: 0.8rem;
     cursor: pointer;
-    transition: transform 0.2s, background 0.2s;
+    transition: transform 0.15s, opacity 0.15s;
+    white-space: nowrap;
 }
 
 .action-btn:hover {
-    background: var(--primary-hover, #0063d1);
     transform: translateY(-1px);
+    opacity: 0.9;
 }
 
-.secondary-btn {
-    background: transparent;
-    border: 1px solid var(--primary-color, #007aff);
-    color: var(--primary-color, #007aff);
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
+/* JSON config hint box */
+.config-hint {
+    background: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 0.8rem 1.2rem;
+    flex-shrink: 0;
+}
+
+.config-hint h4 {
+    margin: 0 0 0.4rem;
     font-size: 0.8rem;
-    cursor: pointer;
+    color: var(--secondary-text);
+    font-weight: 500;
 }
 
-.column-footer {
-    padding: 0.8rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
-    display: flex;
-    justify-content: flex-end;
+.config-hint pre {
+    margin: 0;
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    line-height: 1.5;
 }
 
+.config-hint pre span {
+    color: #6366f1;
+    font-weight: 600;
+}
+
+/* Back link */
 .back-link {
     text-decoration: none;
-    color: var(--primary-color, #007aff);
+    color: var(--primary-color);
     font-weight: 500;
     font-size: 0.9rem;
 }
 
-/* 适配现有 apps-grid 内部的样式 */
+/* Preview content styles */
 .app-desc-content {
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
+.app-desc-content h2,
 .app-desc-content h3 {
     margin-top: 1.2rem;
     margin-bottom: 0.6rem;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .app-desc-content ul {
@@ -129,41 +188,42 @@ textarea {
 }
 
 .app-desc-content a {
-    color: var(--primary-color);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    opacity: 0.9;
+    color: #6366f1;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(99, 102, 241, 0.3);
 }
 
 .app-desc-content a:hover {
-    opacity: 1;
+    border-bottom-color: #6366f1;
 }
 
-.app-desc-content table {
+.app-desc-content code {
+    background: rgba(128, 128, 128, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.85em;
+}
+
+.app-desc-content .desc-img {
     width: 100%;
-    border-collapse: collapse;
+    border-radius: 10px;
     margin: 1rem 0;
 }
 
-.app-desc-content th,
-.app-desc-content td {
-    border: 1px solid #eee;
-    padding: 8px;
-    text-align: left;
-}
-
-:root[data-theme="dark"] .app-desc-content th,
-:root[data-theme="dark"] .app-desc-content td {
-    border-color: var(--border-color);
-}
-
-@media (max-width: 1024px) {
-    .editor-grid {
+@media (max-width: 768px) {
+    .editor-two-col {
         grid-template-columns: 1fr;
-        height: auto;
     }
 
     textarea {
         height: 300px;
+    }
+
+    .header-actions-group {
+        flex-wrap: wrap;
+    }
+
+    .filename-input {
+        width: 120px;
     }
 }

@@ -24,11 +24,31 @@ async function loadApps() {
         const jsonPath = localStorage.getItem('appsJsonPath') || 'data/apps.json';
         const response = await fetch(jsonPath);
         const data = await response.json();
-        return data.apps;
+        const apps = data.apps;
+        // Load .md description files for apps that reference them
+        await loadDescriptionFiles(apps);
+        return apps;
     } catch (error) {
         console.error('加载应用数据失败:', error);
         return [];
     }
+}
+
+// Load external .md description files
+async function loadDescriptionFiles(apps) {
+    const promises = apps.map(async (app) => {
+        if (app.description_file) {
+            try {
+                const resp = await fetch(app.description_file);
+                if (resp.ok) {
+                    app.long_description = await resp.text();
+                }
+            } catch (e) {
+                console.warn(`加载描述文件失败: ${app.description_file}`, e);
+            }
+        }
+    });
+    await Promise.all(promises);
 }
 
 function setCustomJsonPath(path) {
@@ -120,6 +140,19 @@ function renderAppCard(app) {
     });
 
     return card;
+}
+
+// ═══════════════════════════════════════
+// Description Renderer (auto Markdown → HTML)
+// ═══════════════════════════════════════
+function renderDescription(text) {
+    if (!text) return '';
+    const trimmed = text.trim();
+    // If it starts with '<', treat as pre-rendered HTML
+    if (trimmed.startsWith('<')) return trimmed;
+    // Otherwise convert Markdown to HTML
+    if (typeof Converter !== 'undefined') return Converter.mdToHtml(trimmed);
+    return trimmed;
 }
 
 // ═══════════════════════════════════════
@@ -215,7 +248,7 @@ function renderDetailPanel(app) {
         <div class="detail-tags">
             ${app.tags.map(tag => `<span class="detail-tag">${tag}</span>`).join('')}
         </div>
-        <div class="detail-content">${app.long_description}</div>
+        <div class="detail-content">${renderDescription(app.long_description)}</div>
     `;
 
     // Back button

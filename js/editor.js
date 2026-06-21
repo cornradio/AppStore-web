@@ -1,71 +1,95 @@
 /**
- * Editor UI Logic
+ * Editor UI Logic — Markdown → .md file workflow
  */
 document.addEventListener('DOMContentLoaded', () => {
     const markdownInput = document.getElementById('markdownInput');
-    const htmlOutput = document.getElementById('htmlOutput');
     const previewArea = document.getElementById('previewArea');
-    const convertToHtmlBtn = document.getElementById('convertToHtml');
-    const convertFromHtmlBtn = document.getElementById('convertFromHtml');
-    const copyBtn = document.getElementById('copyBtn');
+    const saveMdBtn = document.getElementById('saveMdBtn');
+    const fileNameInput = document.getElementById('fileNameInput');
+    const snippetFilename = document.getElementById('snippetFilename');
 
-    // Load initial content from local storage if available
+    // Load saved content
     const savedMd = localStorage.getItem('editor_md');
-    if (savedMd) {
-        markdownInput.value = savedMd;
-        updatePreview();
-    }
+    const savedName = localStorage.getItem('editor_filename');
+    if (savedMd) markdownInput.value = savedMd;
+    if (savedName) fileNameInput.value = savedName;
+    updatePreview();
+    updateSnippet();
 
-    /**
-     * Update the preview and HTML output
-     */
+    // Live preview on input
+    markdownInput.addEventListener('input', () => {
+        updatePreview();
+        localStorage.setItem('editor_md', markdownInput.value);
+    });
+
+    // Update JSON snippet when filename changes
+    fileNameInput.addEventListener('input', () => {
+        updateSnippet();
+        localStorage.setItem('editor_filename', fileNameInput.value);
+    });
+
     function updatePreview() {
         const md = markdownInput.value;
-        const html = Converter.mdToHtml(md);
+        if (!md.trim()) {
+            previewArea.innerHTML = '<p style="color: #888; text-align: center; margin-top: 50px;">在左侧输入 Markdown，这里实时预览</p>';
+            return;
+        }
+        previewArea.innerHTML = Converter.mdToHtml(md);
 
-        // Show in preview (rendered)
-        previewArea.innerHTML = html;
-
-        // Show in output (string for JSON)
-        htmlOutput.value = html;
-
-        // Save to local storage for persistence
-        localStorage.setItem('editor_md', md);
+        // Handle image loading in preview
+        previewArea.querySelectorAll('.desc-img').forEach(img => {
+            if (!img.complete) {
+                img.addEventListener('load', () => img.classList.add('loaded'));
+            } else {
+                img.classList.add('loaded');
+            }
+        });
     }
 
-    // Auto-update as user types in markdown
-    markdownInput.addEventListener('input', updatePreview);
+    function updateSnippet() {
+        const name = fileNameInput.value.trim() || '文件名';
+        snippetFilename.textContent = name + '.md';
+    }
 
-    // Manual triggers
-    convertToHtmlBtn.addEventListener('click', () => {
-        updatePreview();
-    });
+    // Save as .md file (download)
+    saveMdBtn.addEventListener('click', () => {
+        const md = markdownInput.value;
+        if (!md.trim()) return;
 
-    convertFromHtmlBtn.addEventListener('click', () => {
-        const html = htmlOutput.value;
-        const md = Converter.htmlToMd(html);
-        markdownInput.value = md;
-        updatePreview();
-    });
+        const filename = (fileNameInput.value.trim() || 'description') + '.md';
+        const blob = new Blob([md], { type: 'text/markdown;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
 
-    // Copy to clipboard
-    copyBtn.addEventListener('click', () => {
-        htmlOutput.select();
-        document.execCommand('copy');
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        a.click();
+        URL.revokeObjectURL(url);
 
-        const originalText = copyBtn.innerText;
-        copyBtn.innerText = '已复制！';
-        copyBtn.style.borderColor = '#4cd964';
-        copyBtn.style.color = '#4cd964';
-
+        // Visual feedback
+        const original = saveMdBtn.textContent;
+        saveMdBtn.textContent = '已保存!';
+        saveMdBtn.style.borderColor = '#4cd964';
+        saveMdBtn.style.color = '#4cd964';
         setTimeout(() => {
-            copyBtn.innerText = originalText;
-            copyBtn.style.borderColor = '';
-            copyBtn.style.color = '';
+            saveMdBtn.textContent = original;
+            saveMdBtn.style.borderColor = '';
+            saveMdBtn.style.color = '';
         }, 2000);
     });
 
-    // Handle dark mode tracking from main site
+    // Tab key support in textarea (insert spaces instead of changing focus)
+    markdownInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Tab') {
+            e.preventDefault();
+            const start = markdownInput.selectionStart;
+            const end = markdownInput.selectionEnd;
+            markdownInput.value = markdownInput.value.substring(0, start) + '  ' + markdownInput.value.substring(end);
+            markdownInput.selectionStart = markdownInput.selectionEnd = start + 2;
+        }
+    });
+
+    // Dark mode
     const root = document.documentElement;
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;

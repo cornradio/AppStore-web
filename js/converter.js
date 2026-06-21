@@ -11,11 +11,29 @@ const Converter = {
 
         let html = md;
 
+        // 0. Images ![alt](src =width) -> <img>
+        //    Supports: ![alt](src) or ![alt](src =300) or ![alt](src =50%)
+        html = html.replace(/!\[(.*?)\]\((.*?)(?:\s+=(\d+%?))?\)/g, (match, alt, src, width) => {
+            const widthAttr = width
+                ? (width.includes('%') ? ` style="width:${width}"` : ` style="width:${width}px"`)
+                : '';
+            return `<img class="desc-img" src="${src.trim()}" alt="${alt}"${widthAttr}>`;
+        });
+
         // 1. Headers ### Title -> <h3>Title</h3>
         html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
 
+        // 1.5. Headers ## Title -> <h2>Title</h2>
+        html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+
         // 2. Bold **text** -> <strong>text</strong>
         html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+        // 2.5. Italic *text* -> <em>text</em>
+        html = html.replace(/(?<!\*)\*(?!\*)(.*?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
+
+        // 2.6. Inline code `text` -> <code>text</code>
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
 
         // 3. Links [text](url) -> <a href='url' target='_blank'>text</a>
         html = html.replace(/\[(.*?)\]\((.*?)\)/g, "<a href='$2' target='_blank'>$1</a>");
@@ -58,6 +76,19 @@ const Converter = {
         if (inList) processedLines.push('</ul>');
 
         html = processedLines.join('');
+
+        // Post-process: extract <img> from inside <p> so images are block-level
+        html = html.replace(/<p>(.*?)<\/p>/gs, (match, content) => {
+            // If paragraph contains only an image (possibly with whitespace)
+            if (/^\s*<img[^>]+>\s*$/.test(content)) {
+                return content.trim();
+            }
+            // If paragraph contains text + image, split them
+            if (content.includes('<img')) {
+                return content.replace(/(<img[^>]+>)/g, '</p>$1<p>').replace(/<p><\/p>/g, '');
+            }
+            return match;
+        });
 
         // Wrap in container
         return `<div class='app-desc-content'>${html}</div>`;
