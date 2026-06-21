@@ -2,6 +2,18 @@
   "apps": [
       {
       "id": "app_006",
+      "icon": "img/xlg.jpg",
+      "name": "我的星露谷MOD ",
+      "short_description": "我做了两款星露谷MOD，提升游戏体验",
+      "long_description": "<div class='app-desc-content'><h3>自制星露谷MOD*2</h3><a href='https://www.bilibili.com/video/BV138jx6iEYV' target='_blank'>b站视频教学</a></p></div><p>包含两款专注于提升游戏节奏与效率的轻量化开源模组：</p><strong>🏃 跑步 (SprintMod)</strong><p>按 `Shift`（手柄为左摇杆 `LS`）即刻开启无消耗冲刺，不掉体力，让跑图更省时。<a href='https://www.nexusmods.com/stardewvalley/mods/47978' target='_blank'>SprintMod</a></p>  <img width='400' src='https://wcp.cornradio.org/images/mod/动画-2.gif' alt='i'> <br/><strong>💦 蓄力水壶 (SuperWateringMod)</strong><p>支持超大范围蓄力灌溉，且无论浇水面积多大，均严格只消耗 1 格水，彻底告别频繁补水。<a href='https://www.nexusmods.com/stardewvalley/mods/47981' target='_blank'>SuperWateringMod</a></p></div>  <img width='400' src='https://wcp.cornradio.org/images/mod/%E5%8A%A8%E7%94%BB-1.gif' alt='i'>",
+      "download_link": "https://www.nexusmods.com/profile/kasusa/mods",
+      "tags": [
+        "Game",
+        "Mod"
+      ]
+    },
+      {
+      "id": "app_006",
       "icon": "img/wintranslator.png",
       "name": "Win translator ",
       "short_description": "全平台桌面划词 AI 助手",
