@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twilight Silhouette Generator</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #000; overflow: hidden; }
+  canvas { display: block; width: 100vw; height: 100vh; }
+  #refresh {
+    position: fixed; bottom: 28px; right: 28px;
+    width: 52px; height: 52px; border-radius: 50%;
+    background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.8); font-size: 22px;
+    cursor: pointer; backdrop-filter: blur(8px);
+    transition: all 0.25s ease; display: flex; align-items: center; justify-content: center;
+    z-index: 10;
+  }
+  #refresh:hover { background: rgba(255,255,255,0.22); transform: rotate(180deg); }
+  #refresh:active { transform: rotate(360deg) scale(0.92); }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<button id="refresh" title="生成新风景">↻</button>
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+let W, H;
+
+function resize() {
+  const dpr = window.devicePixelRatio || 1;
+  W = window.innerWidth; H = window.innerHeight;
+  canvas.width = W * dpr; canvas.height = H * dpr;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+window.addEventListener('resize', () => { resize(); generate(); });
+resize();
+
+function rand(a, b) { return a + Math.random() * (b - a); }
+function randInt(a, b) { return Math.floor(rand(a, b + 1)); }
+function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+function lerp(a, b, t) { return a + (b - a) * t; }
+function rgb(c) { return `rgb(${c[0]|0},${c[1]|0},${c[2]|0})`; }
+function rgba(c, a) { return `rgba(${c[0]|0},${c[1]|0},${c[2]|0},${a})`; }
+
+// ============================================================
+// Sky palettes — 3 categories
+// ============================================================
+const SKIES = [
+  // === Sunset / warm tones ===
+  { type:'warm', stops:[[0,[6,8,24]],[.2,[12,18,48]],[.45,[28,38,72]],[.65,[65,55,82]],[.82,[135,82,62]],[.93,[205,120,52]],[1,[242,168,72]]], glow:[248,172,78] },
+  { type:'warm', stops:[[0,[8,6,26]],[.2,[20,14,46]],[.45,[48,26,70]],[.65,[92,45,86]],[.82,[160,65,76]],[.93,[212,108,62]],[1,[238,152,72]]], glow:[225,118,68] },
+  { type:'warm', stops:[[0,[10,12,30]],[.2,[18,22,50]],[.45,[32,40,70]],[.65,[56,56,80]],[.82,[112,76,66]],[.93,[192,125,50]],[1,[245,175,66]]], glow:[248,178,70] },
+  { type:'warm', stops:[[0,[8,8,22]],[.2,[16,16,42]],[.45,[36,26,66]],[.65,[78,40,80]],[.82,[142,62,88]],[.93,[195,105,82]],[1,[225,155,102]]], glow:[228,152,102] },
+  { type:'warm', stops:[[0,[10,5,18]],[.2,[22,10,30]],[.45,[42,16,40]],[.65,[85,26,46]],[.82,[145,42,40]],[.93,[205,75,36]],[1,[245,135,42]]], glow:[248,138,46] },
+
+  // === Blue hour — deep indigo/navy, cool blue glow ===
+  { type:'blue', stops:[[0,[3,4,14]],[.2,[5,8,28]],[.4,[8,16,52]],[.6,[12,28,72]],[.78,[22,48,92]],[.9,[42,72,115]],[1,[68,105,140]]], glow:[75,115,155] },
+  { type:'blue', stops:[[0,[2,3,10]],[.2,[4,6,22]],[.4,[7,12,42]],[.6,[10,22,65]],[.78,[18,40,88]],[.9,[35,65,110]],[1,[55,95,135]]], glow:[62,102,142] },
+  { type:'blue', stops:[[0,[4,3,16]],[.2,[8,8,32]],[.4,[14,18,58]],[.6,[22,35,82]],[.78,[38,58,105]],[.9,[60,88,128]],[1,[85,120,155]]], glow:[92,128,162] },
+
+  // === Pale / silver — near-black sky, white-ish atmospheric scatter ===
+  { type:'pale', stops:[[0,[4,4,10]],[.2,[6,7,18]],[.4,[10,12,28]],[.6,[18,22,42]],[.78,[30,38,58]],[.9,[50,60,78]],[1,[78,88,105]]], glow:[120,130,150] },
+  { type:'pale', stops:[[0,[3,3,8]],[.2,[5,5,14]],[.4,[8,10,24]],[.6,[14,18,38]],[.78,[25,32,52]],[.9,[42,52,72]],[1,[68,78,98]]], glow:[108,118,140] },
+  { type:'pale', stops:[[0,[5,4,12]],[.2,[8,8,22]],[.4,[12,14,35]],[.6,[20,25,48]],[.78,[35,42,65]],[.9,[55,65,85]],[1,[82,95,115]]], glow:[125,138,158] },
+];
+
+// ============================================================
+// Mountain — few peaks, straight slopes, one smoothing pass
+// ============================================================
+function generateMountain(horizonY) {
+  const baseY = horizonY + H * 0.005;
+  const numPeaks = randInt(3, 6);
+  const peakBiasX = rand(0.25, 0.75);
+  const pts = [];
+
+  pts.push({ x: -W * 0.03, y: baseY });
+
+  for (let i = 0; i < numPeaks; i++) {
+    const t = (i + rand(0.25, 0.75)) / numPeaks;
+    const x = W * lerp(-0.02, 1.02, t);
+    const dist = Math.abs(t - peakBiasX);
+    const envelope = Math.exp(-dist * dist * rand(4, 10));
+    const peakH = H * envelope * rand(0.12, 0.3);
+    pts.push({ x, y: baseY - peakH });
+
+    if (i < numPeaks - 1) {
+      const vt = t + rand(0.3, 0.7) / numPeaks;
+      const vx = W * lerp(-0.02, 1.02, vt);
+      const valleyH = H * rand(0, 0.04);
+      pts.push({ x: vx, y: baseY - valleyH });
+    }
+  }
+
+  pts.push({ x: W * 1.03, y: baseY });
+  return { pts, baseY };
+}
+
+// ============================================================
+// Drawing
+// ============================================================
+
+function drawSky(sky, horizonY) {
+  const skyBottom = horizonY + H * 0.05;
+  const grad = ctx.createLinearGradient(0, 0, 0, skyBottom);
+  for (const [stop, color] of sky.stops) {
+    grad.addColorStop(stop, rgb(color));
+  }
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, skyBottom);
+}
+
+function drawGlow(horizonY, sky) {
+  const SCALE = 0.25;
+  const BLUR = 16;
+  const PAD = BLUR * 2;
+  const oW = Math.ceil(W * SCALE) + PAD * 2;
+  const oH = Math.ceil(H * SCALE) + PAD * 2;
+
+  const off = document.createElement('canvas');
+  off.width = oW; off.height = oH;
+  const oc = off.getContext('2d');
+
+  const s = SCALE;
+  const oCx = (W * rand(0.35, 0.65)) * s + PAD;
+  const oHy = horizonY * s + PAD;
+  const glowColor = sky.glow;
+
+  const g1 = oc.createRadialGradient(oCx, oHy, 0, oCx, oHy, W * 0.6 * s);
+  g1.addColorStop(0, rgba(glowColor, 0.5));
+  g1.addColorStop(0.12, rgba(glowColor, 0.4));
+  g1.addColorStop(0.28, rgba(glowColor, 0.25));
+  g1.addColorStop(0.45, rgba(glowColor, 0.14));
+  g1.addColorStop(0.65, rgba(glowColor, 0.05));
+  g1.addColorStop(0.85, rgba(glowColor, 0.01));
+  g1.addColorStop(1, rgba(glowColor, 0));
+  oc.fillStyle = g1;
+  oc.fillRect(0, 0, oW, oH);
+
+  const coreAlpha = sky.type === 'pale' ? 0.45 : sky.type === 'blue' ? 0.32 : 0.38;
+  const bright = [Math.min(255,glowColor[0]+18), Math.min(255,glowColor[1]+28), Math.min(255,glowColor[2]+12)];
+  const g2 = oc.createRadialGradient(oCx, oHy + 4*s, 0, oCx, oHy, W * 0.28 * s);
+  g2.addColorStop(0, rgba(bright, coreAlpha));
+  g2.addColorStop(0.2, rgba(bright, coreAlpha * 0.65));
+  g2.addColorStop(0.45, rgba(glowColor, coreAlpha * 0.3));
+  g2.addColorStop(0.7, rgba(glowColor, 0.04));
+  g2.addColorStop(1, rgba(glowColor, 0));
+  oc.fillStyle = g2;
+  oc.fillRect(0, 0, oW, oH);
+
+  if (Math.random() > 0.3) {
+    const oCx2 = oCx + W * rand(-0.12, 0.12) * s;
+    const g3 = oc.createRadialGradient(oCx2, oHy, 0, oCx2, oHy, W * 0.15 * s);
+    let accent;
+    if (sky.type === 'warm') {
+      accent = [Math.min(255,glowColor[0]+30), Math.min(255,glowColor[1]+22), Math.min(255,glowColor[2]+8)];
+    } else {
+      accent = [Math.min(255,glowColor[0]+20), Math.min(255,glowColor[1]+25), Math.min(255,glowColor[2]+30)];
+    }
+    g3.addColorStop(0, rgba(accent, 0.2));
+    g3.addColorStop(0.5, rgba(accent, 0.06));
+    g3.addColorStop(1, rgba(accent, 0));
+    oc.fillStyle = g3;
+    oc.fillRect(0, 0, oW, oH);
+  }
+
+  ctx.save();
+  ctx.filter = `blur(${BLUR}px)`;
+  ctx.drawImage(off, PAD, PAD, oW - PAD*2, oH - PAD*2, 0, 0, W, H);
+  ctx.filter = 'none';
+  ctx.restore();
+}
+
+function drawMountainSilhouette(horizonY) {
+  const { pts, baseY } = generateMountain(horizonY);
+  const sm = 0.3;
+  ctx.beginPath();
+  ctx.moveTo(-10, H + 10);
+  ctx.lineTo(pts[0].x, pts[0].y);
+
+  for (let i = 0; i < pts.length; i++) {
+    const p = pts[i];
+    const prev = pts[i - 1] || p;
+    const next = pts[i + 1] || p;
+    const m1x = (prev.x + p.x) / 2;
+    const m1y = (prev.y + p.y) / 2;
+    const m2x = (p.x + next.x) / 2;
+    const m2y = (p.y + next.y) / 2;
+    const cpx = p.x + ((m1x + m2x) / 2 - p.x) * sm;
+    const cpy = p.y + ((m1y + m2y) / 2 - p.y) * sm;
+    ctx.lineTo(m1x, m1y);
+    ctx.quadraticCurveTo(cpx, cpy, m2x, m2y);
+  }
+
+  ctx.lineTo(pts[pts.length - 1].x, pts[pts.length - 1].y);
+  ctx.lineTo(W + 10, H + 10);
+  ctx.closePath();
+  ctx.fillStyle = '#000';
+  ctx.fill();
+}
+
+// ============================================================
+// Main
+// ============================================================
+const blackRatio = 0.01;
+
+function generate() {
+  const horizonY = H * (1 - blackRatio);
+  const sky = SKIES[randInt(0, SKIES.length - 1)];
+
+  ctx.clearRect(0, 0, W, H);
+  ctx.fillStyle = '#000';
+  ctx.fillRect(0, 0, W, H);
+
+  drawSky(sky, horizonY);
+  drawGlow(horizonY, sky);
+  drawMountainSilhouette(horizonY);
+}
+
+document.getElementById('refresh').addEventListener('click', generate);
+document.addEventListener('keydown', e => {
+  if (e.code === 'Space' || e.code === 'KeyR') { e.preventDefault(); generate(); }
+});
+generate();
+</script>
+</body>
+</html>

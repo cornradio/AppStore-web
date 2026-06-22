@@ -2,6 +2,17 @@
   "apps": [
     {
       "id": "app_006",
+      "icon": "https://wcp.cornradio.org/images/icons/clipboard_1782138910.jpg",
+      "name": "twilight-generator ",
+      "short_description": "随机生成美丽的 Twilight 壁纸",
+      "download_link": "down/twilight-generator.html",
+      "tags": [
+        "web"
+      ],
+      "description_file": "data/descriptions/twilight-generator.md"
+    },
+    {
+      "id": "app_006",
       "icon": "img/nexttrack.jpg",
       "name": "NextTrack ",
       "short_description": "点击一下就可以切换到下一首音乐",

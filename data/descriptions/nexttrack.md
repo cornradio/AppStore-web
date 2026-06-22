@@ -1,3 +1,5 @@
+![alt text](https://wcp.cornradio.org/images/icons/image.png =500)
+
 - 软件功能：在 macOS 顶栏点击即可切换到下一首音乐，支持主流音乐软件。
 - 开发原因：
   - 系统自带操作需点击两下才能完成下一首：先打开控制键，再点击下一曲，还需要移动鼠标，非常麻烦。
@@ -10,4 +12,5 @@
 xattr -cr /Applications/NextTrack.app
 ```
 
+<br>
 [蓝奏云 下载地址](https://kasusa.lanzoul.com/iy0SM3sk72of)
