@@ -6,6 +6,8 @@
   - 仅支持 M1 芯片。
   - 需执行特定命令后方可使用（因软件无证书，为自签名版本）。
 
+```
 xattr -cr /Applications/NextTrack.app
+```
 
 [蓝奏云 下载地址](https://kasusa.lanzoul.com/iy0SM3sk72of)

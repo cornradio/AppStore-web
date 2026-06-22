@@ -32,7 +32,17 @@ const Converter = {
         // 2.5. Italic *text* -> <em>text</em>
         html = html.replace(/(?<!\*)\*(?!\*)(.*?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
 
-        // 2.6. Inline code `text` -> <code>text</code>
+        // 2.6 Code blocks ``` -> <pre><code>  (MUST run before inline code)
+        html = html.replace(/```(\w*)\r?\n([\s\S]*?)```/g, (match, lang, code) => {
+            const escaped = code
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .trimEnd();
+            return `<pre><code class="lang-${lang || 'text'}">${escaped}</code></pre>`;
+        });
+
+        // 2.7. Inline code `text` -> <code>text</code>
         html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
 
         // 3. Links [text](url) -> <a href='url' target='_blank'>text</a>
@@ -40,32 +50,76 @@ const Converter = {
 
         // 4. Lists & Paragraphs
         let lines = html.split('\n');
-        let inList = false;
         let processedLines = [];
+        let listStack = []; // stack of indent levels for nested lists
+
+        function closeListsTo(level) {
+            while (listStack.length > 0 && listStack[listStack.length - 1] >= level) {
+                processedLines.push('</ul>');
+                listStack.pop();
+            }
+        }
+
+        function closeAllLists() {
+            while (listStack.length > 0) {
+                processedLines.push('</ul>');
+                listStack.pop();
+            }
+        }
+
+        let inCodeBlock = false;
 
         for (let i = 0; i < lines.length; i++) {
-            let line = lines[i].trim();
-            if (!line) {
-                if (inList) {
-                    processedLines.push('</ul>');
-                    inList = false;
-                }
+            let rawLine = lines[i];
+            let line = rawLine.trim();
+
+            // Track code block state
+            if (line.includes('<pre>')) inCodeBlock = true;
+            if (line.includes('</pre>')) {
+                inCodeBlock = false;
+                processedLines.push(rawLine);
+                continue;
+            }
+            if (inCodeBlock) {
+                processedLines.push(rawLine);
                 continue;
             }
 
-            if (line.startsWith('- ') || line.startsWith('* ')) {
-                if (!inList) {
+            // Empty line
+            if (!line) {
+                closeAllLists();
+                continue;
+            }
+
+            // List item: detect indent level
+            let indentMatch = rawLine.match(/^(\s*)[-*]\s+(.+)/);
+            if (indentMatch) {
+                let indent = indentMatch[1].length;
+                let content = indentMatch[2];
+
+                if (listStack.length === 0) {
+                    // Start new list
                     processedLines.push('<ul>');
-                    inList = true;
-                }
-                processedLines.push(`<li>${line.substring(2)}</li>`);
-            } else {
-                if (inList) {
-                    processedLines.push('</ul>');
-                    inList = false;
+                    listStack.push(indent);
+                } else if (indent > listStack[listStack.length - 1]) {
+                    // Deeper nesting: open new sub-list
+                    processedLines.push('<ul>');
+                    listStack.push(indent);
+                } else {
+                    // Same or shallower: close deeper levels
+                    closeListsTo(indent);
+                    if (listStack.length === 0 || listStack[listStack.length - 1] !== indent) {
+                        processedLines.push('<ul>');
+                        listStack.push(indent);
+                    }
                 }
 
-                // If it's already an HTML tag we ignore p-wrapping to avoid nesting issues
+                processedLines.push(`<li>${content}</li>`);
+            } else {
+                // Not a list item
+                closeAllLists();
+
+                // If it's already an HTML tag, skip p-wrapping
                 if (line.startsWith('<') && (line.endsWith('>') || line.includes('>'))) {
                     processedLines.push(line);
                 } else {
@@ -73,7 +127,7 @@ const Converter = {
                 }
             }
         }
-        if (inList) processedLines.push('</ul>');
+        closeAllLists();
 
         html = processedLines.join('');
 
