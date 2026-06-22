@@ -2,6 +2,17 @@
   "apps": [
     {
       "id": "app_006",
+      "icon": "img/nexttrack.jpg",
+      "name": "NextTrack ",
+      "short_description": "点击一下就可以切换到下一首音乐",
+      "download_link": "down/nexttrack.zip",
+      "tags": [
+        "macOS"
+      ],
+      "description_file": "data/descriptions/nexttrack.md"
+    },
+    {
+      "id": "app_006",
       "icon": "img/xlg.jpg",
       "name": "我的星露谷MOD ",
       "short_description": "我做了两款星露谷MOD，提升游戏体验",
@@ -171,7 +182,7 @@
       "download_link": "https://github.com/cornradio/airmouse",
       "tags": [
         "超人气",
-        "Python",
+        "python",
         "Windows",
         "macOS"
       ],
